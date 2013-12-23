@@ -489,8 +489,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 215.0, 189.0, 54.0, 18.0 ],
-					"text" : "$1 2000"
+					"patching_rect" : [ 215.0, 189.0, 47.0, 18.0 ],
+					"text" : "$1 300"
 				}
 
 			}
@@ -503,8 +503,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 231.0, 214.0, 46.0, 20.0 ],
-					"text" : "line"
+					"patching_rect" : [ 231.0, 214.0, 49.0, 20.0 ],
+					"text" : "line 0 1"
 				}
 
 			}
