@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 244.0, 184.0, 780.0, 653.0 ],
+		"rect" : [ -1080.0, 448.0, 780.0, 653.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 18.0,
@@ -65,18 +65,20 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 525.75, 298.5, 46.0, 25.0 ],
-					"text" : "256."
+					"text" : "600."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Center Frequency (default 256hz)",
+					"comment" : "Center Frequency (default 256hz)",
+					"hint" : "Center Frequency (default 256hz)",
 					"id" : "obj-28",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 520.75, 223.5, 25.0, 25.0 ]
 				}
 
@@ -277,7 +279,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Signal Out",
+					"comment" : "Signal Out",
+					"hint" : "Signal Out",
 					"id" : "obj-2",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -288,7 +292,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "Input Frequency",
+					"comment" : "Input Frequency",
+					"hint" : "Input Frequency",
 					"id" : "obj-1",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -543,8 +549,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ]
+ ]
 	}
 
 }
