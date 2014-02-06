@@ -1,0 +1,550 @@
+/*
+- a collection of (22) functions for various waveshaping tasks in GenExpr code
+- this is all simple public domain code; links, references and credits
+given where possible
+- to use these functions in any GenExpr codebox, simply make sure this file
+is in your Max search path, then use the 'require' technique like this:
+require("stkr.waveshaping")
+...then use any of the functions in your codebox (see Gen documentation
+for further details, the 'require' command must be at the top of your codebox)
+- by stkr, Febuary 2012, Max 6.0.4 or later required
+*/
+
+
+/*
+good old(skool) MSP style
+*/
+tanhShape(x, a) {
+
+	a = maximum(a, 1.);
+	y = tanh(x * a);
+
+	return y;
+}
+
+
+/*
+good old dc offset MSP style (thanks mzed)
+*/
+tanhOffset(x, d, a) {
+
+	a = maximum(a, 1.);
+	d = clip(d, 0., 0.1);
+	y = tanh((x + d) * a);
+
+	return dcblock(y);
+}
+
+
+/*
+modified hyperbolic tangent, csound
+http://www.csounds.com/ezine/winter1999/processing/
+*/
+ modHT(xin, d, a) {
+
+	a = maximum(a, 1.);
+	d = clip(d, 0., 1.);
+	x = (xin + d) * a;
+	y = (exp(x) - exp(-x * 1.2)) / (exp(x) + exp(-x));
+
+	return dcblock(y - d);
+}
+
+
+/*
+like MSP [overdrive~] (from the Max examples folder):
+*/
+overdrive(x, shape) {
+/* (sadly does not have the negative shape effect
+explained in the actual [overdrive~] ref page) */
+	shape = clip(shape, 1., 11.);
+	signx = sign(x); /* positive quadrant only */
+	px = x * signx;
+
+	y = 1. - exp(shape * log(1. - px)); /* shape */
+	y = clip(y, 0., 1.); /* hard limit */
+
+	return y * signx; /* return to original quadrant */
+}
+
+
+/*
+based on an idea by Volker Böhm; like [overdrive~] but less CPU
+*/
+atanDrive(xin, drive) {
+
+	drive = maximum(drive, 0.); /* should really be '1.', but... */
+	outdrive = maximum((1. / atan(drive)), 0.1);
+
+	x = atan(xin * drive);
+
+	return x * outdrive;
+}
+/* ^^ actually sounds a lot smoother than [overdrive~],
+really is very good this one, more like 'scDistort' */
+
+
+/*
+polynomial:
+y = x/(1.+(0.28*x^2.))
+^ Peter McCulloch told me this one ^
+... almost tanh-like
+*/
+polyWs(p, d) {
+
+	m = p * d;
+	s = 1. / minimum(d, 1.);
+	b = (m * m) * 0.28;
+	a = b + 1.;
+	n = m / a;		
+
+	return dcblock(n * s);
+}
+
+
+/*
+variable polynomial (as above but with coefficients):
+y = x/(g+(c*x^2.))
+^^ dangerous ^^
+*/
+polyVws(x, c, g, d) {
+
+	c = clip(c, 0., 1.); /* bound */
+	g = clip(g, 0.25, 4.); /* comp */
+
+	m = x * d;
+	s = 1. / minimum(d, 1.);
+	b = (m * m) * c;
+	a = b + g;
+
+	y = m / a;		
+
+	return dcblock(y * s);
+}
+
+
+/*
+from SuperCollider3, by James McCartney; thanks to Maurizio Giri
+*/
+/* like 'distort' UnaryOp (subtile and smooth sounding) */
+scDistort(xin, drive) {
+
+	drive = maximum(drive, 0.);
+	x1 = xin * drive;
+	x2 = abs(x1) + 1.;
+
+	return x1 / x2;
+}
+/* like 'softclip'/'fold2' UnaryOps (more agressive and solid) */
+scSoftclip(xin, drive) {
+
+	drive = maximum(drive, 0.);
+	x1 = xin * drive;
+	x2 = (x1 * x1) + 0.25;
+
+	return x1 / x2;
+}
+
+
+/*
+based on a patch by Trond Lossius:
+"...another approach using sinus. Looking at the patch it might look
+ridiculous, but it sounds really good and warm. I believe this is the
+distortion jhno ended up using for the overdrive in 'radiaL'.
+Me and Tim [Place] discussed these issues a lot a while ago, and ended with
+Tim implementing both this and the tanh approach in the overdrive external
+used in Jamoma: jmod.saturation~. Note that using tanh or sinus in the
+signal loop like this is computationally expensive. Lookup tables are much
+cheaper. jmod.saturation uses lookup and linear interpolation AFAIR."
+*/
+rsinDrive(xin, rdrive) {
+
+	rdrive = maximum(rdrive, 0.); /* should really be '1.', but... */
+	scalerdrive = (rdrive / 10.) * PI;
+	outdrive = 1. / sin(clip(scalerdrive, 0.01, HALFPI));
+	
+	x = sin(xin * scalerdrive);
+
+	return x * outdrive;
+}
+/* ^ this one really is very good, phat but smooth */
+
+
+/*
+polar split distortion, a strange mixture of (strange) ideas from the forums,
+actually really works being driven hard
+*/
+curveSplit(xin, drive) {
+
+	drive = maximum(drive, 1.);
+	drive = atan(1. / (drive * 0.785398));
+	
+	xsplit1 = clip(xin, 0., 1.);
+	xsplit2 = 1. - (clip(xin, -1., 0.) + 1.);
+
+	xpow1 = 1. - pow(drive, xsplit1);
+	xpow2 = pow(drive, xsplit2) - 1.;
+
+	return xpow1 + xpow2;
+}
+
+
+/*
+based on [110.saturn~] by Roman Thelanius
+...this version a bit odd
+*/
+polarSplit(xin, ampl) {
+
+	ampl = maximum(ampl, 0.);
+	pgate = xin < 0.;
+	psplit1 = pgate ? 0. : xin;
+	psplit2 = pgate ? xin : 0.;
+
+	split1 = (tanh((psplit1 * TWOPI) - PI) * 0.5) + 0.5;
+	split2 = (tanh((psplit2 * TWOPI) - PI) * 0.5) - 0.5;
+
+	splice = (split1 + split2) * ampl;
+
+	return dcblock(splice);
+}
+/*
+...a differently odd version
+*/
+polarSplit2(xin, ampl) {
+
+	ampl = maximum(ampl, 0.);
+	pgate = xin < 0.;
+	psplit1 = pgate ? 0. : xin;
+	psplit2 = pgate ? xin : 0.;
+
+	split1 = (tanh((psplit1 * TWOPI) - PI) * 0.5) + 0.5;
+	split2 = (tanh((psplit2 * TWOPI) - PI) * 0.5) - 0.5;
+	/* need a 'lag' here really: */
+	splice = interp(pgate, split1, split2, mode="cosine") * ampl;
+
+	return dcblock(splice);
+}
+/* ^^ sorry Roman, i may have messed this up - i have
+lost the original forum post and Max4 patch now*/
+
+
+/*
+foldback distortion
+hellfire@upb.de
+http://www.musicdsp.org/showArchiveComment.php?ArchiveID=203
+
+Notes:
+a simple fold-back distortion filter.
+if the signal exceeds the given threshold-level, it mirrors at the
+positive/negative threshold-border as long as the singal lies in
+the legal range (-threshold..+threshold). there is no range limit,
+so inputs doesn't need to be in -1..+1 scale. threshold should be
+> 0 depending on use (low thresholds) it makes sense to rescale
+the input to full amplitude
+
+performs approximately the following code
+(just without the loop)
+
+while (in>threshold || in<-threshold)
+{
+// mirror at positive threshold
+if (in>threshold) in= threshold - (in-threshold);
+// mirror at negative threshold
+if (in<-threshold) in= -threshold + (-threshold-in);
+}
+
+Code : 
+float foldback(float in, float threshold)
+{
+if (in>threshold || in<-threshold)
+{
+in= fabs(fabs(fmod(in - threshold, threshold*4)) - threshold*2) - threshold;
+}
+return in;
+}
+*/
+foldBD(xin, thresho, ampl) {
+
+	ampl = maximum(ampl, 1.);
+	thresho = maximum(thresho, 0.01);
+	invthresho = thresho * -1.;
+
+	xa = xin * ampl;
+	zo = xa > thresho;
+	zu = xa < invthresho;
+	xc = clip(xa, invthresho, thresho);
+	wp = abs(abs(mod((xa - thresho), (thresho * 4.))) - (thresho * 2.)) - thresho;
+	/* ...should develop this with xover knees */
+	slcr = selector(((zo + zu) + 1), xc, wp, wp);
+
+	return slcr;
+}
+/* ^^ brittle and harsh high end, but solid special effect */
+
+
+/*
+Waveshaper
+by Bram de Jong
+http://www.musicdsp.org/archive.php?classid=4#41
+
+Notes:
+where x (in [-1..1]) will be distorted and a is
+a distortion parameter that goes from 1 to infinity.
+The equation is valid for positive and negativ values.
+If a is 1, it results in a slight distortion and
+with bigger a's the signal get's more funky.
+
+A good thing about the shaper is that feeding it with
+bigger-than-one values, doesn't create strange fx.
+The maximum this function will reach is 1.2 for a=1.
+
+Code:
+f(x,a) = x*(abs(x) + a)/(x^2 + (a-1)*abs(x) + 1)
+*/
+jongShaper(x, a) {
+
+	a = maximum(a, 1.);
+
+	return (x * (abs(x) + a)) / ((pow(x, 2.) + (a - 1.) * abs(x) + 1.));
+}
+/* ^^ a legendary Bram de Jong waveshaper, this is almost as good as
+the 'Gloubi boulga'; thanks to raja for introducing it */
+
+
+/*
+Waveshaper
+by Partice Tarrabia and Bram de Jong
+http://www.musicdsp.org/archive.php?classid=4#46
+
+Notes:
+amount should be in [-1..1] Plot it and stand back
+in astonishment! ;)
+
+Code:
+x = input in [-1..1]
+y = output
+k = 2*amount/(1-amount);
+
+f(x) = (1+k)*x/(1+k*abs(x))
+*/
+tarrabiaShaper(x, amount) {
+
+	amount = clip(amount, -0.999, 0.997); /* -1. -> 0. very different */
+	k = (2. * amount) / (1. - amount);
+
+	return ((1. + k) * x) / (1. + k * abs(x));
+}
+/* ^^ negative 'amount' values good for oscillators etc, positive
+better for complex audio */
+
+
+/*
+Waveshaper
+by Jon Watte
+http://www.musicdsp.org/archive.php?classid=4#43
+
+Notes:
+A favourite of mine is using a sin() function
+instead. This will have the "unfortunate" side
+effect of removing odd harmonics if you take it
+to the extreme: a triangle wave gets mapped to a
+pure sine wave. This will work with a going from
+.1 or so to a= 5 and bigger! The mathematical
+limits for a = 0 actually turns it into a linear
+function at that point, but unfortunately FPUs
+aren't that good with calculus :-) Once a goes
+above 1, you start getting clipping in addition
+to the "soft" wave shaping. It starts getting
+into more of an effect and less of a mastering
+tool, though :-)
+
+Seeing as this is just various forms of wave
+shaping, you could do it all with a look-up
+table, too. In my version, that would get rid of
+the somewhat-expensive sin() function.
+
+Code:
+(input: a == "overdrive amount")
+
+z = M_PI * a;
+s = 1/sin(z)
+b = 1/a
+
+if (x > b)
+  f(x) = 1
+else
+  f(x) = sin(z*x)*s
+*/
+watteShaper(x, a) {
+
+	a = clip(a, 0.1, 10.); /* only 'normal' use between 0. -> 1. (one sine phase) */
+	z = PI * a;
+	s = clip((1. / sin(z)), -3.236068, 3.236068); /* otherwise blowup */
+	b = 1. / a;
+
+	return (sin(z * x) * s);
+}
+/* ^^ amazing kick for your... kicks; fat and pure, not
+agressive - but be careful of your output gainstage! */
+
+
+/*
+Waveshaper; Polynomial; Distortion
+by Jon Watte
+http://www.musicdsp.org/archive.php?classid=4#114
+
+Notes:
+> The other question; what's a 'waveshaper' algorithm.
+> Is it simply another word for distortion?
+
+A typical "waveshaper" is some function which takes an
+input sample value X and transforms it to an output
+sample X'. A typical implementation would be a look-up
+table of some number of points, and some level of
+interpolation between those points (say, cubic). When
+people talk about a wave shaper, this is most often what
+they mean. Note that a wave shaper, as opposed to a
+filter, does not have any state. The mapping from
+X -> X' is stateless.
+
+Some wave shapers are implemented as polynomials, or
+using other math functions. Hard clipping is a wave
+shaper implemented using the min() and max() functions
+(or the three-argument clamp() function, which is the
+same thing). A very mellow and musical-sounding
+distortion is implemented using a third-degree
+polynomial; something like X' = (3/2)X - (1/2)X^3.
+The nice thing with polynomial wave shapers is that
+you know that the maximum they will expand bandwidth
+is their order. Thus, you need to oversample 3x to
+make sure that a third-degree polynomial is aliasing
+free. With a lookup table based wave shaper, you don't
+know this (unless you treat an N-point table as an
+N-point polynomial :-)
+
+Code:
+float waveshape_distort( float in ) {
+  return 1.5f * in - 0.5f * in *in * in;
+}
+*/
+watteFunc(xin, amp) {
+
+	amp = maximum(amp, 0.);
+/*	xin = clip(xin, -1., 1.); */
+	xin = tanh(xin);
+	x = clip((xin * amp), -1., 1.);
+
+	return 1.5 * x - 0.5 * x * x * x;
+}
+/* ^^ not a good implementation (by me), but still
+has an interesting difference about it */
+
+
+/*
+Variable-hardness clipping function
+by Laurent de Soras
+http://www.musicdsp.org/archive.php?classid=4#277
+(see link for alternatives)
+
+Notes: 
+k >= 1 is the "clipping hardness".
+1 gives a smooth clipping, and a high
+value gives hardclipping.
+
+Don't set k too high, because the
+formula use the pow() function, which
+use exp() and would overflow easily.
+100 seems to be a reasonable value
+for "hardclipping"
+
+Code : 
+f (x) = sign (x) * pow (atan (pow
+(abs (x), k)), (1 / k));
+*/
+varHard(x, k, a) { /* a == 'drive', k == 'clipping' */
+
+	a = clip(a, 1., 100.); /* 'gating' above 10.-ish */
+	k = clip(k, 1., 1000.); /* aliasing above 100.-ish (depends!) */
+	x = x * a;
+
+	return sign(x) * pow(atan(pow(abs(x), k)), (1. / k));
+}
+/* ^^ you will be surprised just how useful this can be */
+
+
+/* and now the great Gloubi-boulga: */
+
+/*
+Waveshaper :: Gloubi-boulga
+by Laurent de Soras
+http://www.musicdsp.org/archive.php?classid=4#86
+(see link for cheaper versions)
+
+Notes:
+Multiply input by gain before processing
+
+Code:
+const double x = input * 0.686306;
+const double a = 1 + exp (sqrt (fabs (x)) * -0.75);
+output = (exp (x) - exp (-x * a)) / (exp (x) + exp (-x));
+*/
+gloubiBoulga(xin, drive) {
+
+	drive = maximum(drive, 1.);
+	x = (xin * drive) * 0.686306;
+	a = 1. + exp(sqrt(abs(x)) * -0.75);
+	y = (exp(x) - exp(-x * a)) / (exp(x) + exp(-x));
+
+	return dcblock(y);
+}
+/* ^^ brilliant and well-known all-round useful great sounding simple distortion */
+
+
+/*
+based on Tom Szilagyi plugin:
+http://tap-plugins.sourceforge.net/ladspa/sigmoid.html
+'tape' saturation curve == 'sigmoid' @ -5.
+*/
+tapeH(xin, pregain, postgain, sigmoid) {
+
+	pregain = dbtoa(clip(pregain, -48., 48.));
+	postgain = dbtoa(clip(postgain, -96., 12.));
+	sigmoid = minimum(sigmoid, -2.); /* -5. == 'tape', -2. == tanh approximation */
+	/* ^ you can easily drive sigmoid to -100. (for example) ^ */
+	x = xin * pregain;
+	y = (2. / (1. + exp(sigmoid * x))) - 1.; /* the sigmoid */
+
+	return y * postgain;
+}
+/* ^^ with 'sigmoid' set at '-5.' Szilagyi calls this 'a tape saturation curve';
+the dynamic changing of the 'sigmoid' parameter is an stkr addition;
+plot it to see the compactness of its -1. -> 1. distribution
+(see the 'checkingSigmoid4.maxpat' patch that came with this download) */
+
+
+/* and now the great JOS: */
+
+/*
+from 'faust' code by Julius O. Smith III
+https://ccrma.stanford.edu/realsimple/faust_strings/Cubic_Nonlinear_Distortion.html
+*/
+/* oversample this by 2, 4 or 8 times with [poly~ @resampling 1]: */
+cnld(xin, offset, drive) { /* c_ubic n_on-l_inear d_istortion */
+
+	offset = clip(offset, 0., 1.); /* add even harmonics, usually stay below '0.1' */
+	drive = clip(drive, 0., 1.);
+
+	pregain = pow(10., (2. * drive));
+	x = clip(((xin + offset) * pregain), -1., 1.);
+	cubic = x - x*x*x/3.;
+
+	return dcblock(cubic);
+	/* + 1x or 2x more dcblocker after downsampling process */
+}
+/* ^^ this function really does sound better than 'very good'
+for certain uses (e.g. especially a guitar processing chain),
+if you follow the oversampling & dcblocking instructions
+(see the contents of the 'cnld8-folder' folder that came with
+this download for an example) */
+
+
