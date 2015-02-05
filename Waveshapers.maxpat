@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 29.0, 69.0, 1235.0, 795.0 ],
+		"rect" : [ 1403.0, 261.0, 1235.0, 795.0 ],
 		"bglocked" : 1,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -29,7 +29,7 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "shaper type 0 - 22",
 					"id" : "obj-93",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -139,12 +139,12 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "gain sig~",
 					"id" : "obj-3",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 754.537903, 94.0, 25.0, 25.0 ]
 				}
 
@@ -162,12 +162,12 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "signal",
 					"id" : "obj-98",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 629.671387, 31.947327, 25.0, 25.0 ]
 				}
 
@@ -264,7 +264,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -1268,6 +1268,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bordercolor" : [ 0.74, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"ft1" : 5.0,
@@ -1307,6 +1308,7 @@
 			}
 , 			{
 				"box" : 				{
+					"bordercolor" : [ 0.74, 0.0, 0.0, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"ft1" : 5.0,
@@ -1676,6 +1678,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 716.132019, 461.0, 128.794312, 20.0 ],
 					"text" : " foldBD - threshold",
+					"textcolor" : [ 0.74, 0.0, 0.0, 1.0 ],
+					"underline" : 1,
 					"varname" : "c11"
 				}
 
@@ -1694,6 +1698,8 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 744.305725, 481.0, 128.794312, 20.0 ],
 					"text" : " foldBD - amplitude",
+					"textcolor" : [ 0.74, 0.0, 0.0, 1.0 ],
+					"underline" : 1,
 					"varname" : "c12"
 				}
 
@@ -1837,7 +1843,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -2208,7 +2214,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -2569,7 +2575,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -2916,7 +2922,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 9,
 							"architecture" : "x86"
 						}
 ,
@@ -4654,11 +4660,6 @@
 					"source" : [ "obj-98", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "attrui.mxe",
-				"type" : "iLaF"
 			}
  ]
 	}
