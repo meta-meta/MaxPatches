@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 9,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 117.0, 273.0, 625.0, 461.0 ],
+		"rect" : [ 295.0, 931.0, 625.0, 461.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 18.0,
@@ -135,7 +135,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 135.0, 62.0, 25.0, 25.0 ]
 				}
 
@@ -147,7 +147,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 81.0, 62.0, 25.0, 25.0 ]
 				}
 
@@ -256,28 +256,6 @@
 					"source" : [ "obj-9", 0 ]
 				}
 
-			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "vposc.maxpat",
-				"bootpath" : "/Projects/MaxPatches/BirdCall",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ringmod.maxpat",
-				"bootpath" : "/Projects/MaxPatches/BirdCall",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "crossfade.maxpat",
-				"bootpath" : "/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
 			}
  ]
 	}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "spatiumPreset">
+	<slot number = "1">
+		<patcher name = "decoder">
+			<patcher name = "decode.reverb">
+				<pattr name = "reverb.center" value = "0.5" />
+				<pattr name = "reverb.gain" value = "-17.318182" />
+				<pattr name = "reverb.eq" value = "4 0 6 0 0 0 50. 0.996152 1.123758 1 5 1 0 0 400. 1. 2. 2 5 1 0 0 1500. 1. 2. 3 7 1 0 0 9000. 1. 0.5" />
+				<pattr name = "reverb.ir" value = "&quot;St. Margaret's Church - 3rd configuration&quot;" />
+			</patcher>
+			<patcher name = "decode.config">
+				<pattr name = "decode.0" value = "0.707" />
+				<pattr name = "decode.1" value = "0.707" />
+				<pattr name = "decode.center" value = "0.5" />
+				<pattr name = "decode.speaker" value = "0.5" />
+				<pattr name = "decode.rotation" value = "0." />
+				<pattr name = "decode.eq" value = "4 0 6 0 0 0 139.279572 1. 0.5 1 5 1 0 0 496.221619 1. 2. 2 5 1 0 0 1500. 1. 2. 3 7 1 0 0 6238.975098 1. 0.5" />
+			</patcher>
+		</patcher>
+	</slot>
+</pattrstorage>
+
