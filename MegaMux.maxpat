@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 9,
+			"revision" : 3,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 1165.0, 66.0, 1567.0, 1081.0 ],
+		"rect" : [ 0.0, 43.0, 1536.0, 748.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -28,6 +28,72 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-103",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 879.0, 626.0, 50.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"int" : 1,
+					"maxclass" : "gswitch2",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 775.0, 626.0, 39.0, 32.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-100",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 805.5, 518.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-95",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 775.0, 570.0, 32.5, 20.0 ],
+					"text" : "!="
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-91",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 869.25, 561.0, 32.5, 20.0 ],
+					"text" : "int"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -849,7 +915,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 240.0, 50.0, 51.0, 20.0 ],
+					"patching_rect" : [ 244.5, 49.0, 51.0, 20.0 ],
 					"text" : "metro 1"
 				}
 
@@ -906,7 +972,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 695.5, 712.0, 50.0, 20.0 ]
+					"patching_rect" : [ 697.5, 537.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -1403,6 +1469,33 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-100", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-100", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-101", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-101", 1 ]
 				}
 
 			}
@@ -2308,10 +2401,46 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-101", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-87", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-91", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-95", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-91", 0 ]
 				}
 
 			}
@@ -2339,6 +2468,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-94", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-95", 0 ]
 				}
 
 			}
@@ -2381,42 +2519,42 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "BirdCall.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/BirdCall",
+				"bootpath" : "/Projects/MaxPatches/BirdCall",
 				"patcherrelativepath" : "./BirdCall",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vposc.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/BirdCall",
+				"bootpath" : "/Projects/MaxPatches/BirdCall",
 				"patcherrelativepath" : "./BirdCall",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "avian-syrinx-model.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/BirdCall",
+				"bootpath" : "/Projects/MaxPatches/BirdCall",
 				"patcherrelativepath" : "./BirdCall",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ringmod.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/BirdCall",
+				"bootpath" : "/Projects/MaxPatches/BirdCall",
 				"patcherrelativepath" : "./BirdCall",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "crossfade.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "trachea.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/BirdCall",
+				"bootpath" : "/Projects/MaxPatches/BirdCall",
 				"patcherrelativepath" : "./BirdCall",
 				"type" : "JSON",
 				"implicit" : 1
