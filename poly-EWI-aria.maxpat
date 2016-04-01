@@ -46,6 +46,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 444.5, 57.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 8"
 				}
@@ -924,7 +928,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [  ],
 							"slidervisibility" : [  ],
-							"blob" : "372.CMlaKA....fQPMDZ....ADzRAUD...P......VVavQWdfLGauQGL.........................D.NCUzQPge....db1VTA4lvv.AuWo9GV4633j1FARIEATTEGpDpoUbdIYgZgispsCE980IgfPp0m1cmwy3Yc1zS0J3HYcRiNmEyELX5y2eW1LqDKvizMXhzTV.BBmrBx6k58Nv4sDVGJyYOjvfuaPkzeNvlA6UlsnZsQctGqu+iFcGaAWzcXPMdpnSkYJko7s44rjmRYfqDUXfWLLBnVc4tR0kwKHsmr4rTwkAuSpNOit9.UFOHqB2mAZrlZEhCaLlpej5JWTBGVnPqTS9ngBXN5bLXKpOjyVtYE7Ywb3EZG1nZwzG5wVU0tLDOxfxuPst04QwCalNyWiVrty8PrOhpF517F8+TiSFek7HAexjj3wiuIQQsQZnY4tcTo+ugrzTyeEsVoG07Y0akjtj5EIKZ3OMz7K.n7AoA"
+							"blob" : "380.CMlaKA....fQPMDZ....ADzRAUD...P......VVavQWdfLGauQGL.........................D.PCUzQPQh....dbVXTK6lvv.AuWo9Orx2w4QaiBRIEATTEGpDpgJNujrPsvwV01gB+80IgfPpUp9zt6LdFOqylbpVBGIiUnU4rHdHCl7782kM0HvB7HcCVXRByCA9SVA4bB0dKXcFBq8k4rGhYvWMnT3N6Yyf8R8VTtRKO2i02utQ0wNjG1cXPMdpnSkoRot7sY4r3mRXfsDknmWDLBnVc41R4kwyIkiL4rjvKCdmjcdFb8AJ0NPT4uOCTXM0JDG1n0UeKTU1fXNLWhFghbACEvLzZYvVTcHmsXyR3ihYvKzNrQ1hoNzisrpcYD9HCJ+DUpVmGEMrY5LeEZv5N28w9HJanayaveSMM5J23+iaTb5UxiB4iGGGkldS5CZi+Pyhc6nR2uWHk5Z9qnwHbnhOsdqfTkTuHYAC++9le.v0TYxN'8\"ì'H!ì'à$ì'á(Cï0XCP…÷¨Tâ2Ì\t"
 						}
 ,
 						"snapshotlist" : 						{
@@ -948,7 +952,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [  ],
 										"slidervisibility" : [  ],
-										"blob" : "372.CMlaKA....fQPMDZ....ADzRAUD...P......VVavQWdfLGauQGL.........................D.NCUzQPge....db1VTA4lvv.AuWo9GV4633j1FARIEATTEGpDpoUbdIYgZgispsCE980IgfPp0m1cmwy3Yc1zS0J3HYcRiNmEyELX5y2eW1LqDKvizMXhzTV.BBmrBx6k58Nv4sDVGJyYOjvfuaPkzeNvlA6UlsnZsQctGqu+iFcGaAWzcXPMdpnSkYJko7s44rjmRYfqDUXfWLLBnVc4tR0kwKHsmr4rTwkAuSpNOit9.UFOHqB2mAZrlZEhCaLlpej5JWTBGVnPqTS9ngBXN5bLXKpOjyVtYE7Ywb3EZG1nZwzG5wVU0tLDOxfxuPst04QwCalNyWiVrty8PrOhpF517F8+TiSFek7HAexjj3wiuIQQsQZnY4tcTo+ugrzTyeEsVoG07Y0akjtj5EIKZ3OMz7K.n7AoA"
+										"blob" : "380.CMlaKA....fQPMDZ....ADzRAUD...P......VVavQWdfLGauQGL.........................D.PCUzQPQh....dbVXTK6lvv.AuWo9Orx2w4QaiBRIEATTEGpDpgJNujrPsvwV01gB+80IgfPpUp9zt6LdFOqylbpVBGIiUnU4rHdHCl7782kM0HvB7HcCVXRByCA9SVA4bB0dKXcFBq8k4rGhYvWMnT3N6Yyf8R8VTtRKO2i02utQ0wNjG1cXPMdpnSkoRot7sY4r3mRXfsDknmWDLBnVc41R4kwyIkiL4rjvKCdmjcdFb8AJ0NPT4uOCTXM0JDG1n0UeKTU1fXNLWhFghbACEvLzZYvVTcHmsXyR3ihYvKzNrQ1hoNzisrpcYD9HCJ+DUpVmGEMrY5LeEZv5N28w9HJanayaveSMM5J23+iaTb5UxiB4iGGGkldS5CZi+Pyhc6nR2uWHk5Z9qnwHbnhOsdqfTkTuHYAC++9le.v0TYxN'8\"ì'H!ì'à$ì'á(Cï0XCP…÷¨Tâ2Ì\t"
 									}
 ,
 									"fileref" : 									{
@@ -997,10 +1001,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 308.0, 57.0, 30.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"style" : "",
 					"text" : "in 7"
 				}
@@ -1015,6 +1015,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 144.0, 375.0, 44.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out~ 2"
 				}
@@ -1029,6 +1033,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 64.0, 375.0, 44.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "out~ 1"
 				}
@@ -1044,6 +1052,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 264.0, 57.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 6"
 				}
@@ -1059,6 +1071,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 224.0, 57.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 5"
 				}
@@ -1074,6 +1090,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 185.0, 57.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 4"
 				}
@@ -1089,6 +1109,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 144.0, 57.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 3"
 				}
@@ -1104,6 +1128,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 104.0, 57.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 2"
 				}
@@ -1119,6 +1147,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 64.0, 57.0, 30.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"style" : "",
 					"text" : "in 1"
 				}
@@ -1260,7 +1292,15 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "EWI USB VST_x86.dll.maxsnap",
+				"bootpath" : "~/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
