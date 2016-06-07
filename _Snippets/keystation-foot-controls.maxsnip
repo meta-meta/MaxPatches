@@ -1,0 +1,46 @@
+{
+	"patcher" : 	{
+		"boxes" : [ 			{
+				"box" : 				{
+					"maxclass" : "bpatcher",
+					"viewvisibility" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"lockeddragscroll" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"bgmode" : 0,
+					"border" : 0,
+					"outlettype" : [ "int", "int", "" ],
+					"presentation_rect" : [ 430.5, 293.0, 134.0, 102.0 ],
+					"id" : "obj-72",
+					"numinlets" : 1,
+					"patching_rect" : [ 10.0, 10.0, 134.0, 102.0 ],
+					"presentation" : 1,
+					"name" : "KeystationPro88-foot-controllers.maxpat",
+					"numoutlets" : 3
+				}
+
+			}
+ ],
+		"appversion" : 		{
+			"major" : 7,
+			"minor" : 2,
+			"revision" : 3,
+			"architecture" : "x86",
+			"modernui" : 1
+		}
+,
+		"description" : "134 x 102, containing 1 object",
+		"tags" : "",
+		"snippetinfo" : 		{
+			"name" : "keystation-foot-controls",
+			"objects" : "jpatcher",
+			"tags" : "",
+			"description" : "134 x 102, containing 1 object",
+			"image" : "iVBORw0KGgoAAAANSUhEUgAAAIYAAABmCAYAAAAOPekTAAAABHNCSVQICAgIfAhkiAAAAqhJREFUeJzt3cFuElEUh/FzZViZFBBi1MT4Fpq4qw/ryqWv4sa4MSamaTvM1MRVgXFhMA39M9Awx7ln+v3WE3rC/TrcGShN7999aKzFs/nUXr95ZT++/7RlWbcdigEpDh2wLGuCeISe9D0A8kQYkAgDEmFAIgxIhAGJMCARBiTCgEQYkAgD0sH3StpMXzztag6pvvgdao4t73nueuhsx+KMAYkwIBEGJMKAdNLmc5+UkpmZNU3rh8OOPi7aHM/nLzt5nGPUF99cHrfzM0ZKyaZnc5tNFv+e8H3HzSYLm57NW4+LPkdUbi8lxajY+2RvF60YFZZScjtj5DRHNJ2H0TSNVTfXtt6sbVyM7y3KdjHGxdhuV7dW3Vx3PUJWc0TldsYoq8t7i7K7GPWv0v23NJc5onG9KtldlL4WI5c5InG/XP27KCsrRkWvi5HLHFG4h5FSss2m6X1zl8scUbiGsftavmn0RtBbLnNE4haG2uCV1dXeq4ShzxGNSxhtu351leAllzkicrnzOZssWjd4dxfl0J3J6HNE5XKDK6V0cNdfVpe2Wq/cNoK5zBGVy5toy/rKzA6/KbW92+i1KLnMEZFLGMc+wd4LkcscEfF5DEiEAYkwIBEGpJM2n15/0/BQucwxJJwxIBEGJMKARBiQCAMSYUAiDEiEAYkwIBEGJMKARBiQCAMSYUAiDEiEAYkwIBEGJMKARBiQCAMSYUAiDEiEAYkwIBEGJMKARBiQCAMSYUAiDEiEAcnlW/seu7fn5//tZ339EuR/omEYCAMSYUAiDEiEAYmrEgefP33se4STccaARBiQCAMSYUBi8+lgCN9tzhkDEmFAIgxIhAGJMCARBiTCgEQYkAgDEmFAIgxIhAGJMCARBiTCgEQYkAgDEmFAIgxIhAHpD6asbJPBiXFmAAAAAElFTkSuQmCC"
+		}
+
+	}
+
+}

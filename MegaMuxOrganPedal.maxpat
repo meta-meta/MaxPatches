@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 4,
+			"minor" : 2,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1092.0, 85.0, 1852.0, 1059.0 ],
+		"rect" : [ 1962.0, 85.0, 1852.0, 1059.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1785,7 +1785,7 @@
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 111.0, 76.0, 120.0, 22.0 ],
 					"style" : "",
-					"text" : "serial COM4 115200"
+					"text" : "serial COM6 115200"
 				}
 
 			}
