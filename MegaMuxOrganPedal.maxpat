@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1962.0, 85.0, 1852.0, 1059.0 ],
+		"rect" : [ 34.0, 77.0, 1585.0, 1049.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -1785,7 +1785,7 @@
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 111.0, 76.0, 120.0, 22.0 ],
 					"style" : "",
-					"text" : "serial COM6 115200"
+					"text" : "serial COM5 115200"
 				}
 
 			}

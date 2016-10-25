@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -1016.0, 77.0, 625.0, 1529.0 ],
+		"rect" : [ -1008.0, 85.0, 625.0, 1529.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -125,7 +125,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 113.0, 200.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.333313, 12.833618, 24.0, 24.0 ],
+					"presentation_rect" : [ 52.333313, 12.833618, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -140,7 +140,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 76.5, 200.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 48.833252, 12.833618, 24.0, 24.0 ],
+					"presentation_rect" : [ 15.833252, 12.833618, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -156,7 +156,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 90.0, 110.0, 87.0, 22.0 ],
 					"style" : "",
-					"text" : "route 11 67 64"
+					"text" : "route 11 64 67"
 				}
 
 			}
