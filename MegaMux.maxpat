@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 2,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
+		"rect" : [ 245.0, 335.0, 1852.0, 929.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -184,19 +184,19 @@
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 15,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
+					"numoutlets" : 16,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 2,
-							"revision" : 1,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 34.0, 77.0, 1852.0, 929.0 ],
+						"rect" : [ 42.0, 85.0, 1852.0, 929.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -224,6 +224,30 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 920.0, 773.0, 150.0, 20.0 ],
+									"style" : "",
+									"text" : "bang on dump"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-23",
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 876.0, 768.0, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-213",
 									"linecount" : 2,
@@ -1159,6 +1183,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-65", 3 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-27", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1509,7 +1542,7 @@
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 47.0, 106.0, 120.0, 22.0 ],
 					"style" : "",
-					"text" : "serial COM4 115200"
+					"text" : "serial COM5 115200"
 				}
 
 			}
@@ -1814,31 +1847,31 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "MegaMuxConfig.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
+				"bootpath" : "D:/Projects/MaxPatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MegaMuxDigitalOut.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
+				"bootpath" : "D:/Projects/MaxPatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MegaMuxDigitalOutSetter.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
+				"bootpath" : "D:/Projects/MaxPatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MegaMuxDigitalOutSetterBatching.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
+				"bootpath" : "D:/Projects/MaxPatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MegaMuxAnalogIn.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
+				"bootpath" : "D:/Projects/MaxPatches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
