@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 564.0, 85.0, 2502.0, 1296.0 ],
+		"rect" : [ -858.0, -1363.0, 3310.0, 1329.0 ],
 		"bgcolor" : [ 0.227451, 0.215686, 0.258824, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -278,7 +278,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1092.0, 761.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1084.0, 790.0, 29.5, 22.0 ],
 					"style" : "",
 					"text" : "*~"
 				}
@@ -764,7 +764,7 @@
 					"fontsize" : 12.0,
 					"id" : "obj-173",
 					"maxclass" : "newobj",
-					"numinlets" : 11,
+					"numinlets" : 12,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 898.5, 650.0, 154.0, 22.0 ],
@@ -835,7 +835,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 891.0, 1152.0, 136.0, 31.0 ],
+					"patching_rect" : [ 916.166626, 1154.0, 136.0, 31.0 ],
 					"presentation_rect" : [ 30.0, 30.0, 50.0, 31.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
@@ -1063,15 +1063,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1085,6 +1076,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-173", 0 ]
 				}
 
 			}
@@ -1217,7 +1217,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-56", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-27", 0 ]
@@ -1637,6 +1637,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-56", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 3 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1907,11 +1916,11 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-30" : [ "live.gain~[1]", "live.gain~", 0 ],
 			"obj-50" : [ "live.gain~[4]", "live.gain~", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-42" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-46" : [ "live.gain~[3]", "live.gain~", 0 ]
+			"obj-46" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-30" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1958,6 +1967,24 @@
 			}
 , 			{
 				"name" : "organVoice.maxpat",
+				"bootpath" : "D:/Projects/MaxPatches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "BCR2000.maxpat",
+				"bootpath" : "D:/Projects/MaxPatches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rotaryInt.maxpat",
+				"bootpath" : "D:/Projects/MaxPatches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "passthroughNode2.maxpat",
 				"bootpath" : "D:/Projects/MaxPatches",
 				"type" : "JSON",
 				"implicit" : 1
