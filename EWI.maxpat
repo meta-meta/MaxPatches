@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 3,
+			"minor" : 2,
 			"revision" : 1,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 267.0, -1112.0, 1085.0, 708.0 ],
+		"rect" : [ 216.0, 237.0, 1085.0, 708.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -43,7 +43,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 181.583328, 507.0, 47.833344, 34.0 ],
+					"patching_rect" : [ 181.583328, 507.0, 48.0, 34.0 ],
 					"style" : "",
 					"text" : "note change"
 				}
@@ -149,7 +149,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 39.5, 261.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "62"
+					"text" : "59"
 				}
 
 			}
@@ -175,7 +175,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 51.0, 409.0, 50.0, 22.0 ],
 					"style" : "",
-					"text" : "62"
+					"text" : "59"
 				}
 
 			}
@@ -355,10 +355,10 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 793.0, 388.0, 32.5, 22.0 ],
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 793.0, 388.0, 31.0, 22.0 ],
 					"style" : "",
-					"text" : "+"
+					"text" : "+ 0."
 				}
 
 			}
@@ -447,9 +447,9 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 793.0, 446.0, 49.0, 22.0 ],
+					"patching_rect" : [ 793.0, 445.0, 56.0, 22.0 ],
 					"style" : "",
-					"text" : "line 0 1"
+					"text" : "line 0. 1."
 				}
 
 			}
