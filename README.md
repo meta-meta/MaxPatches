@@ -17,6 +17,7 @@ MaxPatches
     - what is sustain button??
 * EwiOSC - for ewi starfighter game
 * EwiPoly - hot-swap EwiPoly patches
+    - poly-EWI-dummy (blank)
     - poly-EWI-rect
     - poly-EWI-shepard
     - poly-EWI-aria (EWI virtual instruments)
