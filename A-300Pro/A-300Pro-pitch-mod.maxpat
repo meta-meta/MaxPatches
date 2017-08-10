@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 159.0, 206.0, 1176.0, 792.0 ],
+		"rect" : [ 85.0, 253.0, 1176.0, 792.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,12 +39,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
-					"id" : "obj-2",
+					"id" : "obj-5",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 115.0, 139.0, 30.0, 30.0 ],
+					"patching_rect" : [ 129.5, 307.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -52,39 +52,53 @@
 , 			{
 				"box" : 				{
 					"comment" : "",
-					"id" : "obj-1",
+					"id" : "obj-4",
 					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.0, 139.0, 30.0, 30.0 ],
+					"patching_rect" : [ 69.0, 307.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-8",
+					"id" : "obj-63",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 59.0, 61.0, 142.0, 31.0 ],
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 53.5, 69.0, 106.0, 31.0 ],
 					"style" : "",
-					"text" : "route 32 33"
+					"text" : "route 34"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "Pitch Bend",
+					"id" : "obj-2",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 133.0, 21.0, 30.0, 30.0 ],
+					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"comment" : "CC",
-					"id" : "obj-5",
+					"id" : "obj-1",
 					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 25.0, 20.0, 30.0, 30.0 ],
+					"patching_rect" : [ 62.0, 21.0, 30.0, 30.0 ],
 					"style" : ""
 				}
 
@@ -92,22 +106,22 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"source" : [ "obj-5", 0 ]
+					"destination" : [ "obj-63", 0 ],
+					"source" : [ "obj-1", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-8", 0 ]
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-8", 1 ]
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-63", 0 ]
 				}
 
 			}
@@ -117,24 +131,15 @@
 		"styles" : [ 			{
 				"name" : "PupleStyle",
 				"comment" : 				{
-					"fontsize" : [ 20.0 ],
 					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ],
 					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
 					"fontname" : [ "Fira Code" ]
 				}
 ,
-				"number" : 				{
-					"fontsize" : [ 20.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontname" : [ "Fira Code" ]
-				}
-,
 				"message" : 				{
-					"fontsize" : [ 20.0 ],
 					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ],
 					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
 					"fontname" : [ "Fira Code" ],
 					"bgfillcolor" : 					{
@@ -150,10 +155,19 @@
 				}
 ,
 				"newobj" : 				{
+					"textjustification" : [ 1 ],
 					"fontsize" : [ 20.0 ],
 					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-					"textjustification" : [ 1 ],
 					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"fontname" : [ "Fira Code" ]
+				}
+,
+				"number" : 				{
+					"fontsize" : [ 20.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
 					"fontname" : [ "Fira Code" ]
 				}
 ,
