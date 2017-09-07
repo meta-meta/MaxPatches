@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 85.0, 1212.0, 569.0 ],
+		"rect" : [ 34.0, 77.0, 941.0, 569.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -114,7 +114,7 @@
 , 			{
 				"box" : 				{
 					"annotation" : "",
-					"comment" : "toggle decay",
+					"comment" : "decay toggle",
 					"id" : "obj-158",
 					"index" : 13,
 					"maxclass" : "inlet",
@@ -141,7 +141,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "pitch-bend (centered at 0.0)",
 					"id" : "obj-29",
 					"index" : 12,
 					"maxclass" : "inlet",
@@ -1180,7 +1180,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 154.0, 187.0, 25.0, 25.0 ],
 					"style" : ""
 				}
@@ -1203,7 +1203,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "drawbar 9",
 					"id" : "obj-196",
 					"index" : 11,
 					"maxclass" : "inlet",
@@ -1217,7 +1217,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "drawbar 8",
 					"id" : "obj-188",
 					"index" : 10,
 					"maxclass" : "inlet",
@@ -1231,7 +1231,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "drawbar 7",
 					"id" : "obj-180",
 					"index" : 9,
 					"maxclass" : "inlet",
@@ -1245,7 +1245,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "drawbar 6",
 					"id" : "obj-172",
 					"index" : 8,
 					"maxclass" : "inlet",
@@ -1259,7 +1259,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "drawbar 5",
 					"id" : "obj-164",
 					"index" : 7,
 					"maxclass" : "inlet",
@@ -1273,7 +1273,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "drawbar 4",
 					"id" : "obj-156",
 					"index" : 6,
 					"maxclass" : "inlet",
@@ -1287,7 +1287,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "drawbar 3",
 					"id" : "obj-148",
 					"index" : 5,
 					"maxclass" : "inlet",
@@ -1301,7 +1301,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "drawbar 2",
 					"id" : "obj-140",
 					"index" : 4,
 					"maxclass" : "inlet",
@@ -1315,7 +1315,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "drawbar 1",
 					"id" : "obj-5",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -1336,7 +1336,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 75.0, 213.0, 25.0, 25.0 ],
 					"style" : ""
 				}
