@@ -1,8 +1,15 @@
 MaxPatches
 ==========
+*Some of these are from third party.*
 
-## EWI USB
+## User/UI settings: `git clone git@github.com:meta-meta/Max7UserSettings.git`
 
+## MIDI Controllers
+* MidiController - pick a connected midi controller and parse input
+
+### Keystation Pro 88
+
+### EWI USB
 * EWI - parses MIDI from EWI
 * EWI-to-outboard-MIDI - prepares MIDI for Yamaha outboard MIDI module
 * EwiFlexibility - old messy experiment
@@ -23,5 +30,7 @@ MaxPatches
     - poly-EWI-aria (EWI virtual instruments)
 * EwiPoly-conv-reverb - EwiPoly with convolution reverb option
 * EwiQuNexusHarmonizer - EWI/QuNexus harmonies
-* 
 
+### A-300PRO
+
+## Soft Synths
