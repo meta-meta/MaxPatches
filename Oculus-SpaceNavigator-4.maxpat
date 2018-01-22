@@ -9,10 +9,10 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1212.0, 569.0 ],
+		"rect" : [ 963.0, 1667.0, 933.0, 569.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
-		"default_fontsize" : 12.0,
+		"openinpresentation" : 1,
+		"default_fontsize" : 13.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
 		"gridonopen" : 1,
@@ -37,6 +37,19 @@
 		"style" : "PupleStyle",
 		"subpatcher_template" : "PupleTemplate",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 887.0, 38.0, 106.0, 24.0 ],
+					"style" : "",
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "control 1-4",
 					"id" : "obj-20",
@@ -108,27 +121,45 @@
 			}
 , 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 1,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-80",
-					"maxclass" : "newobj",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "OculusPosition.maxpat",
 					"numinlets" : 8,
 					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 829.092163, 396.0, 178.0, 31.0 ],
-					"style" : "",
-					"text" : "OculusPosition"
+					"patching_rect" : [ 893.0, 391.0, 259.0, 41.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 42.5, 55.24131, 387.0, 48.517376 ],
+					"viewvisibility" : 1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 1,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-79",
-					"maxclass" : "newobj",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "OculusPosition.maxpat",
 					"numinlets" : 8,
 					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 634.092163, 396.0, 178.0, 31.0 ],
-					"style" : "",
-					"text" : "OculusPosition"
+					"patching_rect" : [ 634.092163, 396.0, 229.0, 36.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 43.0, 37.0, 403.0, 47.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -139,7 +170,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 872.0, 118.0, 46.0, 31.0 ],
+					"patching_rect" : [ 846.0, 106.0, 46.0, 24.0 ],
 					"style" : "",
 					"text" : "- 1"
 				}
@@ -153,7 +184,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 846.0, 321.0, 50.0, 31.0 ],
+					"patching_rect" : [ 846.0, 321.0, 50.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -165,7 +196,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 846.0, 263.0, 46.0, 31.0 ],
+					"patching_rect" : [ 846.0, 263.0, 46.0, 24.0 ],
 					"style" : "",
 					"text" : "+ 1"
 				}
@@ -173,7 +204,10 @@
 			}
 , 			{
 				"box" : 				{
+					"activecolor" : [ 0.145098, 0.968627, 0.819608, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"disabled" : [ 0, 0, 0, 0 ],
+					"elementcolor" : [ 0.282353, 0.309804, 0.266667, 1.0 ],
 					"id" : "obj-74",
 					"itemtype" : 0,
 					"maxclass" : "radiogroup",
@@ -181,23 +215,35 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 857.0, 176.0, 24.0, 66.0 ],
+					"patching_rect" : [ 852.0, 170.0, 34.0, 66.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 15.0, 34.0, 66.0 ],
+					"shape" : 2,
 					"size" : 4,
 					"style" : "PupleStyle",
-					"value" : 1
+					"value" : -1
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 1,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-56",
-					"maxclass" : "newobj",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "OculusPosition.maxpat",
 					"numinlets" : 8,
 					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 439.092163, 396.0, 178.0, 31.0 ],
-					"style" : "",
-					"text" : "OculusPosition"
+					"patching_rect" : [ 385.092163, 375.0, 247.0, 37.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 43.0, 20.0, 397.0, 48.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -208,7 +254,7 @@
 					"numinlets" : 9,
 					"numoutlets" : 32,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 245.0, 313.0, 478.0, 31.0 ],
+					"patching_rect" : [ 245.0, 313.0, 478.0, 24.0 ],
 					"style" : "",
 					"text" : "switch-8io-4endpoints"
 				}
@@ -216,14 +262,23 @@
 			}
 , 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 1,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-52",
-					"maxclass" : "newobj",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "OculusPosition.maxpat",
 					"numinlets" : 8,
 					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 237.092163, 396.0, 178.0, 31.0 ],
-					"style" : "",
-					"text" : "OculusPosition"
+					"patching_rect" : [ 109.0, 380.0, 249.0, 32.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 43.0, 3.0, 399.0, 43.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -246,7 +301,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 548.0, 83.0, 163.0, 98.0 ],
+					"patching_rect" : [ 548.0, 83.0, 163.0, 69.0 ],
 					"style" : "",
 					"text" : "TODO button triggers down and up\nfix\n"
 				}
@@ -260,7 +315,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 953.0, 269.0, 50.0, 31.0 ],
+					"patching_rect" : [ 953.0, 269.0, 50.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -272,7 +327,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
-					"patching_rect" : [ 953.0, 225.0, 142.0, 31.0 ],
+					"patching_rect" : [ 953.0, 225.0, 142.0, 24.0 ],
 					"style" : "",
 					"text" : "counter 1 4"
 				}
@@ -332,7 +387,7 @@
 					"clickthrough" : 0,
 					"id" : "obj-10",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 2,
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
@@ -373,7 +428,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "746.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HfqVMjLgTp....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3BLyTSL2TCN2fSM0PSM3HSM4TCNxTiHfH2au0Vd8HBLt.SLv.SMvHSMwDCM3XCMwDCL4PiM2HBHx81asoWOh.iKvHCLw.CL0.iLxjyMxfiLxDCN4LyLh.BakYFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hYx8laz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBH0AWOh.iKx.iMwfSM0XCMyjCN2XSM0XyL4XiHfHWZmgFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXgM1Z8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXuQGcu0VOh.iKzDiLybSLwHCN2jyM0LSLwHyM4LiHfL2XgwVY8HBLt.CM0HiL1DyLvXyLzTCM1HyM4jCL2HBHo41bzElaiUlag0VY8HhHfHWYj0iHwHBHmIWYk4VOhDiHfHFa0UVOh.iHfDFavgVX8HBLtfSMv.CLv.iLyfCMwfSM2jSLvDiMh.RXsIVZy8laoMVRt0iHvHBHg0lXoM2atk1XOUGc8HBLh.hXv01St0iHvHBHzkVakkjal8VOh.iHfLGZucGVZEDdoMWOh.iHfXWZyUWXrkldkETahk1bu4VZi0iHwHxK9.."
+							"blob" : "705.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HPgVMjLgvm....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPiMv.CLv.CL3LCMzXSMvHiM3TSMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
 						}
 ,
 						"snapshotlist" : 						{
@@ -397,7 +452,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "746.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HfqVMjLgTp....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3BLyTSL2TCN2fSM0PSM3HSM4TCNxTiHfH2au0Vd8HBLt.SLv.SMvHSMwDCM3XCMwDCL4PiM2HBHx81asoWOh.iKvHCLw.CL0.iLxjyMxfiLxDCN4LyLh.BakYFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hYx8laz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBH0AWOh.iKx.iMwfSM0XCMyjCN2XSM0XyL4XiHfHWZmgFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXgM1Z8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXuQGcu0VOh.iKzDiLybSLwHCN2jyM0LSLwHyM4LiHfL2XgwVY8HBLt.CM0HiL1DyLvXyLzTCM1HyM4jCL2HBHo41bzElaiUlag0VY8HhHfHWYj0iHwHBHmIWYk4VOhDiHfHFa0UVOh.iHfDFavgVX8HBLtfSMv.CLv.iLyfCMwfSM2jSLvDiMh.RXsIVZy8laoMVRt0iHvHBHg0lXoM2atk1XOUGc8HBLh.hXv01St0iHvHBHzkVakkjal8VOh.iHfLGZucGVZEDdoMWOh.iHfXWZyUWXrkldkETahk1bu4VZi0iHwHxK9.."
+										"blob" : "705.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HPgVMjLgvm....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPiMv.CLv.CL3LCMzXSMvHiM3TSMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
 									}
 ,
 									"fileref" : 									{
@@ -406,6 +461,60 @@
 										"filepath" : "~/Documents/Max 7/Snapshots",
 										"filepos" : -1,
 										"snapshotfileid" : "a49a2b09c7fd6f26988c399a83650d38"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer_20170727.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "9c90c9fa046fea876e7960504d80b72a"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer_20170727_1.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "7bb32f9ba3f4403125925783e73d303a"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer_20170727_2.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "39b28ca95a348601c7af30841f66fb84"
 									}
 
 								}
@@ -429,7 +538,7 @@
 					"clickthrough" : 0,
 					"id" : "obj-9",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 2,
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
@@ -470,7 +579,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "746.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HfqVMjLgTp....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3BLyTSL2TCN2fSM0PSM3HSM4TCNxTiHfH2au0Vd8HBLt.SLv.SMvHSMwDCM3XCMwDCL4PiM2HBHx81asoWOh.iKvHCLw.CL0.iLxjyMxfiLxDCN4LyLh.BakYFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hYx8laz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBH0AWOh.iKx.iMwfSM0XCMyjCN2XSM0XyL4XiHfHWZmgFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXgM1Z8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXuQGcu0VOh.iKzDiLybSLwHCN2jyM0LSLwHyM4LiHfL2XgwVY8HBLt.CM0HiL1DyLvXyLzTCM1HyM4jCL2HBHo41bzElaiUlag0VY8HhHfHWYj0iHwHBHmIWYk4VOhDiHfHFa0UVOh.iHfDFavgVX8HBLtfSMv.CLv.iLyfCMwfSM2jSLvDiMh.RXsIVZy8laoMVRt0iHvHBHg0lXoM2atk1XOUGc8HBLh.hXv01St0iHvHBHzkVakkjal8VOh.iHfLGZucGVZEDdoMWOh.iHfXWZyUWXrkldkETahk1bu4VZi0iHwHxK9.."
+							"blob" : "705.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HPgVMjLgvm....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPiMv.CLv.CL3LCMzXSMvHiM3TSMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
 						}
 ,
 						"snapshotlist" : 						{
@@ -494,7 +603,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "746.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HfqVMjLgTp....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3BLyTSL2TCN2fSM0PSM3HSM4TCNxTiHfH2au0Vd8HBLt.SLv.SMvHSMwDCM3XCMwDCL4PiM2HBHx81asoWOh.iKvHCLw.CL0.iLxjyMxfiLxDCN4LyLh.BakYFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hYx8laz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBH0AWOh.iKx.iMwfSM0XCMyjCN2XSM0XyL4XiHfHWZmgFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXgM1Z8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXuQGcu0VOh.iKzDiLybSLwHCN2jyM0LSLwHyM4LiHfL2XgwVY8HBLt.CM0HiL1DyLvXyLzTCM1HyM4jCL2HBHo41bzElaiUlag0VY8HhHfHWYj0iHwHBHmIWYk4VOhDiHfHFa0UVOh.iHfDFavgVX8HBLtfSMv.CLv.iLyfCMwfSM2jSLvDiMh.RXsIVZy8laoMVRt0iHvHBHg0lXoM2atk1XOUGc8HBLh.hXv01St0iHvHBHzkVakkjal8VOh.iHfLGZucGVZEDdoMWOh.iHfXWZyUWXrkldkETahk1bu4VZi0iHwHxK9.."
+										"blob" : "705.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HPgVMjLgvm....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPiMv.CLv.CL3LCMzXSMvHiM3TSMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
 									}
 ,
 									"fileref" : 									{
@@ -503,6 +612,60 @@
 										"filepath" : "~/Documents/Max 7/Snapshots",
 										"filepos" : -1,
 										"snapshotfileid" : "9c90c9fa046fea876e7960504d80b72a"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "a49a2b09c7fd6f26988c399a83650d38"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer_20170727_1.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "7bb32f9ba3f4403125925783e73d303a"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer_20170727_2.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "39b28ca95a348601c7af30841f66fb84"
 									}
 
 								}
@@ -526,7 +689,7 @@
 					"clickthrough" : 0,
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 2,
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
@@ -567,7 +730,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "746.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HfqVMjLgTp....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3BLyTSL2TCN2fSM0PSM3HSM4TCNxTiHfH2au0Vd8HBLt.SLv.SMvHSMwDCM3XCMwDCL4PiM2HBHx81asoWOh.iKvHCLw.CL0.iLxjyMxfiLxDCN4LyLh.BakYFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hYx8laz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBH0AWOh.iKx.iMwfSM0XCMyjCN2XSM0XyL4XiHfHWZmgFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXgM1Z8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXuQGcu0VOh.iKzDiLybSLwHCN2jyM0LSLwHyM4LiHfL2XgwVY8HBLt.CM0HiL1DyLvXyLzTCM1HyM4jCL2HBHo41bzElaiUlag0VY8HhHfHWYj0iHwHBHmIWYk4VOhDiHfHFa0UVOh.iHfDFavgVX8HBLtfSMv.CLv.iLyfCMwfSM2jSLvDiMh.RXsIVZy8laoMVRt0iHvHBHg0lXoM2atk1XOUGc8HBLh.hXv01St0iHvHBHzkVakkjal8VOh.iHfLGZucGVZEDdoMWOh.iHfXWZyUWXrkldkETahk1bu4VZi0iHwHxK9.."
+							"blob" : "705.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HPgVMjLgvm....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPiMv.CLv.CL3LCMzXSMvHiM3TSMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
 						}
 ,
 						"snapshotlist" : 						{
@@ -591,7 +754,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "746.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HfqVMjLgTp....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3BLyTSL2TCN2fSM0PSM3HSM4TCNxTiHfH2au0Vd8HBLt.SLv.SMvHSMwDCM3XCMwDCL4PiM2HBHx81asoWOh.iKvHCLw.CL0.iLxjyMxfiLxDCN4LyLh.BakYFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hYx8laz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBH0AWOh.iKx.iMwfSM0XCMyjCN2XSM0XyL4XiHfHWZmgFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXgM1Z8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXuQGcu0VOh.iKzDiLybSLwHCN2jyM0LSLwHyM4LiHfL2XgwVY8HBLt.CM0HiL1DyLvXyLzTCM1HyM4jCL2HBHo41bzElaiUlag0VY8HhHfHWYj0iHwHBHmIWYk4VOhDiHfHFa0UVOh.iHfDFavgVX8HBLtfSMv.CLv.iLyfCMwfSM2jSLvDiMh.RXsIVZy8laoMVRt0iHvHBHg0lXoM2atk1XOUGc8HBLh.hXv01St0iHvHBHzkVakkjal8VOh.iHfLGZucGVZEDdoMWOh.iHfXWZyUWXrkldkETahk1bu4VZi0iHwHxK9.."
+										"blob" : "705.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HPgVMjLgvm....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPiMv.CLv.CL3LCMzXSMvHiM3TSMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
 									}
 ,
 									"fileref" : 									{
@@ -600,6 +763,60 @@
 										"filepath" : "~/Documents/Max 7/Snapshots",
 										"filepos" : -1,
 										"snapshotfileid" : "7bb32f9ba3f4403125925783e73d303a"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "a49a2b09c7fd6f26988c399a83650d38"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer_20170727.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "9c90c9fa046fea876e7960504d80b72a"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer_20170727_2.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "39b28ca95a348601c7af30841f66fb84"
 									}
 
 								}
@@ -623,7 +840,7 @@
 					"clickthrough" : 0,
 					"id" : "obj-5",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 2,
 					"numoutlets" : 8,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
@@ -664,7 +881,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-							"blob" : "746.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HfqVMjLgTp....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3BLyTSL2TCN2fSM0PSM3HSM4TCNxTiHfH2au0Vd8HBLt.SLv.SMvHSMwDCM3XCMwDCL4PiM2HBHx81asoWOh.iKvHCLw.CL0.iLxjyMxfiLxDCN4LyLh.BakYFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hYx8laz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBH0AWOh.iKx.iMwfSM0XCMyjCN2XSM0XyL4XiHfHWZmgFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXgM1Z8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXuQGcu0VOh.iKzDiLybSLwHCN2jyM0LSLwHyM4LiHfL2XgwVY8HBLt.CM0HiL1DyLvXyLzTCM1HyM4jCL2HBHo41bzElaiUlag0VY8HhHfHWYj0iHwHBHmIWYk4VOhDiHfHFa0UVOh.iHfDFavgVX8HBLtfSMv.CLv.iLyfCMwfSM2jSLvDiMh.RXsIVZy8laoMVRt0iHvHBHg0lXoM2atk1XOUGc8HBLh.hXv01St0iHvHBHzkVakkjal8VOh.iHfLGZucGVZEDdoMWOh.iHfXWZyUWXrkldkETahk1bu4VZi0iHwHxK9.."
+							"blob" : "705.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HPgVMjLgvm....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPiMv.CLv.CL3LCMzXSMvHiM3TSMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
 						}
 ,
 						"snapshotlist" : 						{
@@ -688,7 +905,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-										"blob" : "746.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HfqVMjLgTp....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3BLyTSL2TCN2fSM0PSM3HSM4TCNxTiHfH2au0Vd8HBLt.SLv.SMvHSMwDCM3XCMwDCL4PiM2HBHx81asoWOh.iKvHCLw.CL0.iLxjyMxfiLxDCN4LyLh.BakYFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hYx8laz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBH0AWOh.iKx.iMwfSM0XCMyjCN2XSM0XyL4XiHfHWZmgFc8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXgM1Z8HBLtTSL0PiMyfCN3XCM0DyMxDSL4DCMh.hXuQGcu0VOh.iKzDiLybSLwHCN2jyM0LSLwHyM4LiHfL2XgwVY8HBLt.CM0HiL1DyLvXyLzTCM1HyM4jCL2HBHo41bzElaiUlag0VY8HhHfHWYj0iHwHBHmIWYk4VOhDiHfHFa0UVOh.iHfDFavgVX8HBLtfSMv.CLv.iLyfCMwfSM2jSLvDiMh.RXsIVZy8laoMVRt0iHvHBHg0lXoM2atk1XOUGc8HBLh.hXv01St0iHvHBHzkVakkjal8VOh.iHfLGZucGVZEDdoMWOh.iHfXWZyUWXrkldkETahk1bu4VZi0iHwHxK9.."
+										"blob" : "705.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................HPgVMjLgvm....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPiMv.CLv.CL3LCMzXSMvHiM3TSMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
 									}
 ,
 									"fileref" : 									{
@@ -697,6 +914,60 @@
 										"filepath" : "~/Documents/Max 7/Snapshots",
 										"filepos" : -1,
 										"snapshotfileid" : "39b28ca95a348601c7af30841f66fb84"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "a49a2b09c7fd6f26988c399a83650d38"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer_20170727.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "9c90c9fa046fea876e7960504d80b72a"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "OculusSpatializer",
+									"origin" : "OculusSpatializer.dll",
+									"type" : "VST",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "OculusSpatializer",
+										"filename" : "OculusSpatializer_20170727_1.maxsnap",
+										"filepath" : "~/Documents/Max 7/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "7bb32f9ba3f4403125925783e73d303a"
 									}
 
 								}
@@ -714,6 +985,13 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-10", 0 ]
@@ -1183,71 +1461,67 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5" : [ "vst~[3]", "vst~[2]", 0 ],
-			"obj-9" : [ "vst~[6]", "vst~[2]", 0 ],
 			"obj-8" : [ "vst~[4]", "vst~[2]", 0 ],
-			"obj-10" : [ "vst~[7]", "vst~[2]", 0 ]
+			"obj-10" : [ "vst~[7]", "vst~[2]", 0 ],
+			"obj-5" : [ "vst~[3]", "vst~[2]", 0 ],
+			"obj-9" : [ "vst~[6]", "vst~[2]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "OculusSpatializer_20170727_2.maxsnap",
 				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"patcherrelativepath" : "../../Users/paulm/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer_20170727_1.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"patcherrelativepath" : "../../Users/paulm/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer_20170727.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"patcherrelativepath" : "../../Users/paulm/Documents/Max 7/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OculusSpatializer.maxsnap",
 				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"patcherrelativepath" : "../../Users/paulm/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OculusSpatializer_20170727.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OculusSpatializer_20170727_1.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SpaceNavigator.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
+				"bootpath" : "D:/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "diff.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
+				"bootpath" : "D:/Projects/MaxPatches/functions",
 				"patcherrelativepath" : "./functions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OculusPosition.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
+				"bootpath" : "D:/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "accum-reset.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
+				"bootpath" : "D:/Projects/MaxPatches/functions",
 				"patcherrelativepath" : "./functions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "switch-8io-4endpoints.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
+				"bootpath" : "D:/Projects/MaxPatches/functions",
 				"patcherrelativepath" : "./functions",
 				"type" : "JSON",
 				"implicit" : 1
@@ -1256,6 +1530,13 @@
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "PupleStyle",
+				"comment" : 				{
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+					"fontname" : [ "Fira Code" ],
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ]
+				}
+,
 				"button" : 				{
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
@@ -1270,10 +1551,10 @@
 				"number" : 				{
 					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
 					"fontname" : [ "Fira Code" ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontsize" : [ 20.0 ],
 					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"fontsize" : [ 20.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ]
 				}
 ,
 				"slider" : 				{
@@ -1285,21 +1566,12 @@
 				"newobj" : 				{
 					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
 					"fontname" : [ "Fira Code" ],
-					"fontsize" : [ 20.0 ],
 					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-					"textjustification" : [ 1 ]
-				}
-,
-				"comment" : 				{
-					"fontname" : [ "Fira Code" ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
-					"fontsize" : [ 20.0 ],
-					"textjustification" : [ 1 ]
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ]
 				}
 ,
 				"message" : 				{
-					"fontname" : [ "Fira Code" ],
-					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1310,8 +1582,10 @@
 						"autogradient" : 0
 					}
 ,
+					"fontname" : [ "Fira Code" ],
+					"textjustification" : [ 1 ],
 					"fontsize" : [ 20.0 ],
-					"textjustification" : [ 1 ]
+					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
