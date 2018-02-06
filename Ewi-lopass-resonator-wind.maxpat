@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1212.0, 569.0 ],
+		"rect" : [ 42.0, 85.0, 1212.0, 569.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -60,7 +60,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "TapeTube.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 6,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
@@ -102,9 +102,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 96.0, 98.0, 41.0, 22.0 ],
+					"patching_rect" : [ 96.0, 98.0, 47.0, 22.0 ],
 					"style" : "",
-					"text" : "/ 127."
+					"text" : "/ 127.5"
 				}
 
 			}
@@ -152,7 +152,7 @@
 				"box" : 				{
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 7,
 					"outlettype" : [ "int", "", "", "", "int", "", "int" ],
 					"patching_rect" : [ 96.0, 23.0, 82.0, 22.0 ],
