@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 888.0, 569.0 ],
+		"rect" : [ 42.0, 85.0, 564.0, 569.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -147,13 +147,13 @@
 , 			{
 				"box" : 				{
 					"annotation" : "",
-					"comment" : "per-note pitch bend",
+					"comment" : "per-note pitch bend pair 1-127 1-127",
 					"id" : "obj-8",
 					"index" : 16,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 1209.0, 189.5, 25.0, 25.0 ],
 					"style" : ""
 				}
