@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 1212.0, 569.0 ],
+		"rect" : [ 42.0, 85.0, 1212.0, 569.0 ],
 		"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 		"editing_bgcolor" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 		"bglocked" : 0,
@@ -39,6 +39,50 @@
 		"style" : "PupleStyle",
 		"subpatcher_template" : "PupleTemplate",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 371.0, 871.0, 113.0, 31.0 ],
+					"style" : "",
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 13.0,
+					"id" : "obj-11",
+					"items" : [ "AU DLS Synth 1", ",", "from Max 1", ",", "from Max 2" ],
+					"labelclick" : 1,
+					"maxclass" : "umenu",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 371.0, 958.0, 100.0, 23.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 371.0, 917.5, 55.0, 23.0 ],
+					"style" : "",
+					"text" : "midiinfo"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "comment",
@@ -1288,6 +1332,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-11", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 16 ],
 					"source" : [ "obj-110", 0 ]
 				}
@@ -1330,8 +1381,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -2069,196 +2134,197 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "bp.Recordr.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Output",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb-mod.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb.gendsp",
-				"bootpath" : "C:/ProgramData/Max 7/examples/gen",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/examples/gen",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_allpass.gendsp",
-				"bootpath" : "C:/ProgramData/Max 7/examples/gen",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/examples/gen",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_comb.gendsp",
-				"bootpath" : "C:/ProgramData/Max 7/examples/gen",
-				"patcherrelativepath" : "../../../../../ProgramData/Max 7/examples/gen",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organ.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organ-routing.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organVoice.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organ-oscbank.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "faders-9-thumb.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-NEWEST.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MidiController.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-parse.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "overdrive.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "osc-organ-control.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "switch-4io-4endpoints.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../../../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-drone.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mix-2-in-1-out.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../../../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qunexus-slider-scale.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../../../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-B-slider-float.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rotaryFloat127.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qunexus-freq-led-msg.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../../../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi-cc-single-tap.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../../../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "toggle-stereo-mono.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../../../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-B-slider-drawbars.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-B-slider.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rotaryInt127.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "../../..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scale-128-neg1-1-exp.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../../../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
