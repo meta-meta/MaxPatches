@@ -1,0 +1,45 @@
+================================
+QuNexus Editor Version 1.1.1 - Build 267
+================================
+
+!!!!! FOR Windows XP, 7, 8 & Mac!!!!!!!!
+
+If you experience any problems or have questions regarding the QuNexus install process
+submit a support request at http://www.keithmcmillen.com/support outlining the problems
+you're experiencing.
+
+Keith McMillen Instruments - http://www.keithmcmillen.com
+
+Built on 7/5/13
+
+
+
+NEW FEATURES:
+__
+
+
+
+
+
+BUG FIXES:
+-fixed LED refresh mode
+-fixed Editors controller layer display of bend pad tilt setting
+
+-fixed logarithmic, sine, and cosine tables
+-optimized sensitivity/velocity response
+__
+
+
+
+KNOWN ISSUES:
+-sometimes the save indicator in the Editor doesn't come on when reverting presets to
+factory settings
+__
+
+
+QuNexus Team:
+Keith McMillen, Conner Lacy, Nick Wang, Evan Adams, Jimmy Allison, Jasmin Blasco, Diane
+Douglas, Tom Ferguson, Steven Fruhwirth, Paul Gaeta, Ingmar Gorman, Christian Heilman,
+Matthew Hettich, Sarah Howe, William Leach, Daniel McAnulty, Jon Short, Carson Whitley,
+and Steve Wright
+__
