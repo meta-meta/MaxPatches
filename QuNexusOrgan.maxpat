@@ -40,6 +40,43 @@
 		"subpatcher_template" : "PupleTemplate",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 123.0, 418.0, 49.0, 31.0 ],
+					"style" : "",
+					"text" : "print"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 10.0, 333.0, 149.0, 31.0 ],
+					"style" : "",
+					"text" : "osc-organ-send"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5.0, 273.0, 53.0, 31.0 ],
+					"style" : "",
+					"text" : "pack"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-23",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -1673,7 +1710,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -1691,6 +1728,14 @@
 					"destination" : [ "obj-64", 0 ],
 					"order" : 1,
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"order" : 1,
+					"source" : [ "obj-4", 1 ]
 				}
 
 			}
@@ -1748,6 +1793,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
 
@@ -1968,6 +2022,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"order" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-112", 0 ],
 					"source" : [ "obj-81", 0 ]
 				}
@@ -2054,22 +2124,23 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-49::obj-7" : [ "AutoName", "AutoName", 0 ],
 			"obj-67::obj-26" : [ "bypass[3]", "bypass", 0 ],
-			"obj-49::obj-74" : [ "Channels", "Channels", 0 ],
-			"obj-49::obj-76" : [ "Record", "Record", 0 ],
 			"obj-67::obj-101" : [ "Dry", "Dry", 0 ],
-			"obj-67::obj-31" : [ "Feedback1", "FB1", 0 ],
-			"obj-49::obj-77" : [ "getsamplelength", "getsamplelength", 0 ],
-			"obj-49::obj-52" : [ "Level", "Level", 0 ],
-			"obj-67::obj-33" : [ "Damp[1]", "Damp", 0 ],
-			"obj-67::obj-32" : [ "Feedback2", "FB2", 0 ],
+			"obj-49::obj-74" : [ "Channels", "Channels", 0 ],
 			"obj-49::obj-73" : [ "Format", "Format", 0 ],
-			"obj-49::obj-7" : [ "AutoName", "AutoName", 0 ]
+			"obj-67::obj-31" : [ "Feedback1", "FB1", 0 ],
+			"obj-49::obj-76" : [ "Record", "Record", 0 ],
+			"obj-67::obj-32" : [ "Feedback2", "FB2", 0 ],
+			"obj-49::obj-52" : [ "Level", "Level", 0 ],
+			"obj-49::obj-77" : [ "getsamplelength", "getsamplelength", 0 ],
+			"obj-67::obj-33" : [ "Damp[1]", "Damp", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "bp.Recordr.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Output",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "./Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2082,22 +2153,22 @@
 			}
 , 			{
 				"name" : "freeverb.gendsp",
-				"bootpath" : "C:/ProgramData/Max 7/examples/gen",
-				"patcherrelativepath" : "../../ProgramData/Max 7/examples/gen",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
+				"patcherrelativepath" : "./Projects/QuNexusOrgan/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_allpass.gendsp",
-				"bootpath" : "C:/ProgramData/Max 7/examples/gen",
-				"patcherrelativepath" : "../../ProgramData/Max 7/examples/gen",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
+				"patcherrelativepath" : "./Projects/QuNexusOrgan/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_comb.gendsp",
-				"bootpath" : "C:/ProgramData/Max 7/examples/gen",
-				"patcherrelativepath" : "../../ProgramData/Max 7/examples/gen",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
+				"patcherrelativepath" : "./Projects/QuNexusOrgan/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
@@ -2263,6 +2334,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "osc-organ-send.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "OSC-route.mxe",
 				"type" : "iLaF"
 			}
@@ -2289,9 +2367,9 @@
 ,
 				"comment" : 				{
 					"fontname" : [ "Fira Code" ],
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
 					"textjustification" : [ 1 ],
-					"fontsize" : [ 20.0 ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ]
+					"fontsize" : [ 20.0 ]
 				}
 ,
 				"number" : 				{
