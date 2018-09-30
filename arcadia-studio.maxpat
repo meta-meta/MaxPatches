@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 1059.0, 378.0, 2304.0, 1162.0 ],
+		"rect" : [ 503.0, 118.0, 2304.0, 1200.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,597 @@
 		"subpatcher_template" : "PupleTemplate",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 4,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 1045.0, 244.0, 1227.0, 951.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "PupleStyle",
+						"subpatcher_template" : "PupleTemplate",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-35",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 213.333313, 298.666687, 130.0, 32.0 ],
+									"style" : "",
+									"text" : "clip 0 127"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-33",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 288.666687, 478.666687, 142.0, 32.0 ],
+									"style" : "",
+									"text" : "speedlim 50"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "int", "int" ],
+									"patching_rect" : [ 261.333313, 384.0, 82.0, 32.0 ],
+									"style" : "",
+									"text" : "change"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 247.999985, 524.666687, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 52.666676, 470.666656, 58.0, 32.0 ],
+									"style" : "",
+									"text" : "$1 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "bang" ],
+									"patching_rect" : [ 29.333332, 359.333344, 70.0, 32.0 ],
+									"style" : "",
+									"text" : "t i b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 58.666676, 416.000031, 46.0, 32.0 ],
+									"style" : "",
+									"text" : "int"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 177.333328, 446.666687, 58.0, 32.0 ],
+									"style" : "",
+									"text" : "pack"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 453.333374, 402.0, 151.333344, 32.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 6,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 204.0, 243.333359, 262.0, 32.0 ],
+									"style" : "",
+									"text" : "scale -60. -20. 0 127"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "number",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 82.0, 237.333328, 50.0, 32.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"format" : 6,
+									"id" : "obj-5",
+									"maxclass" : "flonum",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 417.666656, 190.333328, 162.0, 32.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 160.0, 524.666687, 30.0, 30.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "int" ],
+									"patching_rect" : [ 9.0, 168.0, 82.0, 32.0 ],
+									"style" : "",
+									"text" : "unpack"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 9.0, 280.0, 46.0, 32.0 ],
+									"style" : "",
+									"text" : "+ 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-31",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "signal", "signal" ],
+									"patching_rect" : [ 33.0, 0.0, 58.0, 32.0 ],
+									"style" : "",
+									"text" : "adc~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-32",
+									"linecount" : 3,
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 9,
+									"outlettype" : [ "list", "float", "float", "float", "list", "bang", "list", "list", "FullPacket" ],
+									"patching_rect" : [ 0.0, 65.0, 802.0, 80.0 ],
+									"style" : "",
+									"text" : "analyzer~ @buffersize 2048 @hopsize 512 @fftsize 4096 @windowtype blackman70 @initialdelay 0 @numpitches 1 @numpeakstofind 10 @numpeakstooutput 10 @barkformat list"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-17", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 1 ],
+									"source" : [ "obj-17", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"order" : 0,
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-17", 0 ],
+									"order" : 2,
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"order" : 3,
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 1,
+									"source" : [ "obj-18", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-33", 0 ],
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-32", 0 ],
+									"source" : [ "obj-31", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"source" : [ "obj-32", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"order" : 0,
+									"source" : [ "obj-32", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"order" : 1,
+									"source" : [ "obj-32", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"source" : [ "obj-33", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 0,
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 1 ],
+									"order" : 2,
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"order" : 1,
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-35", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+ ],
+						"styles" : [ 							{
+								"name" : "PMC",
+								"default" : 								{
+									"fontsize" : [ 20.0 ],
+									"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+									"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+									"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
+									"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
+									"fontname" : [ "Fira Code" ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "PupleStyle",
+								"comment" : 								{
+									"fontsize" : [ 20.0 ],
+									"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+									"textjustification" : [ 1 ],
+									"fontname" : [ "Fira Code" ]
+								}
+,
+								"number" : 								{
+									"fontsize" : [ 20.0 ],
+									"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+									"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+									"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+									"fontname" : [ "Fira Code" ]
+								}
+,
+								"message" : 								{
+									"fontsize" : [ 20.0 ],
+									"textjustification" : [ 1 ],
+									"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
+									"fontname" : [ "Fira Code" ],
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color1" : [ 0.223529, 0.266667, 0.454902, 0.458824 ],
+										"color2" : [ 0.031373, 0.027451, 0.031373, 0.466667 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"newobj" : 								{
+									"fontsize" : [ 20.0 ],
+									"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+									"textjustification" : [ 1 ],
+									"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+									"fontname" : [ "Fira Code" ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+								}
+,
+								"slider" : 								{
+									"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+									"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+								}
+,
+								"toggle" : 								{
+									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 1
+							}
+, 							{
+								"name" : "PupleStyle-1",
+								"default" : 								{
+									"fontsize" : [ 20.0 ],
+									"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+									"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+									"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
+									"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
+									"fontname" : [ "Fira Code" ]
+								}
+,
+								"comment" : 								{
+									"fontsize" : [ 20.0 ],
+									"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+									"textjustification" : [ 1 ],
+									"fontname" : [ "Fira Code" ]
+								}
+,
+								"number" : 								{
+									"fontsize" : [ 20.0 ],
+									"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+									"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+									"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+									"fontname" : [ "Fira Code" ]
+								}
+,
+								"message" : 								{
+									"fontsize" : [ 20.0 ],
+									"textjustification" : [ 1 ],
+									"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
+									"fontname" : [ "Fira Code" ],
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color1" : [ 0.223529, 0.266667, 0.454902, 0.458824 ],
+										"color2" : [ 0.031373, 0.027451, 0.031373, 0.466667 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"newobj" : 								{
+									"fontsize" : [ 20.0 ],
+									"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+									"textjustification" : [ 1 ],
+									"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+									"fontname" : [ "Fira Code" ]
+								}
+,
+								"button" : 								{
+									"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+								}
+,
+								"slider" : 								{
+									"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+									"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+								}
+,
+								"toggle" : 								{
+									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+ ],
+						"patchlinecolor" : [ 0.1, 0.41, 0.41, 0.898039 ]
+					}
+,
+					"patching_rect" : [ 1549.0, 47.0, 202.0, 32.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"patchlinecolor" : [ 0.1, 0.41, 0.41, 0.898039 ],
+						"style" : "PupleStyle",
+						"tags" : ""
+					}
+,
+					"style" : "",
+					"text" : "p pitch-detector"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -45,7 +636,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1804.0, 331.0, 327.0, 32.0 ],
 					"style" : "",
-					"text" : "/a-300/note 43 0"
+					"text" : "/a-300/note 47 0"
 				}
 
 			}
@@ -110,7 +701,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1189.0, 263.0, 327.0, 32.0 ],
 					"style" : "",
-					"text" : "/keystation/note 76 0"
+					"text" : "/keystation/note 55 0"
 				}
 
 			}
@@ -431,176 +1022,6 @@
 							}
 , 							{
 								"box" : 								{
-									"autosave" : 1,
-									"bgmode" : 0,
-									"border" : 0,
-									"clickthrough" : 0,
-									"id" : "obj-16",
-									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 8,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "signal", "signal", "", "list", "int", "", "", "" ],
-									"patching_rect" : [ 965.0, 436.0, 326.0, 314.0 ],
-									"presentation_linecount" : 2,
-									"presentation_rect" : [ 0.0, 0.0, 300.0, 100.0 ],
-									"save" : [ "#N", "vst~", "loaduniqueid", 0, "OculusSpatializer.dll", ";" ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_invisible" : 1,
-											"parameter_longname" : "vst~",
-											"parameter_shortname" : "vst~",
-											"parameter_type" : 3
-										}
-
-									}
-,
-									"saved_object_attributes" : 									{
-										"annotation_name" : "",
-										"parameter_enable" : 1
-									}
-,
-									"snapshot" : 									{
-										"filetype" : "C74Snapshot",
-										"version" : 2,
-										"minorversion" : 0,
-										"name" : "snapshotlist",
-										"origin" : "vst~",
-										"type" : "list",
-										"subtype" : "Undefined",
-										"embed" : 1,
-										"snapshot" : 										{
-											"pluginname" : "OculusSpatializer.dll",
-											"plugindisplayname" : "OculusSpatializer",
-											"pluginsavedname" : "OculusSpatializer",
-											"pluginsaveduniqueid" : 0,
-											"version" : 1,
-											"isbank" : 0,
-											"isbase64" : 1,
-											"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
-											"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-											"blob" : "720.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................H.kVMjLgrn....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBH18Fa00VYzIWZi0iHvHBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
-										}
-,
-										"snapshotlist" : 										{
-											"current_snapshot" : 0,
-											"entries" : [ 												{
-													"filetype" : "C74Snapshot",
-													"version" : 2,
-													"minorversion" : 0,
-													"name" : "OculusSpatializer",
-													"origin" : "OculusSpatializer.dll",
-													"type" : "VST",
-													"subtype" : "AudioEffect",
-													"embed" : 0,
-													"snapshot" : 													{
-														"pluginname" : "OculusSpatializer.dll",
-														"plugindisplayname" : "OculusSpatializer",
-														"pluginsavedname" : "OculusSpatializer",
-														"pluginsaveduniqueid" : 0,
-														"version" : 1,
-														"isbank" : 0,
-														"isbase64" : 1,
-														"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ],
-														"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-														"blob" : "720.CMlaKA....fQPMDZ....A7zX0wD....Y....A........................................H.kVMjLgrn....OMkETLU0QI4zTEQEUI4zQS4TQWARaogWOhDiHffGbuMWOh.iK0HBH4A2ay0iHv3RMh.hdv81b8HBLtPSN2jSN4jSN0jCM1fCNzDSM0HyMh.xYgkla8HBLtbCN4PyMybSLxPCMzLCL0PSL4jiLh.hakElb8HBLh.hYgIWOh.iKw.CLv.CLv.SLzjCLwDiMwDSNyfiHfT2bkMWZsAGak0iHvHBHk4VXhwVYxUlYrU1Xzk1atMWOh.iHfHWY1Ulbh8la8HBLh.hbu8Va30iHv3RMh.hbu8Va40iHv3RMh.hbu8Va50iHv3BM1.CLv.CLvfyLzPiM0.iL1fSM0HBHrUlYz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHlI2atQWOh.iK0DSMzXyL3fCN1PSMwbiLwDSNwPiHfTGb8HBLtHCL1DCN0TiMzLSN3biM0TiMyjiMh.hbocFZz0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHhE1Xq0iHv3RMwTCM1LCN3fiMzTSL2HSLwjSLzHBHh8Fcz8Va8HBLtPSLxLyMwDiL3bSN2TyLwDiL2jyLh.xbiEFak0iHv3BLzTiLxXSLy.iMyPSMzXiL2jSNvbiHfjlayQWXtMVYtEVak0iHh.hbkQVOhDiHfblbkUla8HRLh.hXrUWY8HBLh.RXrAGZg0iHv3BN0.CLv.CLxLCNzDCN0bSNw.SL1HBH18Fa00VYzIWZi0iHvHBHg0lXoM2atk1XI4VOh.iHfDVahk1bu4VZi8Tcz0iHvHBHhAWaO4VOh.iHfPWZsUVRtY1a8HBLh.xbn81cXoUP3k1b8HBLh.hcoMWcgwVZ5UVPsIVZy8laoMVOhDiHu3C."
-													}
-,
-													"fileref" : 													{
-														"name" : "OculusSpatializer",
-														"filename" : "OculusSpatializer.maxsnap",
-														"filepath" : "~/Documents/Max 7/Snapshots",
-														"filepos" : -1,
-														"snapshotfileid" : "a49a2b09c7fd6f26988c399a83650d38"
-													}
-
-												}
-, 												{
-													"filetype" : "C74Snapshot",
-													"version" : 2,
-													"minorversion" : 0,
-													"name" : "OculusSpatializer",
-													"origin" : "OculusSpatializer.dll",
-													"type" : "VST",
-													"subtype" : "AudioEffect",
-													"embed" : 0,
-													"fileref" : 													{
-														"name" : "OculusSpatializer",
-														"filename" : "OculusSpatializer_20170727.maxsnap",
-														"filepath" : "~/Documents/Max 7/Snapshots",
-														"filepos" : -1,
-														"snapshotfileid" : "9c90c9fa046fea876e7960504d80b72a"
-													}
-
-												}
-, 												{
-													"filetype" : "C74Snapshot",
-													"version" : 2,
-													"minorversion" : 0,
-													"name" : "OculusSpatializer",
-													"origin" : "OculusSpatializer.dll",
-													"type" : "VST",
-													"subtype" : "AudioEffect",
-													"embed" : 0,
-													"fileref" : 													{
-														"name" : "OculusSpatializer",
-														"filename" : "OculusSpatializer_20170727_1.maxsnap",
-														"filepath" : "~/Documents/Max 7/Snapshots",
-														"filepos" : -1,
-														"snapshotfileid" : "7bb32f9ba3f4403125925783e73d303a"
-													}
-
-												}
-, 												{
-													"filetype" : "C74Snapshot",
-													"version" : 2,
-													"minorversion" : 0,
-													"name" : "OculusSpatializer",
-													"origin" : "OculusSpatializer.dll",
-													"type" : "VST",
-													"subtype" : "AudioEffect",
-													"embed" : 0,
-													"fileref" : 													{
-														"name" : "OculusSpatializer",
-														"filename" : "OculusSpatializer_20170727_2.maxsnap",
-														"filepath" : "~/Documents/Max 7/Snapshots",
-														"filepos" : -1,
-														"snapshotfileid" : "39b28ca95a348601c7af30841f66fb84"
-													}
-
-												}
-, 												{
-													"filetype" : "C74Snapshot",
-													"version" : 2,
-													"minorversion" : 0,
-													"name" : "OculusSpatializer",
-													"origin" : "OculusSpatializer.dll",
-													"type" : "VST",
-													"subtype" : "AudioEffect",
-													"embed" : 0,
-													"fileref" : 													{
-														"name" : "OculusSpatializer",
-														"filename" : "OculusSpatializer_20180625.maxsnap",
-														"filepath" : "~/Documents/Max 7/Snapshots",
-														"filepos" : -1,
-														"snapshotfileid" : "1d511824a8e26dd4668f389d42c76486"
-													}
-
-												}
- ]
-										}
-
-									}
-,
-									"style" : "",
-									"text" : "vst~ OculusSpatializer.dll",
-									"varname" : "vst~",
-									"viewvisibility" : 1
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -870,14 +1291,14 @@
 								"name" : "PMC",
 								"default" : 								{
 									"fontsize" : [ 20.0 ],
+									"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+									"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+									"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
+									"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
-									"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
-									"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
-									"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
-									"fontname" : [ "Fira Code" ],
-									"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
-									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+									"fontname" : [ "Fira Code" ]
 								}
 ,
 								"parentstyle" : "",
@@ -885,15 +1306,6 @@
 							}
 , 							{
 								"name" : "PupleStyle",
-								"number" : 								{
-									"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontsize" : [ 20.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-									"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-									"fontname" : [ "Fira Code" ],
-									"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
-								}
-,
 								"comment" : 								{
 									"fontsize" : [ 20.0 ],
 									"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
@@ -901,9 +1313,20 @@
 									"fontname" : [ "Fira Code" ]
 								}
 ,
+								"number" : 								{
+									"fontsize" : [ 20.0 ],
+									"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+									"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+									"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+									"fontname" : [ "Fira Code" ]
+								}
+,
 								"message" : 								{
 									"fontsize" : [ 20.0 ],
+									"textjustification" : [ 1 ],
 									"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
+									"fontname" : [ "Fira Code" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -913,34 +1336,32 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textjustification" : [ 1 ],
-									"fontname" : [ "Fira Code" ]
+
 								}
 ,
 								"newobj" : 								{
 									"fontsize" : [ 20.0 ],
-									"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+									"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
 									"textjustification" : [ 1 ],
-									"fontname" : [ "Fira Code" ],
-									"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ]
+									"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+									"fontname" : [ "Fira Code" ]
 								}
 ,
 								"button" : 								{
-									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-									"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
-								}
-,
-								"toggle" : 								{
+									"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
 									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
 									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 								}
 ,
 								"slider" : 								{
+									"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
 									"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-									"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+								}
+,
+								"toggle" : 								{
+									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -948,13 +1369,16 @@
 							}
 , 							{
 								"name" : "PupleStyle-1",
-								"number" : 								{
-									"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+								"default" : 								{
 									"fontsize" : [ 20.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-									"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-									"fontname" : [ "Fira Code" ],
-									"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
+									"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+									"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+									"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
+									"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+									"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
+									"fontname" : [ "Fira Code" ]
 								}
 ,
 								"comment" : 								{
@@ -964,21 +1388,20 @@
 									"fontname" : [ "Fira Code" ]
 								}
 ,
-								"default" : 								{
+								"number" : 								{
 									"fontsize" : [ 20.0 ],
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
-									"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
-									"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
-									"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
-									"fontname" : [ "Fira Code" ],
-									"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
-									"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+									"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+									"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+									"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+									"fontname" : [ "Fira Code" ]
 								}
 ,
 								"message" : 								{
 									"fontsize" : [ 20.0 ],
+									"textjustification" : [ 1 ],
 									"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
+									"fontname" : [ "Fira Code" ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -988,34 +1411,32 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-,
-									"textjustification" : [ 1 ],
-									"fontname" : [ "Fira Code" ]
+
 								}
 ,
 								"newobj" : 								{
 									"fontsize" : [ 20.0 ],
-									"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+									"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
 									"textjustification" : [ 1 ],
-									"fontname" : [ "Fira Code" ],
-									"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ]
+									"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+									"fontname" : [ "Fira Code" ]
 								}
 ,
 								"button" : 								{
-									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-									"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
-								}
-,
-								"toggle" : 								{
+									"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
 									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
 									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 								}
 ,
 								"slider" : 								{
+									"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
 									"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-									"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+								}
+,
+								"toggle" : 								{
+									"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+									"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1364,6 +1785,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-4", 8 ]
 				}
@@ -1480,41 +1908,40 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-23::obj-16" : [ "vst~", "vst~", 0 ],
-			"obj-11::obj-85" : [ "live.gain~[8]", "live.gain~", 0 ],
-			"obj-13::obj-35" : [ "slider[2]", "slider[2]", 0 ],
 			"obj-11::obj-80" : [ "live.gain~[9]", "live.gain~", 0 ],
-			"obj-11::obj-77::obj-49::obj-76" : [ "Record", "Record", 0 ],
-			"obj-11::obj-8::obj-10" : [ "vst~[7]", "vst~[2]", 0 ],
+			"obj-13::obj-12" : [ "Bypass", "Bypass", 0 ],
+			"obj-11::obj-77::obj-49::obj-52" : [ "Level", "Level", 0 ],
+			"obj-11::obj-30" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-13::obj-52" : [ "Threshold", "Threshold", 0 ],
 			"obj-11::obj-77::obj-67::obj-101" : [ "Dry", "Dry", 0 ],
-			"obj-11::obj-6" : [ "live.gain~[5]", "live.gain~", 0 ],
-			"obj-11::obj-83" : [ "live.gain~[7]", "live.gain~", 0 ],
+			"obj-11::obj-8::obj-9" : [ "vst~[6]", "vst~[2]", 0 ],
+			"obj-11::obj-77::obj-49::obj-76" : [ "Record", "Record", 0 ],
+			"obj-11::obj-77::obj-67::obj-33" : [ "Damp[1]", "Damp", 0 ],
+			"obj-11::obj-42" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-13::obj-35" : [ "slider[2]", "slider[2]", 0 ],
+			"obj-11::obj-8::obj-10" : [ "vst~[7]", "vst~[2]", 0 ],
+			"obj-11::obj-8::obj-8" : [ "vst~[4]", "vst~[2]", 0 ],
+			"obj-11::obj-77::obj-67::obj-31" : [ "Feedback1", "FB1", 0 ],
+			"obj-11::obj-77::obj-49::obj-73" : [ "Format", "Format", 0 ],
+			"obj-13::obj-2" : [ "Output", "Output", 0 ],
+			"obj-11::obj-46" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"obj-13::obj-28" : [ "Attack", "Attack", 0 ],
 			"obj-13::obj-34" : [ "slider[3]", "slider[3]", 0 ],
-			"obj-11::obj-30" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-11::obj-46" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-13::obj-44" : [ "Input", "Input", 0 ],
-			"obj-11::obj-8::obj-9" : [ "vst~[6]", "vst~[2]", 0 ],
-			"obj-11::obj-77::obj-49::obj-7" : [ "AutoName", "AutoName", 0 ],
-			"obj-11::obj-77::obj-67::obj-31" : [ "Feedback1", "FB1", 0 ],
-			"obj-13::obj-78" : [ "Ratio", "Ratio", 0 ],
-			"obj-11::obj-42" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-11::obj-50" : [ "live.gain~[4]", "live.gain~", 0 ],
-			"obj-11::obj-77::obj-49::obj-52" : [ "Level", "Level", 0 ],
-			"obj-11::obj-8::obj-8" : [ "vst~[4]", "vst~[2]", 0 ],
-			"obj-11::obj-77::obj-49::obj-77" : [ "getsamplelength", "getsamplelength", 0 ],
-			"obj-11::obj-77::obj-67::obj-26" : [ "bypass[3]", "bypass", 0 ],
-			"obj-11::obj-77::obj-67::obj-32" : [ "Feedback2", "FB2", 0 ],
-			"obj-13::obj-47" : [ "Release", "Release", 0 ],
-			"obj-11::obj-77::obj-67::obj-33" : [ "Damp[1]", "Damp", 0 ],
-			"obj-11::obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-11::obj-77::obj-49::obj-74" : [ "Channels", "Channels", 0 ],
-			"obj-13::obj-52" : [ "Threshold", "Threshold", 0 ],
-			"obj-11::obj-77::obj-49::obj-73" : [ "Format", "Format", 0 ],
+			"obj-11::obj-6" : [ "live.gain~[5]", "live.gain~", 0 ],
 			"obj-13::obj-15::obj-2" : [ "pastebang", "pastebang", 0 ],
+			"obj-11::obj-77::obj-49::obj-74" : [ "Channels", "Channels", 0 ],
+			"obj-11::obj-77::obj-67::obj-32" : [ "Feedback2", "FB2", 0 ],
+			"obj-11::obj-50" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-13::obj-78" : [ "Ratio", "Ratio", 0 ],
+			"obj-11::obj-77::obj-49::obj-7" : [ "AutoName", "AutoName", 0 ],
+			"obj-11::obj-85" : [ "live.gain~[8]", "live.gain~", 0 ],
+			"obj-11::obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-13::obj-44" : [ "Input", "Input", 0 ],
 			"obj-11::obj-8::obj-5" : [ "vst~[3]", "vst~[2]", 0 ],
-			"obj-13::obj-12" : [ "Bypass", "Bypass", 0 ],
-			"obj-13::obj-2" : [ "Output", "Output", 0 ]
+			"obj-11::obj-77::obj-67::obj-26" : [ "bypass[3]", "bypass", 0 ],
+			"obj-11::obj-83" : [ "live.gain~[7]", "live.gain~", 0 ],
+			"obj-13::obj-47" : [ "Release", "Release", 0 ],
+			"obj-11::obj-77::obj-49::obj-77" : [ "getsamplelength", "getsamplelength", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1695,36 +2122,6 @@
 				"bootpath" : "D:/Projects/MaxPatches/functions",
 				"patcherrelativepath" : "./functions",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer_20170727.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer_20170727_1.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer_20170727_2.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer_20180625.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
@@ -1963,6 +2360,36 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "OculusSpatializer_20170727_2.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OculusSpatializer.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OculusSpatializer_20170727.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OculusSpatializer_20170727_1.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "OculusSpatializer_20180625.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "OculusPosition.maxpat",
 				"bootpath" : "D:/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
@@ -2178,20 +2605,24 @@
 				"name" : "mxj.mxe",
 				"type" : "iLaF"
 			}
+, 			{
+				"name" : "analyzer~.mxe",
+				"type" : "iLaF"
+			}
  ],
 		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "PMC",
 				"default" : 				{
 					"fontsize" : [ 20.0 ],
+					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
+					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
-					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
-					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
-					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
-					"fontname" : [ "Fira Code" ],
-					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
-					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"parentstyle" : "",
@@ -2199,15 +2630,6 @@
 			}
 , 			{
 				"name" : "PupleStyle",
-				"number" : 				{
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"fontname" : [ "Fira Code" ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
-				}
-,
 				"comment" : 				{
 					"fontsize" : [ 20.0 ],
 					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
@@ -2215,9 +2637,20 @@
 					"fontname" : [ "Fira Code" ]
 				}
 ,
+				"number" : 				{
+					"fontsize" : [ 20.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"fontname" : [ "Fira Code" ]
+				}
+,
 				"message" : 				{
 					"fontsize" : [ 20.0 ],
+					"textjustification" : [ 1 ],
 					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
+					"fontname" : [ "Fira Code" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2227,34 +2660,32 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"textjustification" : [ 1 ],
-					"fontname" : [ "Fira Code" ]
+
 				}
 ,
 				"newobj" : 				{
 					"fontsize" : [ 20.0 ],
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
 					"textjustification" : [ 1 ],
-					"fontname" : [ "Fira Code" ],
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ]
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"button" : 				{
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
-				}
-,
-				"toggle" : 				{
+					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
 					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 				}
 ,
 				"slider" : 				{
+					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
 					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+				}
+,
+				"toggle" : 				{
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2262,13 +2693,16 @@
 			}
 , 			{
 				"name" : "PupleStyle-1",
-				"number" : 				{
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+				"default" : 				{
 					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"fontname" : [ "Fira Code" ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
+					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
+					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
+					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"comment" : 				{
@@ -2278,21 +2712,20 @@
 					"fontname" : [ "Fira Code" ]
 				}
 ,
-				"default" : 				{
+				"number" : 				{
 					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
-					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
-					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
-					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
-					"fontname" : [ "Fira Code" ],
-					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
-					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"message" : 				{
 					"fontsize" : [ 20.0 ],
+					"textjustification" : [ 1 ],
 					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
+					"fontname" : [ "Fira Code" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2302,34 +2735,32 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"textjustification" : [ 1 ],
-					"fontname" : [ "Fira Code" ]
+
 				}
 ,
 				"newobj" : 				{
 					"fontsize" : [ 20.0 ],
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
 					"textjustification" : [ 1 ],
-					"fontname" : [ "Fira Code" ],
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ]
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"button" : 				{
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
-				}
-,
-				"toggle" : 				{
+					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
 					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 				}
 ,
 				"slider" : 				{
+					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
 					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+				}
+,
+				"toggle" : 				{
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 				}
 ,
 				"parentstyle" : "",
