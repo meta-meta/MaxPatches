@@ -2,15 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 0,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 3372.0, 1289.0 ],
-		"bgcolor" : [ 0.227451, 0.215686, 0.258824, 1.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 34.0, 76.0, 1639.0, 810.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -41,23 +41,23 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-80",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 2627.0, 983.0, 136.0, 31.0 ],
-					"presentation_rect" : [ 45.0, 45.0, 50.0, 31.0 ],
+					"patching_rect" : [ 2627.0, 983.0, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[9]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -40 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -76,7 +76,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 2661.0, 831.0, 37.0, 22.0 ],
-					"style" : "",
 					"text" : "adc~"
 				}
 
@@ -89,7 +88,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 74.0, 481.0, 79.0, 22.0 ],
-					"style" : "",
 					"text" : "loadmess 36"
 				}
 
@@ -102,7 +100,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 2391.0, 1116.0, 94.0, 22.0 ],
-					"style" : "",
 					"text" : "QuNexusOrgan",
 					"varname" : "QuNexusOrgan"
 				}
@@ -112,23 +109,23 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-83",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 935.5, 1440.0, 136.0, 31.0 ],
-					"presentation_rect" : [ 60.0, 60.0, 50.0, 31.0 ],
+					"patching_rect" : [ 935.5, 1440.0, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[7]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -40 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -143,23 +140,23 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-85",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 776.5, 1440.0, 136.0, 31.0 ],
-					"presentation_rect" : [ 45.0, 45.0, 50.0, 31.0 ],
+					"patching_rect" : [ 776.5, 1440.0, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[8]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -40 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -175,10 +172,9 @@
 					"id" : "obj-75",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 9,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
 					"patching_rect" : [ 1251.5, 1192.0, 46.0, 22.0 ],
-					"style" : "",
 					"text" : "Drums",
 					"varname" : "Drums"
 				}
@@ -191,7 +187,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1631.5, 1204.0, 150.0, 20.0 ],
-					"style" : "",
 					"text" : "TODO: 6 channels"
 				}
 
@@ -226,7 +221,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 685.0, 752.0, 60.0, 22.0 ],
-					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -239,7 +233,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2012.0, 1347.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "0"
 				}
 
@@ -252,7 +245,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2057.0, 1347.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "1"
 				}
 
@@ -282,23 +274,23 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-6",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 685.0, 1228.5, 136.0, 31.0 ],
-					"presentation_rect" : [ 45.0, 45.0, 50.0, 31.0 ],
+					"patching_rect" : [ 685.0, 1228.5, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[5]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -40 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -317,7 +309,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
 					"patching_rect" : [ 1905.0, 390.0, 34.0, 22.0 ],
-					"style" : "",
 					"text" : "t b b"
 				}
 
@@ -329,8 +320,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1860.0, 245.0, 150.0, 48.0 ],
-					"style" : "",
+					"patching_rect" : [ 1860.0, 245.0, 150.0, 47.0 ],
 					"text" : "selection happens with first bang so these can all route to one command"
 				}
 
@@ -343,7 +333,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 1845.0, 299.0, 77.0, 22.0 ],
-					"style" : "",
 					"text" : "double-bang"
 				}
 
@@ -356,7 +345,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1935.0, 442.0, 43.0, 22.0 ],
-					"style" : "",
 					"text" : "delete"
 				}
 
@@ -369,7 +357,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 795.75, 790.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "2"
 				}
 
@@ -382,7 +369,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 761.625, 790.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "1"
 				}
 
@@ -394,8 +380,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2148.0, 706.0, 150.0, 34.0 ],
-					"style" : "",
+					"patching_rect" : [ 2148.0, 706.0, 150.0, 33.0 ],
 					"text" : "TODO: bpatcher for samplers"
 				}
 
@@ -407,8 +392,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
-					"patching_rect" : [ 823.166687, 823.5, 125.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 823.166687000000024, 823.5, 125.0, 22.0 ],
 					"text" : "organ-decay-switcher"
 				}
 
@@ -420,8 +404,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
-					"patching_rect" : [ 144.833374, 925.5, 125.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 144.833373999999992, 925.5, 125.0, 22.0 ],
 					"text" : "organ-decay-switcher"
 				}
 
@@ -434,7 +417,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1404.0, 891.5, 105.0, 22.0 ],
-					"style" : "",
 					"text" : "scale 0 127 1. 50."
 				}
 
@@ -446,8 +428,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1383.5, 930.5, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1383.5, 930.5, 24.0, 24.0 ]
 				}
 
 			}
@@ -481,7 +463,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 929.0, 921.5, 125.0, 22.0 ],
-					"style" : "",
 					"text" : "scale 0 127 50. 5000."
 				}
 
@@ -494,7 +475,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 748.0, 1110.0, 125.0, 22.0 ],
-					"style" : "",
 					"text" : "scale 0 127 50. 5000."
 				}
 
@@ -506,7 +486,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 843.0, 1037.0, 150.0, 20.0 ],
-					"style" : "",
 					"text" : "pedals"
 				}
 
@@ -518,7 +497,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 510.5, 1131.0, 150.0, 20.0 ],
-					"style" : "",
 					"text" : "keys"
 				}
 
@@ -531,7 +509,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1514.0, 976.0, 36.0, 22.0 ],
-					"style" : "",
 					"text" : "*~ 1."
 				}
 
@@ -543,8 +520,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1828.0, 405.0, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1828.0, 405.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -556,7 +533,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 630.125, 1334.0, 109.0, 22.0 ],
-					"style" : "",
 					"text" : "scale 0 127 -70. 6."
 				}
 
@@ -568,8 +544,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1172.5, 937.0, 24.0, 24.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1172.5, 937.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -581,7 +557,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1132.0, 741.0, 112.0, 22.0 ],
-					"style" : "",
 					"text" : "scale 0 127 0.01 1."
 				}
 
@@ -594,7 +569,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1225.5, 815.0, 105.0, 22.0 ],
-					"style" : "",
 					"text" : "scale 0 127 2. 24."
 				}
 
@@ -607,7 +581,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1222.0, 917.5, 105.0, 22.0 ],
-					"style" : "",
 					"text" : "scale 0 127 1. 50."
 				}
 
@@ -644,7 +617,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 829.75, 1002.5, 176.5, 22.0 ],
-					"style" : "",
 					"text" : "organ"
 				}
 
@@ -657,7 +629,6 @@
 					"numoutlets" : 9,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 781.125, 684.0, 203.0, 22.0 ],
-					"style" : "",
 					"text" : "KeystationPro88-button-row-[faders]"
 				}
 
@@ -670,7 +641,6 @@
 					"numoutlets" : 36,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 404.625, 866.0, 386.5, 22.0 ],
-					"style" : "",
 					"text" : "switch-9io-4endpoints"
 				}
 
@@ -683,7 +653,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 565.0, 983.0, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "/ 127."
 				}
 
@@ -696,7 +665,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 565.0, 947.0, 31.0, 22.0 ],
-					"style" : "",
 					"text" : "- 63"
 				}
 
@@ -709,7 +677,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 336.625, 965.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "* 1."
 				}
 
@@ -722,7 +689,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 351.625, 921.5, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "/ 127."
 				}
 
@@ -735,7 +701,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
 					"patching_rect" : [ 1064.5, 745.0, 36.0, 22.0 ],
-					"style" : "",
 					"text" : "line~"
 				}
 
@@ -748,7 +713,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1064.5, 715.0, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "$1 50"
 				}
 
@@ -759,8 +723,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.833374, 1237.0, 150.0, 20.0 ],
-					"style" : "",
+					"patching_rect" : [ 80.833374000000006, 1237.0, 150.0, 20.0 ],
 					"text" : "add to Keystation Parser"
 				}
 
@@ -772,8 +735,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 80.833374, 1262.0, 58.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 80.833374000000006, 1262.0, 58.0, 22.0 ],
 					"text" : "midiflush"
 				}
 
@@ -786,7 +748,6 @@
 					"numoutlets" : 8,
 					"outlettype" : [ "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 1342.5, 515.0, 193.0, 22.0 ],
-					"style" : "",
 					"text" : "KeystationPro88-knob-row-bottom"
 				}
 
@@ -799,7 +760,6 @@
 					"numoutlets" : 8,
 					"outlettype" : [ "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 1374.0, 591.0, 191.0, 22.0 ],
-					"style" : "",
 					"text" : "KeystationPro88-knob-row-middle"
 				}
 
@@ -811,8 +771,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 8,
 					"outlettype" : [ "", "", "", "", "", "", "", "" ],
-					"patching_rect" : [ 128.833374, 427.0, 173.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 308.6666259765625, 409.0, 173.0, 22.0 ],
 					"text" : "KeystationPro88-knob-row-top"
 				}
 
@@ -825,7 +784,6 @@
 					"numoutlets" : 8,
 					"outlettype" : [ "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 1519.0, 207.0, 202.0, 22.0 ],
-					"style" : "",
 					"text" : "KeystationPro88-button-row-[knobs]"
 				}
 
@@ -838,7 +796,6 @@
 					"numoutlets" : 9,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 425.875, 784.0, 136.0, 22.0 ],
-					"style" : "",
 					"text" : "KeystationPro88-faders"
 				}
 
@@ -873,7 +830,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 72.5, 761.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "join"
 				}
 
@@ -889,11 +845,11 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "MegaMuxOrganPedal.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 3,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 72.5, 528.0, 684.0, 173.0 ],
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ 101.3333740234375, 542.0, 277.0, 113.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 191.0, 315.0, 684.0, 173.0 ],
 					"prototypename" : "Pedals",
@@ -930,7 +886,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1064.5, 684.0, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "/ 255."
 				}
 
@@ -943,7 +898,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1064.5, 902.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "*~"
 				}
 
@@ -956,7 +910,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 2157.0, 949.5, 35.0, 22.0 ],
-					"style" : "",
 					"text" : "* 70."
 				}
 
@@ -969,7 +922,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 2148.0, 909.5, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "- 1."
 				}
 
@@ -982,7 +934,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 2148.0, 879.5, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "/ 127."
 				}
 
@@ -991,23 +942,23 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-50",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 2143.0, 994.5, 136.0, 31.0 ],
-					"presentation_rect" : [ 372.0, 52.0, 50.0, 31.0 ],
+					"patching_rect" : [ 2143.0, 994.5, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[4]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 0 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -1026,7 +977,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 2001.0, 953.5, 35.0, 22.0 ],
-					"style" : "",
 					"text" : "* 70."
 				}
 
@@ -1039,7 +989,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1992.0, 913.5, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "- 1."
 				}
 
@@ -1052,7 +1001,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1992.0, 883.5, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "/ 127."
 				}
 
@@ -1061,23 +1009,23 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-46",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1987.0, 998.5, 136.0, 31.0 ],
-					"presentation_rect" : [ 216.0, 56.0, 50.0, 31.0 ],
+					"patching_rect" : [ 1987.0, 998.5, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[3]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 0 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -1096,7 +1044,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1845.0, 957.5, 35.0, 22.0 ],
-					"style" : "",
 					"text" : "* 70."
 				}
 
@@ -1109,7 +1056,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1836.0, 917.5, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "- 1."
 				}
 
@@ -1122,7 +1068,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1836.0, 887.5, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "/ 127."
 				}
 
@@ -1131,23 +1076,23 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-42",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1831.0, 1002.5, 136.0, 31.0 ],
-					"presentation_rect" : [ 60.0, 60.0, 50.0, 31.0 ],
+					"patching_rect" : [ 1831.0, 1002.5, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[2]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 0 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -1166,7 +1111,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1689.0, 961.5, 35.0, 22.0 ],
-					"style" : "",
 					"text" : "* 70."
 				}
 
@@ -1179,7 +1123,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1680.0, 921.5, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "- 1."
 				}
 
@@ -1192,7 +1135,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 1680.0, 891.5, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "/ 127."
 				}
 
@@ -1201,23 +1143,23 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-30",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1675.0, 1006.5, 136.0, 31.0 ],
-					"presentation_rect" : [ 45.0, 45.0, 50.0, 31.0 ],
+					"patching_rect" : [ 1675.0, 1006.5, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[1]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ 0 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -1236,7 +1178,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 1118.0, 827.0, 62.0, 22.0 ],
-					"style" : "",
 					"text" : "degrade~"
 				}
 
@@ -1249,7 +1190,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 1737.5, 357.0, 49.0, 22.0 ],
-					"style" : "",
 					"text" : "sel 127"
 				}
 
@@ -1262,7 +1202,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 2001.0, 706.0, 103.0, 22.0 ],
-					"style" : "",
 					"text" : "sample-looper b3"
 				}
 
@@ -1275,7 +1214,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 1886.75, 706.0, 103.0, 22.0 ],
-					"style" : "",
 					"text" : "sample-looper b2"
 				}
 
@@ -1288,7 +1226,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 1775.75, 706.0, 103.0, 22.0 ],
-					"style" : "",
 					"text" : "sample-looper b1"
 				}
 
@@ -1301,7 +1238,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 1665.75, 706.0, 103.0, 22.0 ],
-					"style" : "",
 					"text" : "sample-looper b0"
 				}
 
@@ -1316,7 +1252,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 449.5, 1103.0, 176.5, 22.0 ],
-					"style" : "",
 					"text" : "organ"
 				}
 
@@ -1329,7 +1264,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1896.0, 442.0, 33.0, 22.0 ],
-					"style" : "",
 					"text" : "stop"
 				}
 
@@ -1342,7 +1276,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1787.0, 434.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "rec"
 				}
 
@@ -1355,7 +1288,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1737.5, 434.0, 33.0, 22.0 ],
-					"style" : "",
 					"text" : "play"
 				}
 
@@ -1368,7 +1300,6 @@
 					"numoutlets" : 8,
 					"outlettype" : [ "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 1659.0, 495.0, 131.0, 22.0 ],
-					"style" : "",
 					"text" : "radio-button-selector-8"
 				}
 
@@ -1377,23 +1308,23 @@
 				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-3",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1257.0, 1334.0, 136.0, 31.0 ],
-					"presentation_rect" : [ 30.0, 30.0, 50.0, 31.0 ],
+					"patching_rect" : [ 1257.0, 1334.0, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 6.0,
+							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial_enable" : 1,
-							"parameter_initial" : [ -40 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -1411,7 +1342,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1277.5, 1519.0, 37.0, 22.0 ],
-					"style" : "",
 					"text" : "dac~"
 				}
 
@@ -1453,9 +1383,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 308.666626, 169.0, 262.0, 164.0 ],
+					"patching_rect" : [ 308.666626000000008, 169.0, 262.0, 164.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 194.666504, 63.0, 276.0, 163.0 ],
+					"presentation_rect" : [ 194.66650390625, 63.0, 276.0, 163.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1477,7 +1407,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 594.5, 134.0, 310.0, 225.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 472.666504, 13.0, 310.0, 213.0 ],
+					"presentation_rect" : [ 472.66650390625, 13.0, 310.0, 213.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1497,9 +1427,9 @@
 					"numoutlets" : 7,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "bang", "bang", "bang", "bang", "bang", "", "" ],
-					"patching_rect" : [ 85.333374, 231.0, 172.666656, 128.0 ],
+					"patching_rect" : [ 85.333374000000006, 231.0, 172.666655999999989, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 17.333344, 218.0, 168.666656, 128.0 ],
+					"presentation_rect" : [ 17.333343505859375, 218.0, 168.666656494140625, 128.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -1511,8 +1441,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 5,
 					"outlettype" : [ "", "", "", "", "" ],
-					"patching_rect" : [ 89.333374, 90.0, 137.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 89.333374000000006, 90.0, 137.0, 22.0 ],
 					"text" : "KeystationPro88-parser"
 				}
 
@@ -1530,9 +1459,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 273.5, 46.0, 624.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 198.666504, 234.0, 624.0, 53.0 ],
-					"range" : 89,
-					"style" : ""
+					"presentation_rect" : [ 198.66650390625, 234.0, 624.0, 53.0 ],
+					"range" : 89
 				}
 
 			}
@@ -2143,7 +2071,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-70", 0 ],
-					"midpoints" : [ 248.500031, 414.0, 15.0, 414.0, 15.0, 756.0, 19.0, 756.0, 19.0, 1188.0, 639.625, 1188.0 ],
+					"midpoints" : [ 248.500029999999981, 414.0, 15.0, 414.0, 15.0, 756.0, 19.0, 756.0, 19.0, 1188.0, 639.625, 1188.0 ],
 					"source" : [ "obj-39", 6 ]
 				}
 
@@ -2165,7 +2093,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-140", 2 ],
-					"midpoints" : [ 157.833374, 216.0, 57.0, 216.0, 57.0, 863.0, 260.333374, 863.0 ],
+					"midpoints" : [ 157.833373999999992, 216.0, 57.0, 216.0, 57.0, 863.0, 260.333373999999992, 863.0 ],
 					"source" : [ "obj-4", 2 ]
 				}
 
@@ -2173,7 +2101,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-140", 0 ],
-					"midpoints" : [ 128.333374, 188.0, 37.0, 188.0, 37.0, 873.0, 154.333374, 873.0 ],
+					"midpoints" : [ 128.333373999999992, 188.0, 37.0, 188.0, 37.0, 873.0, 154.333373999999992, 873.0 ],
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -2181,7 +2109,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 1 ],
-					"midpoints" : [ 216.833374, 217.0, 248.500031, 217.0 ],
+					"midpoints" : [ 216.833373999999992, 217.0, 248.500029999999981, 217.0 ],
 					"source" : [ "obj-4", 4 ]
 				}
 
@@ -2189,7 +2117,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 187.333374, 217.0, 94.833374, 217.0 ],
+					"midpoints" : [ 187.333373999999992, 217.0, 94.833374000000006, 217.0 ],
 					"order" : 3,
 					"source" : [ "obj-4", 3 ]
 				}
@@ -2198,7 +2126,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-53", 0 ],
-					"midpoints" : [ 98.833374, 124.0, 259.0, 124.0, 259.0, 40.0, 283.0, 40.0 ],
+					"midpoints" : [ 98.833374000000006, 124.0, 259.0, 124.0, 259.0, 40.0, 283.0, 40.0 ],
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -2206,7 +2134,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
-					"midpoints" : [ 187.333374, 130.0, 604.0, 130.0 ],
+					"midpoints" : [ 187.333373999999992, 130.0, 604.0, 130.0 ],
 					"order" : 2,
 					"source" : [ "obj-4", 3 ]
 				}
@@ -2215,7 +2143,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
-					"midpoints" : [ 187.333374, 154.0, 318.166626, 154.0 ],
+					"midpoints" : [ 187.333373999999992, 154.0, 318.166626000000008, 154.0 ],
 					"order" : 1,
 					"source" : [ "obj-4", 3 ]
 				}
@@ -2224,7 +2152,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
-					"midpoints" : [ 187.333374, 124.0, 259.0, 124.0, 259.0, 31.0, 945.0, 31.0 ],
+					"midpoints" : [ 187.333373999999992, 124.0, 259.0, 124.0, 259.0, 31.0, 945.0, 31.0 ],
 					"order" : 0,
 					"source" : [ "obj-4", 3 ]
 				}
@@ -2470,7 +2398,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 1 ],
+					"destination" : [ "obj-1", 2 ],
 					"source" : [ "obj-59", 7 ]
 				}
 
@@ -2549,7 +2477,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-63", 7 ]
 				}
 
@@ -2668,7 +2596,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-1", 1 ],
 					"source" : [ "obj-68", 0 ]
 				}
 
@@ -2871,255 +2799,221 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-77::obj-49::obj-7" : [ "AutoName", "AutoName", 0 ],
-			"obj-77::obj-67::obj-31" : [ "Feedback1", "FB1", 0 ],
-			"obj-75::obj-47::obj-78" : [ "Ratio", "Ratio", 0 ],
-			"obj-30" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-77::obj-49::obj-74" : [ "Channels", "Channels", 0 ],
-			"obj-77::obj-67::obj-26" : [ "bypass[3]", "bypass", 0 ],
-			"obj-8::obj-5" : [ "vst~[3]", "vst~[2]", 0 ],
-			"obj-77::obj-67::obj-32" : [ "Feedback2", "FB2", 0 ],
-			"obj-75::obj-47::obj-44" : [ "Input", "Input", 0 ],
-			"obj-42" : [ "live.gain~[2]", "live.gain~", 0 ],
-			"obj-75::obj-47::obj-47" : [ "Release", "Release", 0 ],
-			"obj-6" : [ "live.gain~[5]", "live.gain~", 0 ],
-			"obj-77::obj-49::obj-73" : [ "Format", "Format", 0 ],
-			"obj-77::obj-49::obj-76" : [ "Record", "Record", 0 ],
-			"obj-46" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-77::obj-49::obj-52" : [ "Level", "Level", 0 ],
-			"obj-75::obj-47::obj-52" : [ "Threshold", "Threshold", 0 ],
-			"obj-77::obj-67::obj-33" : [ "Damp[1]", "Damp", 0 ],
-			"obj-80" : [ "live.gain~[9]", "live.gain~", 0 ],
-			"obj-75::obj-47::obj-15::obj-2" : [ "pastebang", "pastebang", 0 ],
-			"obj-77::obj-49::obj-77" : [ "getsamplelength", "getsamplelength", 0 ],
-			"obj-50" : [ "live.gain~[4]", "live.gain~", 0 ],
-			"obj-8::obj-9" : [ "vst~[6]", "vst~[2]", 0 ],
-			"obj-75::obj-47::obj-28" : [ "Attack", "Attack", 0 ],
-			"obj-75::obj-47::obj-35" : [ "slider[2]", "slider[2]", 0 ],
-			"obj-83" : [ "live.gain~[7]", "live.gain~", 0 ],
-			"obj-8::obj-10" : [ "vst~[7]", "vst~[2]", 0 ],
-			"obj-85" : [ "live.gain~[8]", "live.gain~", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-77::obj-67::obj-101" : [ "Dry", "Dry", 0 ],
+			"obj-77::obj-49::obj-74" : [ "Channels", "Channels", 0 ],
+			"obj-85" : [ "live.gain~[8]", "live.gain~", 0 ],
+			"obj-46" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-77::obj-49::obj-7" : [ "AutoName", "AutoName", 0 ],
+			"obj-77::obj-49::obj-73" : [ "Format", "Format", 0 ],
+			"obj-77::obj-67::obj-31" : [ "Feedback1", "FB1", 0 ],
+			"obj-80" : [ "live.gain~[9]", "live.gain~", 0 ],
 			"obj-8::obj-8" : [ "vst~[4]", "vst~[2]", 0 ],
-			"obj-75::obj-47::obj-12" : [ "Bypass", "Bypass", 0 ],
-			"obj-75::obj-47::obj-2" : [ "Output", "Output", 0 ],
-			"obj-75::obj-47::obj-34" : [ "slider[3]", "slider[3]", 0 ]
+			"obj-30" : [ "live.gain~[1]", "live.gain~", 0 ],
+			"obj-8::obj-9" : [ "vst~[6]", "vst~[2]", 0 ],
+			"obj-83" : [ "live.gain~[7]", "live.gain~", 0 ],
+			"obj-77::obj-49::obj-76" : [ "Record", "Record", 0 ],
+			"obj-50" : [ "live.gain~[4]", "live.gain~", 0 ],
+			"obj-77::obj-49::obj-52" : [ "Level", "Level", 0 ],
+			"obj-8::obj-10" : [ "vst~[7]", "vst~[2]", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-77::obj-67::obj-26" : [ "bypass[3]", "bypass", 0 ],
+			"obj-77::obj-49::obj-77" : [ "getsamplelength", "getsamplelength", 0 ],
+			"obj-77::obj-67::obj-33" : [ "Damp[1]", "Damp", 0 ],
+			"obj-77::obj-67::obj-32" : [ "Feedback2", "FB2", 0 ],
+			"obj-42" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-6" : [ "live.gain~[5]", "live.gain~", 0 ],
+			"obj-8::obj-5" : [ "vst~[3]", "vst~[2]", 0 ],
+			"parameterbanks" : 			{
+
+			}
+
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "KeystationPro88-parser.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MidiController.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-group-a.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-group-C.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-group-B.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-foot-controllers.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "radio-button-selector-8.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organ.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organ-routing.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organVoice.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organ-oscbank.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "sample-looper.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "adat-output.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MegaMuxOrganPedal.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MegaMuxConfig.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SerialController.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MegaMuxSerialParser.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MegaMuxAnalogInNoUI.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "adat-input.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-faders.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-button-row-[knobs].maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-knob-row-top.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-knob-row-middle.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-knob-row-bottom.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "switch-9io-4endpoints.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
+				"bootpath" : "C:/Projects/MaxPatches/functions",
 				"patcherrelativepath" : "../functions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "KeystationPro88-button-row-[faders].maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/KeystationPro88",
+				"bootpath" : "C:/Projects/MaxPatches/KeystationPro88",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "overdrive.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organ-decay-switcher.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "double-bang.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
+				"bootpath" : "C:/Projects/MaxPatches/functions",
 				"patcherrelativepath" : "../functions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Record.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Oculus-SpaceNavigator-4.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3127,119 +3021,125 @@
 , 			{
 				"name" : "OculusSpatializer_20170727_2.maxsnap",
 				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"patcherrelativepath" : "../../../Users/paulm/Documents/Max 7/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OculusSpatializer.maxsnap",
 				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"patcherrelativepath" : "../../../Users/paulm/Documents/Max 7/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OculusSpatializer_20170727.maxsnap",
 				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"patcherrelativepath" : "../../../Users/paulm/Documents/Max 7/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OculusSpatializer_20170727_1.maxsnap",
 				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"patcherrelativepath" : "../../../Users/paulm/Documents/Max 7/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "SpaceNavigator.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "diff.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
+				"bootpath" : "C:/Projects/MaxPatches/functions",
 				"patcherrelativepath" : "../functions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OculusPosition.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "accum-reset.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
+				"bootpath" : "C:/Projects/MaxPatches/functions",
 				"patcherrelativepath" : "../functions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "switch-8io-4endpoints.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
+				"bootpath" : "C:/Projects/MaxPatches/functions",
 				"patcherrelativepath" : "../functions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Drums.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/DrumsContactMics",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
 				"patcherrelativepath" : "../DrumsContactMics",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bp.Compressor.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Effects",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pastebang.maxpat",
-				"bootpath" : "C74:/packages/Beap/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "snare.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/DrumsContactMics",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
 				"patcherrelativepath" : "../DrumsContactMics",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "reson-presentation.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mira-io.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/DrumsContactMics",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
 				"patcherrelativepath" : "../DrumsContactMics",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "kick.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/DrumsContactMics",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
 				"patcherrelativepath" : "../DrumsContactMics",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "hihat.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/DrumsContactMics",
+				"name" : "hi-tom.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
+				"patcherrelativepath" : "../DrumsContactMics",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "lo-tom.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
+				"patcherrelativepath" : "../DrumsContactMics",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "hihat-biquad.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
 				"patcherrelativepath" : "../DrumsContactMics",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-Harmonizer-voice.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
@@ -3252,199 +3152,214 @@
 			}
 , 			{
 				"name" : "transratio.maxpat",
-				"bootpath" : "C:/ProgramData/Max 7/examples/max-tricks/notes-and-pitch/pitch-to-freq-ratio",
+				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/max-tricks/notes-and-pitch/pitch-to-freq-ratio",
+				"patcherrelativepath" : "../../../Users/paulm/AppData/Roaming/Cycling '74/Max 8/examples/max-tricks/notes-and-pitch/pitch-to-freq-ratio",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ride.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/DrumsContactMics",
+				"name" : "ride-biquad.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
+				"patcherrelativepath" : "../DrumsContactMics",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crash-biquad.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
+				"patcherrelativepath" : "../DrumsContactMics",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "detect-onset.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
 				"patcherrelativepath" : "../DrumsContactMics",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexusOrgan.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bp.Recordr.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
 				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb-mod.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb.gendsp",
-				"bootpath" : "D:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
 				"patcherrelativepath" : "../Projects/QuNexusOrgan/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_allpass.gendsp",
-				"bootpath" : "D:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
 				"patcherrelativepath" : "../Projects/QuNexusOrgan/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_comb.gendsp",
-				"bootpath" : "D:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
 				"patcherrelativepath" : "../Projects/QuNexusOrgan/code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "faders-9-thumb.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-NEWEST.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-parse.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "osc-organ-control.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "switch-4io-4endpoints.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-drone.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mix-2-in-1-out.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qunexus-slider-scale.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-B-slider-float.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rotaryFloat127.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "qunexus-freq-led-msg.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "midi-cc-single-tap.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "toggle-stereo-mono.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-B-slider-drawbars.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "QuNexus-B-slider.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rotaryInt127.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scale-128-neg1-1-exp.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
+				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
+				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "osc-organ-send.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
+				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "OSC-route.mxe",
-				"type" : "iLaF"
+				"name" : "osc-theremin-control.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
-				"name" : "mira.frame.mxe",
-				"type" : "iLaF"
-			}
-, 			{
-				"name" : "mira.channel.mxe",
-				"type" : "iLaF"
+				"name" : "mira.frame.mxe64",
+				"type" : "mx64"
 			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"bgcolor" : [ 0.227451, 0.215686, 0.258824, 1.0 ]
 	}
 
 }
