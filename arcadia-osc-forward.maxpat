@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1639.0, 810.0 ],
+		"rect" : [ 40.0, 104.0, 1386.0, 810.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "PupleTemplate",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1050.0, 499.0, 204.0, 31.0 ],
+					"text" : "/unity/rpm 0."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1040.0, 397.0, 202.0, 31.0 ],
+					"text" : "sprintf /unity/rpm %.2f"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-29",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -55,7 +79,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -137.0, 102.0, 799.0, 778.0 ],
+						"rect" : [ 34.0, 76.0, 1639.0, 810.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -85,12 +109,24 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-7",
+									"maxclass" : "newobj",
+									"numinlets" : 5,
+									"numoutlets" : 4,
+									"outlettype" : [ "int", "", "", "int" ],
+									"patching_rect" : [ 843.0, 432.0, 61.0, 22.0 ],
+									"text" : "counter"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-69",
 									"linecount" : 9,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 525.0, 153.0, 157.0, 127.0 ],
+									"patching_rect" : [ 525.0, 153.0, 159.0, 127.0 ],
 									"text" : "other lists of vals were periodically getting mixed in and making the numbers crazy.\n\nwe know this only has len 2\n\nmight be a good reason to switch to OSC"
 								}
 
@@ -115,7 +151,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 232.0, 317.0, 85.0, 22.0 ],
-									"text" : "188 24"
+									"text" : "213 57"
 								}
 
 							}
@@ -164,7 +200,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 258.0, 505.0, 152.0, 22.0 ],
-									"text" : "4454318.5789"
+									"text" : "13563106.5781"
 								}
 
 							}
@@ -176,7 +212,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 573.0, 786.0, 88.0, 22.0 ],
-									"text" : "9.608991"
+									"text" : "11.788958"
 								}
 
 							}
@@ -234,8 +270,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 446.125, 717.0, 45.0, 22.0 ],
-									"text" : "$1 500"
+									"patching_rect" : [ 446.125, 717.0, 52.0, 22.0 ],
+									"text" : "$1 1000"
 								}
 
 							}
@@ -305,8 +341,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 301.5, 596.0, 150.0, 20.0 ],
-									"text" : "X6 white sensors"
+									"patching_rect" : [ 258.0, 596.0, 150.0, 20.0 ],
+									"text" : "X4 white sensors"
 								}
 
 							}
@@ -410,8 +446,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 408.5, 596.0, 42.0, 22.0 ],
-									"text" : "10000"
+									"patching_rect" : [ 408.5, 596.0, 35.0, 22.0 ],
+									"text" : "8500"
 								}
 
 							}
@@ -531,7 +567,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 358.0, 254.0, 50.0, 22.0 ],
-									"text" : "188 24"
+									"text" : "213 57"
 								}
 
 							}
@@ -791,6 +827,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-45", 0 ],
+									"order" : 1,
+									"source" : [ "obj-40", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-7", 0 ],
+									"order" : 0,
 									"source" : [ "obj-40", 0 ]
 								}
 
@@ -916,11 +961,35 @@
 						"styles" : [ 							{
 								"name" : "PupleStyle",
 								"newobj" : 								{
-									"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-									"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-									"fontname" : [ "Fira Code" ],
 									"textjustification" : [ 1 ],
-									"fontsize" : [ 20.0 ]
+									"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Fira Code" ],
+									"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ]
+								}
+,
+								"message" : 								{
+									"textjustification" : [ 1 ],
+									"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
+									"fontsize" : [ 20.0 ],
+									"bgfillcolor" : 									{
+										"type" : "gradient",
+										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"color1" : [ 0.223529, 0.266667, 0.454902, 0.458824 ],
+										"color2" : [ 0.031373, 0.027451, 0.031373, 0.466667 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+,
+									"fontname" : [ "Fira Code" ]
+								}
+,
+								"comment" : 								{
+									"textjustification" : [ 1 ],
+									"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+									"fontsize" : [ 20.0 ],
+									"fontname" : [ "Fira Code" ]
 								}
 ,
 								"slider" : 								{
@@ -942,35 +1011,11 @@
 ,
 								"number" : 								{
 									"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-									"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-									"fontname" : [ "Fira Code" ],
 									"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-									"fontsize" : [ 20.0 ]
-								}
-,
-								"message" : 								{
+									"fontsize" : [ 20.0 ],
 									"fontname" : [ "Fira Code" ],
-									"textjustification" : [ 1 ],
-									"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
-									"bgfillcolor" : 									{
-										"type" : "gradient",
-										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-										"color1" : [ 0.223529, 0.266667, 0.454902, 0.458824 ],
-										"color2" : [ 0.031373, 0.027451, 0.031373, 0.466667 ],
-										"angle" : 270.0,
-										"proportion" : 0.39,
-										"autogradient" : 0
-									}
-,
-									"fontsize" : [ 20.0 ]
-								}
-,
-								"comment" : 								{
-									"fontname" : [ "Fira Code" ],
-									"textjustification" : [ 1 ],
-									"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
-									"fontsize" : [ 20.0 ]
+									"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
 								}
 ,
 								"parentstyle" : "",
@@ -993,6 +1038,7 @@
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 64.0,
 					"format" : 6,
 					"id" : "obj-18",
 					"maxclass" : "flonum",
@@ -1000,7 +1046,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1073.0, 211.0, 156.0, 31.0 ]
+					"patching_rect" : [ 1073.0, 211.0, 332.0, 80.0 ]
 				}
 
 			}
@@ -1012,7 +1058,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 750.0, 266.0, 188.0, 31.0 ],
-					"text" : "7 0"
+					"text" : "1 0"
 				}
 
 			}
@@ -1048,7 +1094,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 577.0, 543.0, 317.0, 31.0 ],
-					"text" : "/organ-pedals/note 7 0"
+					"text" : "/organ-pedals/note 1 0"
 				}
 
 			}
@@ -1126,7 +1172,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 116.0, 137.0, 322.0, 31.0 ],
-					"text" : "/keystation/note 72 0"
+					"text" : "/rpm 0."
 				}
 
 			}
@@ -1184,6 +1230,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-18", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-29", 0 ]
 				}
@@ -1228,6 +1281,22 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 1 ],
+					"order" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
  ],
 		"dependency_cache" : [ 			{
 				"name" : "MegaMuxOrganPedalParser.maxpat",
@@ -1269,11 +1338,35 @@
 		"styles" : [ 			{
 				"name" : "PupleStyle",
 				"newobj" : 				{
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-					"fontname" : [ "Fira Code" ],
 					"textjustification" : [ 1 ],
-					"fontsize" : [ 20.0 ]
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"fontsize" : [ 20.0 ],
+					"fontname" : [ "Fira Code" ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ]
+				}
+,
+				"message" : 				{
+					"textjustification" : [ 1 ],
+					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
+					"fontsize" : [ 20.0 ],
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"color1" : [ 0.223529, 0.266667, 0.454902, 0.458824 ],
+						"color2" : [ 0.031373, 0.027451, 0.031373, 0.466667 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"fontname" : [ "Fira Code" ]
+				}
+,
+				"comment" : 				{
+					"textjustification" : [ 1 ],
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+					"fontsize" : [ 20.0 ],
+					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"slider" : 				{
@@ -1295,35 +1388,11 @@
 ,
 				"number" : 				{
 					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontname" : [ "Fira Code" ],
 					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontsize" : [ 20.0 ]
-				}
-,
-				"message" : 				{
+					"fontsize" : [ 20.0 ],
 					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ],
-					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
-					"bgfillcolor" : 					{
-						"type" : "gradient",
-						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"color1" : [ 0.223529, 0.266667, 0.454902, 0.458824 ],
-						"color2" : [ 0.031373, 0.027451, 0.031373, 0.466667 ],
-						"angle" : 270.0,
-						"proportion" : 0.39,
-						"autogradient" : 0
-					}
-,
-					"fontsize" : [ 20.0 ]
-				}
-,
-				"comment" : 				{
-					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
-					"fontsize" : [ 20.0 ]
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
 				}
 ,
 				"parentstyle" : "",
