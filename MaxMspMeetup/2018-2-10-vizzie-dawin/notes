@@ -1,0 +1,23 @@
+
+poly~ / poly
+
+linedrive
+tapin~ / tapout~
+
+#1 #2 ...attributes
+
+gendy synthesis (xenakis)
+
+
+number~  DO NOT USE IN SIGNAL PATH
+
+analyzer~  (CNMAT)
+
+odot functional programming
+
+
+expr~ ??
+
+
+
+
