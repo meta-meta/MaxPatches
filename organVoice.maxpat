@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 2969.0, 1289.0 ],
+		"rect" : [ 649.0, 256.0, 1832.0, 868.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2045.4185791015625, 420.5, 70.0, 47.0 ],
+					"patching_rect" : [ 1396.4185791015625, 228.5, 70.0, 47.0 ],
 					"text" : "is continuous velocity"
 				}
 
@@ -56,12 +56,12 @@
 					"annotation" : "",
 					"comment" : "per-note pitch bend pair 1-127 1-127",
 					"id" : "obj-121",
-					"index" : 11,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2014.9185791015625, 420.5, 25.0, 25.0 ]
+					"patching_rect" : [ 1365.9185791015625, 228.5, 25.0, 25.0 ]
 				}
 
 			}
@@ -115,7 +115,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-95",
-					"linecount" : 3,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -592,7 +592,7 @@
 					"annotation" : "",
 					"comment" : "per-note pitch bend pair 1-127 1-127",
 					"id" : "obj-46",
-					"index" : 10,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -886,7 +886,7 @@
 					"annotation" : "",
 					"comment" : "decay curve (0 - 1.5)",
 					"id" : "obj-162",
-					"index" : 9,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -914,7 +914,7 @@
 					"annotation" : "",
 					"comment" : "decay time (ms)",
 					"id" : "obj-160",
-					"index" : 8,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -942,7 +942,7 @@
 					"annotation" : "",
 					"comment" : "toggle decay",
 					"id" : "obj-158",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1216,7 +1216,7 @@
 					"annotation" : "note amplitude",
 					"comment" : "pitch bend",
 					"id" : "obj-11",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1371,13 +1371,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-<<<<<<< f56b425ec3b997fd968a2f255fbad49c0ccb6ee5:organVoice.maxpat
-					"patching_rect" : [ 526.199951000000056, 60.199997000000003, 51.0, 22.0 ],
-					"text" : "metro 1"
-=======
 					"patching_rect" : [ 606.5, 45.199996948242188, 56.0, 22.0 ],
 					"text" : "metro 10"
->>>>>>> studio:Projects/QuNexusOrgan/patchers/organVoice.maxpat
 				}
 
 			}
@@ -1497,7 +1492,7 @@
 					"annotation" : "drawbar multiplier",
 					"comment" : "drawbar multiplier",
 					"id" : "obj-7",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1525,7 +1520,7 @@
 					"annotation" : "drawbar index",
 					"comment" : "drawbar index",
 					"id" : "obj-6",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1540,11 +1535,11 @@
 					"comment" : "midi note",
 					"hint" : "",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 22.949998999999998, 61.0, 25.0, 25.0 ]
 				}
 
@@ -1554,11 +1549,11 @@
 					"annotation" : "note amplitude",
 					"comment" : "note amplitude",
 					"id" : "obj-4",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 523.0, 202.0, 25.0, 25.0 ]
 				}
 
@@ -1568,7 +1563,7 @@
 					"annotation" : "freq",
 					"comment" : "freq",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1581,7 +1576,7 @@
 					"annotation" : "oscillator index",
 					"comment" : "oscillator index",
 					"id" : "obj-2",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1594,7 +1589,7 @@
 					"annotation" : "amp",
 					"comment" : "amp",
 					"id" : "obj-1",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1719,7 +1714,7 @@
 					"annotation" : "drawbar value",
 					"comment" : "drawbar value",
 					"id" : "obj-69",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -2536,15 +2531,38 @@
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "PupleStyle",
+				"comment" : 				{
+					"fontsize" : [ 20.0 ],
+					"fontname" : [ "Fira Code" ],
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+					"textjustification" : [ 1 ]
+				}
+,
+				"number" : 				{
+					"fontsize" : [ 20.0 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"fontname" : [ "Fira Code" ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
+				}
+,
+				"newobj" : 				{
+					"fontsize" : [ 20.0 ],
+					"fontname" : [ "Fira Code" ],
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+					"textjustification" : [ 1 ]
+				}
+,
 				"message" : 				{
-<<<<<<< f56b425ec3b997fd968a2f255fbad49c0ccb6ee5:organVoice.maxpat
-					"textjustification" : [ 1 ],
 					"fontsize" : [ 20.0 ],
 					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
-=======
->>>>>>> studio:Projects/QuNexusOrgan/patchers/organVoice.maxpat
+					"fontname" : [ "Fira Code" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2555,66 +2573,24 @@
 						"autogradient" : 0
 					}
 ,
-					"textjustification" : [ 1 ],
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
-					"fontname" : [ "Fira Code" ]
-				}
-,
-				"newobj" : 				{
-					"textjustification" : [ 1 ],
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-					"fontsize" : [ 20.0 ],
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"fontname" : [ "Fira Code" ]
-				}
-,
-				"comment" : 				{
-					"textjustification" : [ 1 ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
-					"fontsize" : [ 20.0 ],
-					"fontname" : [ "Fira Code" ]
-				}
-,
-<<<<<<< f56b425ec3b997fd968a2f255fbad49c0ccb6ee5:organVoice.maxpat
-=======
-				"number" : 				{
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontsize" : [ 20.0 ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontname" : [ "Fira Code" ]
-				}
-,
->>>>>>> studio:Projects/QuNexusOrgan/patchers/organVoice.maxpat
-				"slider" : 				{
-					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ]
-<<<<<<< f56b425ec3b997fd968a2f255fbad49c0ccb6ee5:organVoice.maxpat
-				}
-,
-				"number" : 				{
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontname" : [ "Fira Code" ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
-=======
->>>>>>> studio:Projects/QuNexusOrgan/patchers/organVoice.maxpat
+					"textjustification" : [ 1 ]
 				}
 ,
 				"toggle" : 				{
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ]
+				}
+,
+				"slider" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
+				}
+,
+				"button" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
