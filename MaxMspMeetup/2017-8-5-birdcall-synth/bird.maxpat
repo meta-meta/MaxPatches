@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 1,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 77.0, 806.0, 569.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 161.0, 186.0, 1285.0, 571.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 18.0,
@@ -38,25 +39,12 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-3",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1026.0, 292.0, 100.0, 29.0 ],
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-2",
 					"linecount" : 11,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 799.0, 11.0, 399.0, 234.0 ],
-					"style" : "",
+					"patching_rect" : [ 799.0, 11.0, 399.0, 228.0 ],
 					"text" : "bp1 - Left bronchus pressure (pulse freq)\nbw1 - Left bronchus impedance (pulse width)\nbp2 - Right bronchus pressure (pulse freq)\nbw2 - Right bronchus impedance (pulse width)\nrm - Ring modulation mix\nmod - FM modulation index\nbf - Syrinx base frequency\npw - Syrinx pulse width\ntf1 - First trachea formant\ntf2 - Second trachea formant\namp - Attenuation"
 				}
 
@@ -68,8 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 741.0, 356.0, 169.0, 48.0 ],
-					"style" : "",
+					"patching_rect" : [ 741.0, 356.0, 169.0, 47.0 ],
 					"text" : "trachea resonance (2.0 - 5.0)"
 				}
 
@@ -82,7 +69,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 741.0, 278.0, 85.0, 29.0 ],
-					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -98,8 +84,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 741.0, 311.0, 50.0, 29.0 ],
-					"style" : ""
+					"patching_rect" : [ 741.0, 311.0, 50.0, 29.0 ]
 				}
 
 			}
@@ -110,7 +95,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 674.0, 164.0, 46.0, 27.0 ],
-					"style" : "",
 					"text" : "amp"
 				}
 
@@ -119,13 +103,12 @@
 				"box" : 				{
 					"comment" : "amp (0 - 1)",
 					"id" : "obj-52",
-					"index" : 11,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 674.0, 193.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 674.0, 193.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -136,7 +119,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 610.0, 164.0, 43.0, 27.0 ],
-					"style" : "",
 					"text" : "tf2"
 				}
 
@@ -145,13 +127,12 @@
 				"box" : 				{
 					"comment" : "tf2 (50Hz - 3000Hz)",
 					"id" : "obj-50",
-					"index" : 10,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 610.0, 193.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 610.0, 193.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -162,7 +143,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 547.0, 135.0, 43.0, 27.0 ],
-					"style" : "",
 					"text" : "tf1"
 				}
 
@@ -171,13 +151,12 @@
 				"box" : 				{
 					"comment" : "tf1 (50Hz - 3000Hz)",
 					"id" : "obj-48",
-					"index" : 9,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 547.0, 164.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 547.0, 164.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -188,7 +167,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 483.0, 135.0, 43.0, 27.0 ],
-					"style" : "",
 					"text" : "pw"
 				}
 
@@ -197,13 +175,12 @@
 				"box" : 				{
 					"comment" : "pw (0 - 4)",
 					"id" : "obj-46",
-					"index" : 8,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 483.0, 164.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 483.0, 164.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -214,7 +191,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 419.0, 135.0, 43.0, 27.0 ],
-					"style" : "",
 					"text" : "bf"
 				}
 
@@ -223,13 +199,12 @@
 				"box" : 				{
 					"comment" : "bf (80Hz - 1000Hz)",
 					"id" : "obj-44",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 419.0, 164.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 419.0, 164.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -240,7 +215,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 355.0, 135.0, 46.0, 27.0 ],
-					"style" : "",
 					"text" : "mod"
 				}
 
@@ -249,13 +223,12 @@
 				"box" : 				{
 					"comment" : "mod (0Hz - 200Hz)",
 					"id" : "obj-42",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 355.0, 164.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 355.0, 164.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -266,7 +239,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 291.0, 135.0, 43.0, 27.0 ],
-					"style" : "",
 					"text" : "rm"
 				}
 
@@ -275,13 +247,12 @@
 				"box" : 				{
 					"comment" : "rm (0 - 1)",
 					"id" : "obj-39",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 291.0, 164.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 291.0, 164.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -292,7 +263,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 226.0, 164.0, 43.0, 27.0 ],
-					"style" : "",
 					"text" : "bw2"
 				}
 
@@ -301,13 +271,12 @@
 				"box" : 				{
 					"comment" : "bw2 (1 - 4)",
 					"id" : "obj-37",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 226.0, 193.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 226.0, 193.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -318,7 +287,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 162.0, 164.0, 43.0, 27.0 ],
-					"style" : "",
 					"text" : "bp2"
 				}
 
@@ -327,13 +295,12 @@
 				"box" : 				{
 					"comment" : "bp2 (0Hz - 10Hz)",
 					"id" : "obj-35",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 162.0, 193.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 162.0, 193.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -344,7 +311,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 99.0, 69.0, 43.0, 27.0 ],
-					"style" : "",
 					"text" : "bw1"
 				}
 
@@ -353,13 +319,12 @@
 				"box" : 				{
 					"comment" : "bw1 (1 - 4)",
 					"id" : "obj-33",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 99.0, 98.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 99.0, 98.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -370,7 +335,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 35.0, 69.0, 43.0, 27.0 ],
-					"style" : "",
 					"text" : "bp1"
 				}
 
@@ -379,13 +343,12 @@
 				"box" : 				{
 					"comment" : "bp1 (0Hz - 10Hz)",
 					"id" : "obj-19",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.0, 98.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 35.0, 98.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -393,12 +356,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-13",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 380.75, 496.0, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 380.75, 496.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -412,7 +374,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 377.0, 433.0, 32.5, 29.0 ],
-					"style" : "",
 					"text" : "*~"
 				}
 
@@ -427,7 +388,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 327.5, 351.0, 71.0, 29.0 ],
-					"style" : "",
 					"text" : "trachea"
 				}
 
@@ -442,7 +402,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 184.0, 300.0, 162.0, 29.0 ],
-					"style" : "",
 					"text" : "avian-syrinx-model"
 				}
 
@@ -457,7 +416,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 171.0, 242.0, 58.0, 29.0 ],
-					"style" : "",
 					"text" : "vposc"
 				}
 
@@ -472,7 +430,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 47.399994, 147.0, 58.0, 29.0 ],
-					"style" : "",
 					"text" : "vposc"
 				}
 
@@ -604,7 +561,44 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "vposc.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/MaxMspMeetup/2017-8-5-birdcall-synth",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "avian-syrinx-model.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/MaxMspMeetup/2017-8-5-birdcall-synth",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ringmod.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/MaxMspMeetup/2017-8-5-birdcall-synth",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crossfade.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/MaxMspMeetup/2017-8-5-birdcall-synth",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "trachea.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/MaxMspMeetup/2017-8-5-birdcall-synth",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
