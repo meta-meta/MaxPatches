@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 102.0, 888.0, 570.0 ],
+		"rect" : [ 34.0, 102.0, 893.0, 570.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,18 @@
 		"style" : "PupleStyle",
 		"subpatcher_template" : "PupleTemplate",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 420.0, 378.0, 165.0, 31.0 ],
+					"text" : "scale 1. 11. 1. 60."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "gain 1. - 50.",
 					"id" : "obj-4",
@@ -108,7 +120,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 67.0, 202.0, 150.0, 29.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.0, 12.0, 105.0, 29.0 ],
+					"presentation_rect" : [ 13.0, 63.5, 105.0, 29.0 ],
 					"text" : "overdive"
 				}
 
@@ -139,6 +151,7 @@
 			}
 , 			{
 				"box" : 				{
+					"checkedcolor" : [ 0.698039215686274, 0.533333333333333, 0.333333333333333, 0.77 ],
 					"id" : "obj-38",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -147,26 +160,31 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 100.5, 229.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 30.5, 64.5, 64.5 ]
+					"presentation_rect" : [ 85.5, 49.25, 57.5, 57.5 ],
+					"thickness" : 100.0,
+					"uncheckedcolor" : [ 0.325490196078431, 0.2, 0.2, 0.53 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.415686274509804, 0.650980392156863, 0.650980392156863, 1.0 ],
 					"fontsize" : 40.0,
 					"format" : 6,
+					"htricolor" : [ 0.12156862745098, 0.258823529411765, 0.435294117647059, 0.690196078431373 ],
 					"id" : "obj-28",
 					"maxclass" : "flonum",
-					"maximum" : 50.0,
+					"maximum" : 11.0,
 					"minimum" : 1.0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 351.5, 267.0, 139.0, 53.0 ],
+					"patching_rect" : [ 351.5, 267.0, 147.0, 53.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 72.0, 36.0, 136.0, 53.0 ],
-					"textcolor" : [ 0.12156862745098, 0.258823529411765, 0.435294117647059, 0.69 ]
+					"presentation_rect" : [ 1.0, 1.0, 136.0, 53.0 ],
+					"textcolor" : [ 0.12156862745098, 0.258823529411765, 0.435294117647059, 0.69 ],
+					"tricolor" : [ 0.12156862745098, 0.258823529411765, 0.435294117647059, 0.27 ]
 				}
 
 			}
@@ -199,7 +217,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-20", 1 ],
+					"destination" : [ "obj-5", 0 ],
 					"source" : [ "obj-28", 0 ]
 				}
 
@@ -253,47 +271,51 @@
 				}
 
 			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 1 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
  ],
 		"styles" : [ 			{
 				"name" : "PupleStyle",
-				"comment" : 				{
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
-					"fontsize" : [ 20.0 ],
-					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ]
-				}
-,
-				"slider" : 				{
-					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+				"toggle" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ]
 				}
 ,
 				"number" : 				{
-					"fontsize" : [ 20.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
 					"fontname" : [ "Fira Code" ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"fontsize" : [ 20.0 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"newobj" : 				{
-					"fontsize" : [ 20.0 ],
-					"fontname" : [ "Fira Code" ],
 					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"fontname" : [ "Fira Code" ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
 					"textjustification" : [ 1 ],
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ]
+					"fontsize" : [ 20.0 ]
+				}
+,
+				"slider" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
+				}
+,
+				"button" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
 				}
 ,
 				"message" : 				{
-					"fontsize" : [ 20.0 ],
 					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
 					"fontname" : [ "Fira Code" ],
 					"bgfillcolor" : 					{
@@ -306,12 +328,15 @@
 						"autogradient" : 0
 					}
 ,
-					"textjustification" : [ 1 ]
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ]
 				}
 ,
-				"toggle" : 				{
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+				"comment" : 				{
+					"fontname" : [ "Fira Code" ],
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ]
 				}
 ,
 				"parentstyle" : "",
