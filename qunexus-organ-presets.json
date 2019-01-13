@@ -1,0 +1,44 @@
+{
+	"pattrstorage" : 	{
+		"name" : "presets",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"decay1" : [ 987 ],
+					"decay2" : [ 0 ],
+					"decay3" : [ 0 ],
+					"decay4" : [ 0 ],
+					"decay5" : [ 0 ],
+					"decay6" : [ 1630 ],
+					"decay7" : [ 1212 ],
+					"decay8" : [ 125 ],
+					"decay9" : [ 458 ],
+					"drawbar1" : [ 55 ],
+					"drawbar2" : [ 0 ],
+					"drawbar3" : [ 31 ],
+					"drawbar4" : [ 11 ],
+					"drawbar5" : [ 8 ],
+					"drawbar6" : [ 15 ],
+					"drawbar7" : [ 12 ],
+					"drawbar8" : [ 13 ],
+					"drawbar9" : [ 6 ],
+					"freq1" : [ 0.0 ],
+					"freq2" : [ 1.0 ],
+					"freq3" : [ 1.5 ],
+					"freq4" : [ 2.0 ],
+					"freq5" : [ 3.0 ],
+					"freq6" : [ 4.0 ],
+					"freq7" : [ 5.0 ],
+					"freq8" : [ 6.0 ],
+					"freq9" : [ 8.0 ],
+					"pitchshift" : [ 1000.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
