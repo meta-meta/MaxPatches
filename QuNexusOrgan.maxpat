@@ -39,6 +39,114 @@
 		"subpatcher_template" : "PupleTemplate",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-109",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2087.333251953125, -103.092781066894531, 184.0, 31.0 ],
+					"text" : "scale 0 128 -0.2 0.2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-106",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 75.0, 299.0, 150.0, 96.0 ],
+					"text" : "TODO: increase higher drawbars when bite"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ -64.0, 237.0, 50.0, 31.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ -5.0, 287.0, 50.0, 31.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-95",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -263.0, 180.0, 111.0, 31.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-94",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ -290.5, 250.0, 51.0, 51.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-91",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -282.5, 367.0, 47.0, 31.0 ],
+					"text" : "gate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-90",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"patching_rect" : [ -64.0, 350.0, 73.0, 31.0 ],
+					"text" : "unpack"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ -163.0, 280.0, 116.0, 31.0 ],
+					"text" : "EWI-newest"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-76",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -570,7 +678,7 @@
 				"box" : 				{
 					"fontsize" : 13.0,
 					"id" : "obj-11",
-					"items" : [ "Microsoft GS Wavetable Synth", ",", "QuNexus", ",", "MIDIOUT2 (QuNexus)", ",", "MIDIOUT3 (QuNexus)" ],
+					"items" : [ "Microsoft GS Wavetable Synth", ",", "EWI-USB" ],
 					"labelclick" : 1,
 					"maxclass" : "umenu",
 					"numinlets" : 1,
@@ -1278,7 +1386,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 12,
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "float" ],
-					"patching_rect" : [ -218.0, -988.125, 184.0, 31.0 ],
+					"patching_rect" : [ -250.0, -911.125, 184.0, 31.0 ],
 					"text" : "QuNexus-NEWEST"
 				}
 
@@ -1533,6 +1641,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-47", 0 ],
+					"source" : [ "obj-109", 0 ]
 				}
 
 			}
@@ -1835,6 +1950,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"source" : [ "obj-29", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"order" : 1,
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-109", 0 ],
+					"order" : 0,
+					"source" : [ "obj-29", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"order" : 2,
 					"source" : [ "obj-3", 0 ]
@@ -1965,13 +2110,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
 					"midpoints" : [ -267.629638671875, -450.94586181640625, 2186.5, -450.94586181640625 ],
 					"source" : [ "obj-38", 3 ]
@@ -2014,6 +2152,13 @@
 					"destination" : [ "obj-68", 1 ],
 					"order" : 1,
 					"source" : [ "obj-38", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 1 ],
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -2515,8 +2660,43 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"source" : [ "obj-90", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-90", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-91", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-92", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-91", 0 ],
+					"source" : [ "obj-94", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-94", 0 ],
+					"source" : [ "obj-95", 0 ]
 				}
 
 			}
@@ -2552,21 +2732,21 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-35::obj-29" : [ "number[4]", "number", 0 ],
-			"obj-35::obj-28" : [ "number[23]", "number", 0 ],
-			"obj-49::obj-52" : [ "Level[1]", "Level", 0 ],
 			"obj-49::obj-7" : [ "AutoName[1]", "AutoName", 0 ],
-			"obj-49::obj-77" : [ "getsamplelength[1]", "getsamplelength", 0 ],
-			"obj-49::obj-76" : [ "Record[1]", "Record", 0 ],
-			"obj-35::obj-27" : [ "number[24]", "number", 0 ],
-			"obj-35::obj-26" : [ "number[21]", "number", 0 ],
-			"obj-35::obj-30" : [ "number[3]", "number", 0 ],
-			"obj-49::obj-73" : [ "Format[1]", "Format", 0 ],
 			"obj-35::obj-6" : [ "number[20]", "number", 0 ],
+			"obj-35::obj-26" : [ "number[21]", "number", 0 ],
+			"obj-35::obj-29" : [ "number[4]", "number", 0 ],
 			"obj-49::obj-74" : [ "Channels[1]", "Channels", 0 ],
-			"obj-35::obj-25" : [ "number[22]", "number", 0 ],
+			"obj-35::obj-30" : [ "number[3]", "number", 0 ],
 			"obj-35::obj-18" : [ "number[2]", "number", 0 ],
 			"obj-35::obj-4" : [ "number[1]", "number", 0 ],
+			"obj-49::obj-76" : [ "Record[1]", "Record", 0 ],
+			"obj-35::obj-25" : [ "number[22]", "number", 0 ],
+			"obj-35::obj-28" : [ "number[23]", "number", 0 ],
+			"obj-35::obj-27" : [ "number[24]", "number", 0 ],
+			"obj-49::obj-52" : [ "Level[1]", "Level", 0 ],
+			"obj-49::obj-77" : [ "getsamplelength[1]", "getsamplelength", 0 ],
+			"obj-49::obj-73" : [ "Format[1]", "Format", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2763,6 +2943,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "EWI-newest.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "OSC-route.mxe64",
 				"type" : "mx64"
 			}
@@ -2801,15 +2988,15 @@
 , 			{
 				"name" : "PMC",
 				"default" : 				{
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontname" : [ "Fira Code" ],
 					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
 					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
-					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
 					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+					"fontsize" : [ 20.0 ],
 					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
-					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ]
+					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2818,32 +3005,30 @@
 , 			{
 				"name" : "PupleStyle",
 				"comment" : 				{
-					"fontsize" : [ 20.0 ],
 					"fontname" : [ "Fira Code" ],
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
 					"textjustification" : [ 1 ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ]
+					"fontsize" : [ 20.0 ]
 				}
 ,
 				"number" : 				{
-					"fontsize" : [ 20.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
 					"fontname" : [ "Fira Code" ],
 					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ]
+					"fontsize" : [ 20.0 ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ]
 				}
 ,
 				"newobj" : 				{
-					"fontsize" : [ 20.0 ],
 					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ],
 					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ],
 					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
 				}
 ,
 				"message" : 				{
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
 					"fontname" : [ "Fira Code" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -2855,7 +3040,9 @@
 						"autogradient" : 0
 					}
 ,
-					"textjustification" : [ 1 ]
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ],
+					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ]
 				}
 ,
 				"toggle" : 				{
@@ -2881,32 +3068,30 @@
 , 			{
 				"name" : "PupleStyle-1",
 				"comment" : 				{
-					"fontsize" : [ 20.0 ],
 					"fontname" : [ "Fira Code" ],
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
 					"textjustification" : [ 1 ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ]
+					"fontsize" : [ 20.0 ]
 				}
 ,
 				"number" : 				{
-					"fontsize" : [ 20.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
 					"fontname" : [ "Fira Code" ],
 					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ]
+					"fontsize" : [ 20.0 ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ]
 				}
 ,
 				"newobj" : 				{
-					"fontsize" : [ 20.0 ],
 					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ],
 					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ],
 					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
 				}
 ,
 				"message" : 				{
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
 					"fontname" : [ "Fira Code" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -2918,19 +3103,21 @@
 						"autogradient" : 0
 					}
 ,
-					"textjustification" : [ 1 ]
+					"textjustification" : [ 1 ],
+					"fontsize" : [ 20.0 ],
+					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ]
 				}
 ,
 				"default" : 				{
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"fontname" : [ "Fira Code" ],
 					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
 					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
-					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
 					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+					"fontsize" : [ 20.0 ],
 					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
-					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ]
+					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"toggle" : 				{
