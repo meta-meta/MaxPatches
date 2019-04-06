@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 434.0, 244.0, 1176.0, 792.0 ],
+		"rect" : [ 1289.0, -1219.0, 1173.0, 790.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 262.0, 108.0, 30.0, 30.0 ]
+					"patching_rect" : [ 286.0, 98.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -68,8 +68,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 31.0, 37.0, 250.0, 31.0 ],
-					"text" : "midi-in-selector ewi"
+					"patching_rect" : [ 31.0, 37.0, 261.0, 31.0 ],
+					"text" : "midi-in-selector \"akai apc40\""
 				}
 
 			}

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 422.0, 205.0, 1178.0, 471.0 ],
+		"rect" : [ 422.0, 204.0, 1179.0, 472.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "PupleTemplate",
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "",
+					"id" : "obj-4",
+					"index" : 2,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 162.0, 403.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-17",
 					"linecount" : 5,
 					"maxclass" : "comment",
@@ -56,7 +68,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 290.0, 238.0, 150.0, 163.0 ],
+					"patching_rect" : [ 290.0, 238.0, 152.0, 163.0 ],
 					"text" : "select-midi only outputs if there's a match.\n\ndon't open the gate if there's no match"
 				}
 
@@ -138,8 +150,8 @@
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 75.0, 175.0, 286.0, 31.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "select-midi.js",
@@ -185,6 +197,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
+					"order" : 2,
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
 					"order" : 1,
 					"source" : [ "obj-10", 0 ]
 				}
@@ -243,32 +263,45 @@
  ],
 		"styles" : [ 			{
 				"name" : "PupleStyle",
-				"comment" : 				{
-					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ],
-					"fontsize" : [ 20.0 ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ]
+				"button" : 				{
+					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ]
+				}
+,
+				"slider" : 				{
+					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
 				}
 ,
 				"number" : 				{
-					"fontname" : [ "Fira Code" ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontsize" : [ 20.0 ],
 					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"fontsize" : [ 20.0 ],
 					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ]
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"fontname" : [ "Fira Code" ]
+				}
+,
+				"comment" : 				{
+					"textjustification" : [ 1 ],
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+					"fontsize" : [ 20.0 ],
+					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"newobj" : 				{
-					"fontname" : [ "Fira Code" ],
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
 					"textjustification" : [ 1 ],
 					"fontsize" : [ 20.0 ],
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"message" : 				{
-					"fontname" : [ "Fira Code" ],
+					"textjustification" : [ 1 ],
+					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -279,26 +312,13 @@
 						"autogradient" : 0
 					}
 ,
-					"textjustification" : [ 1 ],
 					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ]
+					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"toggle" : 				{
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
-				}
-,
-				"slider" : 				{
-					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
-				}
-,
-				"button" : 				{
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
