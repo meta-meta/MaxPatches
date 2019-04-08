@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1639.0, 810.0 ],
+		"rect" : [ 511.0, 97.0, 2366.0, 1225.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -51,14 +51,14 @@
 					"patching_rect" : [ 2627.0, 983.0, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[9]",
-							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[9]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -94,19 +94,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-77",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 2391.0, 1116.0, 94.0, 22.0 ],
-					"text" : "QuNexusOrgan",
-					"varname" : "QuNexusOrgan"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"channels" : 1,
 					"id" : "obj-83",
 					"lastchannelcount" : 0,
@@ -119,14 +106,14 @@
 					"patching_rect" : [ 935.5, 1440.0, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[7]",
-							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[7]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -150,14 +137,14 @@
 					"patching_rect" : [ 776.5, 1440.0, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[8]",
-							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[8]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -169,47 +156,12 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-75",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 9,
-					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "" ],
-					"patching_rect" : [ 1251.5, 1192.0, 46.0, 22.0 ],
-					"text" : "Drums",
-					"varname" : "Drums"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-74",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1631.5, 1204.0, 150.0, 20.0 ],
 					"text" : "TODO: 6 channels"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-8",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "Oculus-SpaceNavigator-4.maxpat",
-					"numinlets" : 5,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 2234.0, 1262.0, 408.0, 94.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 873.0, 613.5, 408.0, 94.0 ],
-					"viewvisibility" : 1
 				}
 
 			}
@@ -281,17 +233,17 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 685.0, 1228.5, 136.0, 30.0 ],
+					"patching_rect" : [ 729.375, 1237.0, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[5]",
-							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[5]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -952,14 +904,14 @@
 					"patching_rect" : [ 2143.0, 994.5, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[4]",
-							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[4]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -1019,14 +971,14 @@
 					"patching_rect" : [ 1987.0, 998.5, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[3]",
-							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[3]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -1086,14 +1038,14 @@
 					"patching_rect" : [ 1831.0, 1002.5, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[2]",
-							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[2]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -1153,14 +1105,14 @@
 					"patching_rect" : [ 1675.0, 1006.5, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[1]",
-							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ 0 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[1]",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -1315,17 +1267,17 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1257.0, 1334.0, 136.0, 30.0 ],
+					"patching_rect" : [ 1348.0, 1334.0, 136.0, 30.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_initial_enable" : 1,
 							"parameter_mmax" : 6.0,
 							"parameter_initial" : [ -40 ],
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~",
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -1550,14 +1502,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-124", 1 ],
 					"source" : [ "obj-123", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 1 ],
-					"order" : 2,
-					"source" : [ "obj-124", 0 ]
 				}
 
 			}
@@ -1792,15 +1736,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
-					"source" : [ "obj-30", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 2 ],
-					"order" : 1,
 					"source" : [ "obj-30", 0 ]
 				}
 
@@ -1809,14 +1744,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-31", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"order" : 3,
-					"source" : [ "obj-32", 0 ]
 				}
 
 			}
@@ -2175,15 +2102,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
-					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 2 ],
-					"order" : 1,
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -2212,15 +2130,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 2 ],
-					"order" : 1,
 					"source" : [ "obj-46", 0 ]
 				}
 
@@ -2256,15 +2165,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
-					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 2 ],
-					"order" : 1,
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -2693,31 +2593,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"order" : 1,
-					"source" : [ "obj-75", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-82", 0 ],
-					"order" : 0,
-					"source" : [ "obj-75", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-54", 2 ],
 					"source" : [ "obj-76", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-8", 3 ],
-					"source" : [ "obj-77", 0 ]
 				}
 
 			}
@@ -2799,30 +2676,15 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-77::obj-67::obj-101" : [ "Dry", "Dry", 0 ],
-			"obj-77::obj-49::obj-74" : [ "Channels", "Channels", 0 ],
-			"obj-85" : [ "live.gain~[8]", "live.gain~", 0 ],
-			"obj-46" : [ "live.gain~[3]", "live.gain~", 0 ],
-			"obj-77::obj-49::obj-7" : [ "AutoName", "AutoName", 0 ],
-			"obj-77::obj-49::obj-73" : [ "Format", "Format", 0 ],
-			"obj-77::obj-67::obj-31" : [ "Feedback1", "FB1", 0 ],
 			"obj-80" : [ "live.gain~[9]", "live.gain~", 0 ],
-			"obj-8::obj-8" : [ "vst~[4]", "vst~[2]", 0 ],
 			"obj-30" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-8::obj-9" : [ "vst~[6]", "vst~[2]", 0 ],
-			"obj-83" : [ "live.gain~[7]", "live.gain~", 0 ],
-			"obj-77::obj-49::obj-76" : [ "Record", "Record", 0 ],
 			"obj-50" : [ "live.gain~[4]", "live.gain~", 0 ],
-			"obj-77::obj-49::obj-52" : [ "Level", "Level", 0 ],
-			"obj-8::obj-10" : [ "vst~[7]", "vst~[2]", 0 ],
-			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
-			"obj-77::obj-67::obj-26" : [ "bypass[3]", "bypass", 0 ],
-			"obj-77::obj-49::obj-77" : [ "getsamplelength", "getsamplelength", 0 ],
-			"obj-77::obj-67::obj-33" : [ "Damp[1]", "Damp", 0 ],
-			"obj-77::obj-67::obj-32" : [ "Feedback2", "FB2", 0 ],
+			"obj-85" : [ "live.gain~[8]", "live.gain~", 0 ],
 			"obj-42" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"obj-6" : [ "live.gain~[5]", "live.gain~", 0 ],
-			"obj-8::obj-5" : [ "vst~[3]", "vst~[2]", 0 ],
+			"obj-3" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-83" : [ "live.gain~[7]", "live.gain~", 0 ],
+			"obj-46" : [ "live.gain~[3]", "live.gain~", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -2837,10 +2699,24 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "MidiController.maxpat",
+				"name" : "midi-in-keystation.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "midi-in-selector.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "select-midi.js",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : "..",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -2880,29 +2756,29 @@
 			}
 , 			{
 				"name" : "organ.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organ-routing.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organVoice.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "organ-oscbank.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3010,352 +2886,6 @@
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
 				"implicit" : 1
-			}
-, 			{
-				"name" : "Oculus-SpaceNavigator-4.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer_20170727_2.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"patcherrelativepath" : "../../../Users/paulm/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"patcherrelativepath" : "../../../Users/paulm/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer_20170727.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"patcherrelativepath" : "../../../Users/paulm/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusSpatializer_20170727_1.maxsnap",
-				"bootpath" : "~/Documents/Max 7/Snapshots",
-				"patcherrelativepath" : "../../../Users/paulm/Documents/Max 7/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "SpaceNavigator.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "diff.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OculusPosition.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "accum-reset.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "switch-8io-4endpoints.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "../functions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Drums.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "snare.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reson-presentation.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mira-io.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "kick.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hi-tom.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "lo-tom.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "hihat-biquad.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNexus-Harmonizer-voice.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "gizmo_loadme.maxpat",
-				"bootpath" : "C74:/help/msp",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "transratio.maxpat",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/max-tricks/notes-and-pitch/pitch-to-freq-ratio",
-				"patcherrelativepath" : "../../../Users/paulm/AppData/Roaming/Cycling '74/Max 8/examples/max-tricks/notes-and-pitch/pitch-to-freq-ratio",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ride-biquad.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "crash-biquad.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "detect-onset.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/DrumsContactMics",
-				"patcherrelativepath" : "../DrumsContactMics",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNexusOrgan.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.Recordr.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "freeverb-mod.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "freeverb.gendsp",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "freeverb_allpass.gendsp",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "freeverb_comb.gendsp",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/code",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/code",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "faders-9-thumb.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNexus-NEWEST.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNexus-parse.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "osc-organ-control.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "switch-4io-4endpoints.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNexus-drone.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mix-2-in-1-out.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qunexus-slider-scale.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNexus-B-slider-float.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rotaryFloat127.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "qunexus-freq-led-msg.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "midi-cc-single-tap.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "toggle-stereo-mono.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNexus-B-slider-drawbars.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "QuNexus-B-slider.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "rotaryInt127.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "scale-128-neg1-1-exp.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/Projects/QuNexusOrgan/patchers",
-				"patcherrelativepath" : "../Projects/QuNexusOrgan/patchers",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "osc-organ-send.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "osc-theremin-control.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "mira.frame.mxe64",
-				"type" : "mx64"
 			}
  ],
 		"autosave" : 0,
