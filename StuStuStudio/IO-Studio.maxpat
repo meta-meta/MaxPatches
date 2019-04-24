@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 3372.0, 1289.0 ],
+		"rect" : [ 42.0, 85.0, 3372.0, 1289.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 20.0,
@@ -38,6 +38,53 @@
 		"style" : "PupleStyle",
 		"subpatcher_template" : "PurpleTemplate2018",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-49",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2591.0, 1178.0, 161.0, 29.0 ],
+					"presentation_linecount" : 2,
+					"text" : "To MRT-3B"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 2591.0, 1040.0, 167.0, 31.0 ],
+					"text" : "midi-in-padkontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2553.0, 1211.0, 180.0, 31.0 ],
+					"text" : "midi-out-padkontrol"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 3052.0, 970.0, 150.0, 96.0 ],
+					"text" : "TODO: filter CC and explicitly send CC to TG100"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontsize" : 10.0,
 					"id" : "obj-51",
@@ -68,7 +115,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2499.0, 860.0, 234.0, 31.0 ],
-					"presentation_linecount" : 2,
 					"text" : "/bcr-2000/buttons 51 0"
 				}
 
@@ -247,7 +293,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2051.0, 1024.0, 50.0, 31.0 ],
-					"text" : "65 0"
+					"text" : "45 0"
 				}
 
 			}
@@ -848,7 +894,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
+					"destination" : [ "obj-32", 0 ],
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -894,6 +940,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-27", 3 ],
 					"source" : [ "obj-35", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-32", 0 ],
+					"source" : [ "obj-38", 0 ]
 				}
 
 			}
@@ -1025,8 +1078,8 @@
 			"obj-21::obj-117" : [ "ch1_level[20]", "1", 0 ],
 			"obj-8::obj-104" : [ "ch1_level[44]", "1", 0 ],
 			"obj-21::obj-47" : [ "ch1_level[33]", "1", 0 ],
-			"obj-13::obj-28" : [ "ch1_mute[4]", "Mute", 0 ],
 			"obj-13::obj-103" : [ "ch1_mute[8]", "Mute", 0 ],
+			"obj-13::obj-28" : [ "ch1_mute[4]", "Mute", 0 ],
 			"obj-21::obj-22" : [ "ch1_pan[11]", "Pan", 0 ],
 			"obj-8::obj-72" : [ "ch1_level[40]", "1", 0 ],
 			"obj-13::obj-56" : [ "ch1_pan[4]", "Pan", 0 ],
@@ -1067,8 +1120,8 @@
 			"obj-8::obj-60" : [ "ch1_level[43]", "1", 0 ],
 			"obj-21::obj-92" : [ "ch1_level[35]", "1", 0 ],
 			"obj-21::obj-37" : [ "Mute[1]", "Mute", 0 ],
-			"obj-8::obj-37" : [ "Mute[8]", "Mute", 0 ],
 			"obj-8::obj-22" : [ "ch1_pan[24]", "Pan", 0 ],
+			"obj-8::obj-37" : [ "Mute[8]", "Mute", 0 ],
 			"obj-21::obj-38" : [ "ch1_pan[18]", "Pan", 0 ],
 			"obj-13::obj-85" : [ "ch1_level[12]", "1", 0 ],
 			"obj-21::obj-66" : [ "ch1_mute[11]", "Mute", 0 ],
@@ -1093,8 +1146,8 @@
 			"obj-8::obj-92" : [ "ch1_level[42]", "1", 0 ],
 			"obj-13::obj-23" : [ "ch1_level[28]", "1", 0 ],
 			"obj-21::obj-16" : [ "ch1_level[30]", "1", 0 ],
-			"obj-13::obj-81" : [ "ch1_pan[6]", "Pan", 0 ],
 			"obj-13::obj-35" : [ "ch1_mute[3]", "Mute", 0 ],
+			"obj-13::obj-81" : [ "ch1_pan[6]", "Pan", 0 ],
 			"obj-8::obj-97" : [ "ch1_level[49]", "1", 0 ],
 			"obj-13::obj-37" : [ "Mute[5]", "Mute", 0 ],
 			"obj-21::obj-35" : [ "ch1_mute[14]", "Mute", 0 ],
@@ -1541,6 +1594,20 @@
 			}
 , 			{
 				"name" : "midi-out-bcr2000.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "midi-out-padkontrol.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "midi-in-padkontrol.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
 				"type" : "JSON",
