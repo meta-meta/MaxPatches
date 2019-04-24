@@ -39,37 +39,53 @@
 		"subpatcher_template" : "PupleTemplate",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
+					"comment" : "",
+					"id" : "obj-3",
+					"index" : 0,
+					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 153.0, 328.0, 31.0 ],
-					"text" : "midi-out-selector \"keystation pro 88\""
+					"patching_rect" : [ 31.0, 83.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-1",
-					"index" : 1,
-					"maxclass" : "inlet",
+					"id" : "obj-2",
+					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 83.0, 90.0, 30.0, 30.0 ]
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 31.0, 37.0, 383.0, 31.0 ],
+					"text" : "midi-in-selector \"keystation 61 mk3\" midiin"
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-1", 0 ]
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "midi-in-selector.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "select-midi.js",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "PupleStyle",
 				"button" : 				{

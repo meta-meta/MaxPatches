@@ -43,8 +43,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 153.0, 328.0, 31.0 ],
-					"text" : "midi-out-selector \"keystation pro 88\""
+					"patching_rect" : [ 83.0, 153.0, 358.0, 31.0 ],
+					"text" : "midi-out-selector keystation"
 				}
 
 			}

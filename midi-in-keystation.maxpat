@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 0,
+			"revision" : 3,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 1391.0, 536.0, 1176.0, 792.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -40,12 +41,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 83.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 31.0, 83.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -54,11 +54,10 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 31.0, 37.0, 418.0, 32.0 ],
-					"style" : "",
-					"text" : "midi-in-selector keystation midiin"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 31.0, 37.0, 374.0, 31.0 ],
+					"text" : "midi-in-selector \"keystation pro 88\" midiin"
 				}
 
 			}
@@ -71,45 +70,37 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "midi-in-selector.maxpat",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "select-midi.js",
-				"bootpath" : "D:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "PupleStyle",
 				"comment" : 				{
 					"fontsize" : [ 20.0 ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
 					"textjustification" : [ 1 ],
-					"fontname" : [ "Fira Code" ]
+					"fontname" : [ "Fira Code" ],
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ]
 				}
 ,
 				"number" : 				{
 					"fontsize" : [ 20.0 ],
 					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"fontname" : [ "Fira Code" ],
 					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontname" : [ "Fira Code" ]
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ]
+				}
+,
+				"newobj" : 				{
+					"fontsize" : [ 20.0 ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+					"textjustification" : [ 1 ],
+					"fontname" : [ "Fira Code" ],
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
 				}
 ,
 				"message" : 				{
 					"fontsize" : [ 20.0 ],
 					"textjustification" : [ 1 ],
-					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
 					"fontname" : [ "Fira Code" ],
+					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -120,14 +111,6 @@
 						"autogradient" : 0
 					}
 
-				}
-,
-				"newobj" : 				{
-					"fontsize" : [ 20.0 ],
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"textjustification" : [ 1 ],
-					"fontname" : [ "Fira Code" ]
 				}
 ,
 				"button" : 				{
@@ -151,13 +134,7 @@
 				"multi" : 1
 			}
  ],
-		"patchlinecolor" : [ 0.1, 0.41, 0.41, 0.898039 ],
-		"bgfillcolor_type" : "gradient",
-		"bgfillcolor_color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
-		"bgfillcolor_color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-		"bgfillcolor_angle" : 270.0,
-		"bgfillcolor_proportion" : 0.39
+		"patchlinecolor" : [ 0.1, 0.41, 0.41, 0.898039 ]
 	}
 
 }
