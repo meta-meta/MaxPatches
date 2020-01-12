@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 3372.0, 1289.0 ],
+		"rect" : [ 26.0, 85.0, 3372.0, 1289.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,30 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-52",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2581.0, 1331.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-51",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2528.0, 1331.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-166",
 					"maxclass" : "gain~",
@@ -530,8 +554,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 0,
-							"revision" : 3,
+							"minor" : 1,
+							"revision" : 0,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -792,7 +816,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1017.0, 647.042724609375, 150.0, 47.0 ],
+					"patching_rect" : [ 1017.0, 647.042724609375, 150.0, 48.0 ],
 					"text" : "TODO: should toggle output 1 when receiving 127?"
 				}
 
@@ -1033,7 +1057,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1666.5301513671875, 886.0145263671875, 60.0, 87.0 ],
+					"patching_rect" : [ 1666.5301513671875, 886.0145263671875, 60.0, 89.0 ],
 					"text" : "clear prev position, then display playhead"
 				}
 
@@ -1175,17 +1199,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-278",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2568.5, 1178.0145263671875, 35.0, 22.0 ],
-					"text" : "dac~"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-60",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1224,7 +1237,7 @@
 					"numoutlets" : 4,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "", "" ],
-					"patching_rect" : [ 2600.5, 1018.0145263671875, 165.0, 35.0 ],
+					"patching_rect" : [ 2600.5, 1018.0145263671875, 165.0, 36.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -1729,7 +1742,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1754.0301513671875, 590.12799072265625, 58.0, 26.0 ]
+					"patching_rect" : [ 1754.0301513671875, 590.12799072265625, 58.0, 27.0 ]
 				}
 
 			}
@@ -1826,7 +1839,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 606.9608154296875, 1162.57861328125, 89.0, 42.0 ]
+					"patching_rect" : [ 606.9608154296875, 1162.57861328125, 89.0, 43.0 ]
 				}
 
 			}
@@ -1995,7 +2008,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 396.9608154296875, 841.57867431640625, 89.0, 42.0 ]
+					"patching_rect" : [ 396.9608154296875, 841.57867431640625, 89.0, 43.0 ]
 				}
 
 			}
@@ -2042,7 +2055,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2622.0, 46.775222778320313, 150.0, 47.0 ],
+					"patching_rect" : [ 2622.0, 46.775222778320313, 150.0, 48.0 ],
 					"text" : "TODO: digit display with matrixctrl output to leds\n"
 				}
 
@@ -3841,7 +3854,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 124.746551513671875, 1205.7935791015625, 343.292694091796875, 33.0 ],
+					"patching_rect" : [ 124.746551513671875, 1205.7935791015625, 343.292694091796875, 34.0 ],
 					"text" : "https://cycling74.com/forums/akai-apc40-max-midi-from-scratch"
 				}
 
@@ -3882,7 +3895,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 186.720428466796875, 1311.50732421875, 150.0, 47.0 ],
+					"patching_rect" : [ 186.720428466796875, 1311.50732421875, 150.0, 48.0 ],
 					"text" : "64 Generic Mode\n65 Live Mode 1\n66 Alternate Live Mode 2"
 				}
 
@@ -3898,7 +3911,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.220428466796875, 1389.50732421875, 150.0, 37.0 ],
+					"patching_rect" : [ 287.220428466796875, 1389.50732421875, 150.0, 38.0 ],
 					"text" : "Put the APC40 in Live alternate mode 2"
 				}
 
@@ -4540,14 +4553,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-278", 0 ],
+					"destination" : [ "obj-51", 0 ],
 					"source" : [ "obj-165", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-278", 1 ],
+					"destination" : [ "obj-52", 0 ],
 					"source" : [ "obj-166", 0 ]
 				}
 
@@ -6492,6 +6505,12 @@
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Users/paulm/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Analogue Drums.amxd",
+				"bootpath" : "C74:/packages/Max for Live/patchers/Max Instrument/Analogue Drums",
+				"type" : "amxd",
 				"implicit" : 1
 			}
  ],
