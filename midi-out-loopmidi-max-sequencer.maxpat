@@ -43,8 +43,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 83.0, 153.0, 344.0, 33.0 ],
-					"text" : "midi-out-selector \"loopMIDI Port\""
+					"patching_rect" : [ 83.0, 153.0, 458.0, 33.0 ],
+					"text" : "midi-out-selector \"loopMIDI Max Sequencer\""
 				}
 
 			}
@@ -56,7 +56,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 83.0, 90.0, 30.0, 30.0 ]
 				}
 

@@ -45,19 +45,28 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 950.0, 1091.0, 24.0, 24.0 ]
+					"patching_rect" : [ 916.82232666015625, 1176.0, 24.0, 24.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"args" : [ 8, 4 ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
 					"id" : "obj-75",
-					"maxclass" : "newobj",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "midi-beat-clock.maxpat",
 					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 938.8466796875, 1049.57861328125, 89.0, 22.0 ],
-					"text" : "midi-beat-clock"
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 888.316650390625, 915.00726318359375, 194.0, 197.0 ],
+					"viewvisibility" : 1
 				}
 
 			}
@@ -1802,7 +1811,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1655.0301513671875, 677.042724609375, 50.0, 22.0 ]
+					"patching_rect" : [ 1602.0, 701.067138671875, 50.0, 22.0 ]
 				}
 
 			}
