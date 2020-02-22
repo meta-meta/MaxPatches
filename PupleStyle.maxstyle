@@ -30,7 +30,7 @@
 		"fontsize" : [ 20.0 ],
 		"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
 		"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-		"fontname" : [ "Fira Code" ],
+		"fontname" : [ "JetBrains Mono" ],
 		"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
 		"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 	}
