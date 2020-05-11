@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 1,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -68,7 +68,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 826.5, 179.5, 150.0, 128.0 ],
+					"patching_rect" : [ 826.5, 179.5, 168.0, 130.0 ],
 					"text" : "https://cycling74.com/forums/sync-transport-to-external-clock"
 				}
 
@@ -92,7 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 691.0, 450.0, 55.0, 33.0 ],
+					"patching_rect" : [ 691.0, 450.0, 70.0, 33.0 ],
 					"text" : "t b b"
 				}
 
@@ -104,7 +104,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 741.0, 562.0, 55.0, 33.0 ],
+					"patching_rect" : [ 741.0, 562.0, 58.0, 33.0 ],
 					"text" : "pack"
 				}
 
@@ -116,7 +116,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 740.0, 621.0, 147.0, 33.0 ],
+					"patching_rect" : [ 740.0, 621.0, 168.0, 33.0 ],
 					"text" : "timesig $1 $2"
 				}
 
@@ -265,7 +265,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 531.0, 621.0, 139.0, 33.0 ],
+					"patching_rect" : [ 531.0, 621.0, 144.0, 33.0 ],
 					"text" : "loadmess #2"
 				}
 
@@ -303,10 +303,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 47.0, 150.0, 55.0 ],
+					"patching_rect" : [ 135.0, 47.0, 150.0, 56.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 88.0, 20.0, 150.0, 55.0 ],
+					"presentation_rect" : [ 88.0, 20.0, 150.0, 56.0 ],
 					"text" : "Time Signature",
 					"textjustification" : 0
 				}
@@ -365,7 +365,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 221.0, 677.0, 81.0, 33.0 ],
+					"patching_rect" : [ 221.0, 677.0, 82.0, 33.0 ],
 					"text" : "change"
 				}
 
@@ -377,7 +377,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 542.0, 715.0, 197.0, 33.0 ],
+					"patching_rect" : [ 542.0, 715.0, 242.0, 33.0 ],
 					"text" : "expr (16 * 6) / $i1"
 				}
 
@@ -401,7 +401,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 367.0, 715.0, 140.0, 33.0 ],
+					"patching_rect" : [ 367.0, 715.0, 168.0, 33.0 ],
 					"text" : "expr 16 / $i1"
 				}
 
@@ -413,7 +413,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 558.0, 585.0, 146.0, 33.0 ],
+					"patching_rect" : [ 558.0, 585.0, 156.0, 33.0 ],
 					"text" : "loadmess  #1"
 				}
 
@@ -440,7 +440,7 @@
 				"box" : 				{
 					"id" : "obj-21",
 					"maxclass" : "number",
-					"maximum" : 16,
+					"maximum" : 64,
 					"minimum" : 1,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -531,7 +531,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 367.0, 276.0, 150.0, 79.0 ],
+					"patching_rect" : [ 367.0, 276.0, 156.0, 80.0 ],
 					"text" : "1 MIDI beat = 6 pulses = a 16th note"
 				}
 
@@ -543,7 +543,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1052.0, 20.5, 158.0, 566.0 ],
+					"patching_rect" : [ 1052.0, 20.5, 182.0, 573.0 ],
 					"text" : "This message consists of 3 bytes; a status byte (decimal 242, hex 0xF2), followed by two 7-bit data bytes (least significant byte first) forming a 14-bit value which specifies the number of \"MIDI beats\" (1 MIDI beat = a 16th note = 6 clock pulses) since the start of the song. "
 				}
 
@@ -555,7 +555,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "int", "int" ],
-					"patching_rect" : [ 52.5, 680.0, 81.0, 33.0 ],
+					"patching_rect" : [ 52.5, 680.0, 82.0, 33.0 ],
 					"text" : "change"
 				}
 
@@ -579,7 +579,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 542.0, 9.5, 202.0, 104.0 ],
+					"patching_rect" : [ 542.0, 9.5, 206.0, 105.0 ],
 					"text" : "https://cycling74.com/forums/slave-max-to-elektron-midi-clock"
 				}
 
@@ -780,12 +780,13 @@
 					"fontsize" : 10.0,
 					"gradient" : 0,
 					"id" : "obj-119",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 342.0, 397.0, 29.0, 21.0 ],
-					"text" : "257",
+					"patching_rect" : [ 342.0, 397.0, 29.0, 33.0 ],
+					"text" : "2289",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -809,7 +810,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 373.75, 397.0, 34.0, 21.0 ],
-					"text" : "514",
+					"text" : "4578",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -833,7 +834,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 448.5, 397.0, 43.0, 21.0 ],
-					"text" : "2059",
+					"text" : "18315",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -857,7 +858,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 404.5, 397.0, 43.0, 21.0 ],
-					"text" : "1029",
+					"text" : "9157",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -872,7 +873,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 350.0, 473.0, 77.0, 21.0 ],
-					"text" : "258:02:06"
+					"text" : "2290:02:06"
 				}
 
 			}
@@ -928,7 +929,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 85.0, 448.0, 52.0, 21.0 ],
-					"text" : "258"
+					"text" : "2290"
 				}
 
 			}
@@ -1231,7 +1232,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 492.5, 397.0, 50.0, 21.0 ],
-					"text" : "4118",
+					"text" : "36630",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -1284,7 +1285,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 152.0, 319.0, 50.0, 21.0 ],
-					"text" : "24711"
+					"text" : "219783"
 				}
 
 			}
@@ -1322,7 +1323,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 134.0, 259.0, 65.0, 21.0 ],
-					"text" : "23886"
+					"text" : "0"
 				}
 
 			}
@@ -1430,7 +1431,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 325.0, 202.0, 65.0, 21.0 ],
-					"text" : "242 13 31"
+					"text" : "242 0 0"
 				}
 
 			}
@@ -1472,7 +1473,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 298.0, 259.0, 100.0, 21.0 ],
-					"text" : "3981"
+					"text" : "0"
 				}
 
 			}
@@ -2241,56 +2242,19 @@
 		"styles" : [ 			{
 				"name" : "PupleStyle",
 				"default" : 				{
-					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
-					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
-					"fontsize" : [ 20.0 ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"textcolor_inverse" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ],
-					"fontname" : [ "JetBrains Mono" ],
 					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
+					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
 					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+					"fontsize" : [ 20.0 ],
 					"accentcolor" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ],
-					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ]
-				}
-,
-				"slider" : 				{
-					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
-				}
-,
-				"button" : 				{
-					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
-				}
-,
-				"toggle" : 				{
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
-				}
-,
-				"number" : 				{
-					"fontsize" : [ 20.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontname" : [ "Fira Code" ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ]
-				}
-,
-				"newobj" : 				{
-					"fontsize" : [ 20.0 ],
-					"fontname" : [ "Fira Code" ],
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-					"textjustification" : [ 1 ]
+					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+					"fontname" : [ "JetBrains Mono" ],
+					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"textcolor_inverse" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ]
 				}
 ,
 				"message" : 				{
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
-					"fontname" : [ "Fira Code" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2301,14 +2265,51 @@
 						"autogradient" : 0
 					}
 ,
-					"textjustification" : [ 1 ]
-				}
-,
-				"comment" : 				{
 					"fontsize" : [ 20.0 ],
 					"fontname" : [ "Fira Code" ],
 					"textjustification" : [ 1 ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ]
+					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ]
+				}
+,
+				"comment" : 				{
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+					"fontsize" : [ 20.0 ],
+					"fontname" : [ "Fira Code" ],
+					"textjustification" : [ 1 ]
+				}
+,
+				"newobj" : 				{
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"fontsize" : [ 20.0 ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+					"fontname" : [ "Fira Code" ],
+					"textjustification" : [ 1 ]
+				}
+,
+				"slider" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
+				}
+,
+				"button" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ]
+				}
+,
+				"number" : 				{
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+					"fontsize" : [ 20.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"fontname" : [ "Fira Code" ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ]
 				}
 ,
 				"parentstyle" : "",
@@ -2317,10 +2318,10 @@
 , 			{
 				"name" : "PurpleStyle2",
 				"default" : 				{
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 0.811764705882353 ],
-					"textcolor_inverse" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ],
+					"accentcolor" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ],
 					"fontname" : [ "JetBrains Mono" ],
-					"accentcolor" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ]
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 0.811764705882353 ],
+					"textcolor_inverse" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ]
 				}
 ,
 				"parentstyle" : "PupleStyle",

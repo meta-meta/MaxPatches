@@ -3,16 +3,16 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 3,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1639.0, 810.0 ],
+		"rect" : [ 1048.0, 310.0, 1639.0, 810.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -38,6 +38,18 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-2",
+					"index" : 0,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 141.0, 900.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"format" : 6,
 					"id" : "obj-70",
@@ -153,8 +165,8 @@
 					"id" : "obj-50",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1144.5, 238.0, 66.0, 22.0 ],
 					"text" : "midi-in-ewi"
 				}
@@ -162,7 +174,7 @@
 			}
 , 			{
 				"box" : 				{
-					"domain" : [ 20.0, 22050.0 ],
+					"domain" : [ 20.0, 15000.0 ],
 					"id" : "obj-48",
 					"maxclass" : "spectroscope~",
 					"monochrome" : 0,
@@ -170,7 +182,10 @@
 					"numoutlets" : 1,
 					"orientation" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 348.5, 685.0, 1022.0, 179.0 ],
+					"patching_rect" : [ 219.0, 688.0, 1022.0, 179.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.0, 2.0, 454.0, 179.0 ],
+					"range" : [ 0.0, 0.200000002980232 ],
 					"scroll" : 3,
 					"sono" : 1
 				}
@@ -194,7 +209,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1318.4000244140625, 622.0, 85.0, 33.0 ],
+					"patching_rect" : [ 1318.4000244140625, 622.0, 85.0, 34.0 ],
 					"text" : "Trachea formant 2"
 				}
 
@@ -206,7 +221,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1170.4000244140625, 615.0, 85.0, 33.0 ],
+					"patching_rect" : [ 1170.4000244140625, 615.0, 85.0, 34.0 ],
 					"text" : "Trachea formant 1"
 				}
 
@@ -218,7 +233,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1017.4000244140625, 615.0, 85.0, 33.0 ],
+					"patching_rect" : [ 1017.4000244140625, 615.0, 85.0, 34.0 ],
 					"text" : "Syrinx pulse width"
 				}
 
@@ -230,7 +245,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 886.4000244140625, 615.0, 85.0, 33.0 ],
+					"patching_rect" : [ 886.4000244140625, 615.0, 85.0, 34.0 ],
 					"text" : "Syrinx base freq"
 				}
 
@@ -243,18 +258,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 745.4000244140625, 615.0, 85.0, 34.0 ],
 					"text" : "FM mod index\n"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-39",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 50.0, 707.0, 47.0, 22.0 ],
-					"text" : "*~ 0.75"
 				}
 
 			}
@@ -276,7 +279,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 463.399993896484375, 617.0, 123.0, 47.0 ],
+					"patching_rect" : [ 463.399993896484375, 617.0, 123.0, 48.0 ],
 					"text" : "R Bronchus impedence\n"
 				}
 
@@ -288,7 +291,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 170.399993896484375, 617.0, 123.0, 47.0 ],
+					"patching_rect" : [ 170.399993896484375, 617.0, 123.0, 48.0 ],
 					"text" : "L Bronchus impedence\n"
 				}
 
@@ -460,25 +463,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-67",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "Record.maxpat",
-					"numinlets" : 3,
-					"numoutlets" : 0,
-					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 399.5, 887.0, 457.0, 149.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-64",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -551,25 +535,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-56",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 93.0, 671.0, 68.0, 22.0 ],
-					"text" : "cross~ 200"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-49",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 671.0, 356.0, 118.0, 22.0 ],
-					"text" : "50 42."
+					"text" : "42 67."
 				}
 
 			}
@@ -582,26 +554,6 @@
 					"outlettype" : [ "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 290.0, 319.0, 169.0, 22.0 ],
 					"text" : "route 47 48 50 45 41 53 43 52"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-46",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "convolution.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 32.5, 805.0, 291.0, 188.0 ],
-					"viewvisibility" : 1
 				}
 
 			}
@@ -721,19 +673,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 305.5, 462.5, 79.0, 35.0 ],
+					"patching_rect" : [ 305.5, 462.5, 79.0, 36.0 ],
 					"text" : "scale 0 127 0. 10000."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 212.5, 1018.0, 35.0, 22.0 ],
-					"text" : "dac~"
 				}
 
 			}
@@ -789,6 +730,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "int", "", "", "", "", "" ],
 					"patching_rect" : [ 64.0, 35.0, 468.0, 248.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1.0, 177.0, 468.0, 248.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -850,7 +793,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"order" : 1,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -858,7 +801,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-56", 0 ],
+					"destination" : [ "obj-48", 0 ],
 					"order" : 0,
 					"source" : [ "obj-12", 0 ]
 				}
@@ -1017,62 +960,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-12", 10 ],
 					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 1 ],
-					"order" : 1,
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"order" : 2,
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-48", 0 ],
-					"order" : 0,
-					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 1 ],
-					"order" : 0,
-					"source" : [ "obj-46", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"order" : 0,
-					"source" : [ "obj-46", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-67", 1 ],
-					"order" : 1,
-					"source" : [ "obj-46", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"order" : 1,
-					"source" : [ "obj-46", 0 ]
 				}
 
 			}
@@ -1339,20 +1226,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "convolution.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Record.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : "..",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "midi-in-ewi.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : "..",
@@ -1361,14 +1234,6 @@
 			}
 , 			{
 				"name" : "risekeys.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "multiconvolve~.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "mxj.mxe64",
 				"type" : "mx64"
 			}
  ],

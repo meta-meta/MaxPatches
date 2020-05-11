@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1356.0, 810.0 ],
+		"rect" : [ 34.0, 85.0, 1356.0, 810.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -44,7 +44,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "float" ],
-					"patching_rect" : [ 756.0, 571.0, 42.0, 31.0 ],
+					"patching_rect" : [ 756.0, 571.0, 70.0, 33.0 ],
 					"text" : "t b f"
 				}
 
@@ -56,7 +56,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 751.0, 731.0, 40.0, 31.0 ],
+					"patching_rect" : [ 751.0, 731.0, 58.0, 33.0 ],
 					"text" : "join"
 				}
 
@@ -68,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 725.0, 632.0, 30.0, 31.0 ],
+					"patching_rect" : [ 725.0, 632.0, 45.0, 33.0 ],
 					"text" : "int"
 				}
 
@@ -82,7 +82,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 725.0, 686.0, 52.0, 31.0 ],
+					"patching_rect" : [ 725.0, 686.0, 70.0, 33.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"name" : "",
@@ -105,7 +105,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "float" ],
-					"patching_rect" : [ 617.0, 553.0, 42.0, 31.0 ],
+					"patching_rect" : [ 617.0, 553.0, 70.0, 33.0 ],
 					"text" : "t b f"
 				}
 
@@ -117,7 +117,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 612.0, 713.0, 40.0, 31.0 ],
+					"patching_rect" : [ 612.0, 713.0, 58.0, 33.0 ],
 					"text" : "join"
 				}
 
@@ -129,7 +129,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 586.0, 614.0, 30.0, 31.0 ],
+					"patching_rect" : [ 586.0, 614.0, 45.0, 33.0 ],
 					"text" : "int"
 				}
 
@@ -143,7 +143,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 586.0, 668.0, 52.0, 31.0 ],
+					"patching_rect" : [ 586.0, 668.0, 70.0, 33.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"name" : "",
@@ -166,7 +166,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 504.0, 547.0, 41.0, 31.0 ],
+					"patching_rect" : [ 504.0, 547.0, 70.0, 33.0 ],
 					"text" : "t b i"
 				}
 
@@ -178,7 +178,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.0, 553.0, 51.0, 31.0 ],
+					"patching_rect" : [ 330.0, 553.0, 58.0, 33.0 ],
 					"text" : "pack"
 				}
 
@@ -190,7 +190,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 499.0, 707.0, 51.0, 31.0 ],
+					"patching_rect" : [ 499.0, 707.0, 58.0, 33.0 ],
 					"text" : "pack"
 				}
 
@@ -217,7 +217,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 473.0, 608.0, 30.0, 31.0 ],
+					"patching_rect" : [ 473.0, 608.0, 45.0, 33.0 ],
 					"text" : "int"
 				}
 
@@ -253,7 +253,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 131.0, 559.0, 30.0, 31.0 ],
+					"patching_rect" : [ 131.0, 559.0, 45.0, 33.0 ],
 					"text" : "int"
 				}
 
@@ -265,7 +265,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 146.0, 513.0, 41.0, 31.0 ],
+					"patching_rect" : [ 146.0, 513.0, 70.0, 33.0 ],
 					"text" : "t b i"
 				}
 
@@ -277,7 +277,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 131.0, 599.0, 51.0, 31.0 ],
+					"patching_rect" : [ 131.0, 599.0, 58.0, 33.0 ],
 					"text" : "pack"
 				}
 
@@ -291,7 +291,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
-					"patching_rect" : [ 473.0, 662.0, 52.0, 31.0 ],
+					"patching_rect" : [ 473.0, 662.0, 70.0, 33.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"name" : "",
@@ -446,7 +446,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 437.0, 28.0, 587.0, 74.0 ],
+					"patching_rect" : [ 437.0, 28.0, 587.0, 80.0 ],
 					"text" : "https://rolisupport.freshdesk.com/support/solutions/articles/36000024631-max-tutorial-receiving-and-displaying-the-seaboard-s-mpe-data"
 				}
 
@@ -461,9 +461,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 596.0, 475.0, 62.0, 23.0 ],
+					"patching_rect" : [ 596.0, 475.0, 62.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 269.416656494140625, 202.0, 62.0, 23.0 ]
+					"presentation_rect" : [ 269.416656494140625, 202.0, 62.0, 24.0 ]
 				}
 
 			}
@@ -474,7 +474,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 556.83331298828125, 377.0, 50.0, 31.0 ],
+					"patching_rect" : [ 556.83331298828125, 377.0, 70.0, 33.0 ],
 					"text" : "* 48."
 				}
 
@@ -761,7 +761,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 127.5, 34.0, 211.0, 31.0 ],
+					"patching_rect" : [ 127.5, 34.0, 279.0, 33.0 ],
 					"text" : "midi-in-seaboard-block"
 				}
 
@@ -1200,34 +1200,32 @@
 		"styles" : [ 			{
 				"name" : "PupleStyle",
 				"number" : 				{
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"fontname" : [ "Fira Code" ],
 					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"fontname" : [ "Fira Code" ],
 					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
 					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"fontsize" : [ 20.0 ]
-				}
-,
-				"newobj" : 				{
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ],
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
 					"fontsize" : [ 20.0 ]
 				}
 ,
 				"comment" : 				{
 					"fontname" : [ "Fira Code" ],
 					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
-					"textjustification" : [ 1 ],
-					"fontsize" : [ 20.0 ]
+					"fontsize" : [ 20.0 ],
+					"textjustification" : [ 1 ]
+				}
+,
+				"newobj" : 				{
+					"fontname" : [ "Fira Code" ],
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+					"fontsize" : [ 20.0 ],
+					"textjustification" : [ 1 ]
 				}
 ,
 				"message" : 				{
 					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ],
 					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
-					"fontsize" : [ 20.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1237,24 +1235,26 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
-				}
 ,
-				"slider" : 				{
-					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+					"fontsize" : [ 20.0 ],
+					"textjustification" : [ 1 ]
 				}
 ,
 				"button" : 				{
-					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
 					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
 				}
 ,
 				"toggle" : 				{
 					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+				}
+,
+				"slider" : 				{
+					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
 				}
 ,
 				"parentstyle" : "",
