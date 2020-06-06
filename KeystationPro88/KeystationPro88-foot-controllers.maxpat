@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 3,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 380.0, 99.0, 626.0, 651.0 ],
+		"rect" : [ 39.0, 914.0, 626.0, 623.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,9 +39,21 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-8",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 247.0, 129.0, 150.0, 48.0 ],
+					"text" : "volume was 11, changing to 7 TODO: check if clash with TG100 2020-05-23"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "expression pedal",
 					"id" : "obj-6",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -53,7 +65,7 @@
 				"box" : 				{
 					"comment" : "sustain 2",
 					"id" : "obj-5",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -65,7 +77,7 @@
 				"box" : 				{
 					"comment" : "sustain 1",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -150,8 +162,8 @@
 					"numinlets" : 4,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 90.0, 110.0, 85.0, 22.0 ],
-					"text" : "route 11 64 67"
+					"patching_rect" : [ 90.0, 110.0, 79.0, 22.0 ],
+					"text" : "route 7 64 67"
 				}
 
 			}
@@ -159,7 +171,7 @@
 				"box" : 				{
 					"comment" : "CC",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -232,7 +244,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
