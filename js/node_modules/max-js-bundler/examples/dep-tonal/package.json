@@ -1,0 +1,10 @@
+{
+	"name": "max-bundler-tonal-example",
+	"version": "1.0.0",
+	"dependencies": {
+		"tonal": "^2.2.1"
+	},
+	"scripts": {
+		"build": "../../bin/run build ./index.js --output index.build.js"
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"name": "max-bundler-uuid-example",
+	"version": "1.0.0",
+	"dependencies": {
+		"uuid": "^3.3.2"
+	},
+	"scripts": {
+		"build": "../../bin/run build ./index.js --output index.build.js"
+	}
+}
