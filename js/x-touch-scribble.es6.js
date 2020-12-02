@@ -18,3 +18,20 @@ const set = (msg, track, line = 0) => {
   }
 
   //max-js-bundler build ./x-touch-scribble.es6.js -o ./x-touch-scribble.js --force
+
+
+/*
+const scribble = (msg, track, line = 0) =>
+  ['f0', '00', '00', '66', '14', '12']
+    .concat(
+      ((line * 7 * 8) + track * 7)
+        .toString(16)
+        .padStart(2, '0')
+    )
+    .concat(
+      msg.padEnd(7).substr(0, 7)
+        .split('')
+        .map(c => c.charCodeAt(0).toString(16)),
+    )
+    .concat('f7').join(' ')
+    */

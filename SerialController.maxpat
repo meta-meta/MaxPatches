@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 0,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-49",
@@ -158,7 +159,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 296.5, 12.0, 30.0, 30.0 ]
 				}
 
@@ -334,7 +335,7 @@
 				"box" : 				{
 					"fontsize" : 13.0,
 					"id" : "obj-16",
-					"items" : "COM7",
+					"items" : "COM4",
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -370,8 +371,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 301.0, 325.0, 119.0, 22.0 ],
-					"text" : "serial COM7 115200"
+					"patching_rect" : [ 301.0, 325.0, 118.0, 22.0 ],
+					"text" : "serial COM4 115200"
 				}
 
 			}
