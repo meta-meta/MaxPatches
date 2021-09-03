@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 27.0, 84.0, 1639.0, 819.0 ],
+		"rect" : [ 41.0, 84.0, 1639.0, 819.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 20.0,
@@ -57,7 +57,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 92.0, 438.0, 526.0, 35.0 ],
-					"text" : "replace 1::oscMsg /oled/print help 0. 0."
+					"text" : "append 1::oscMsg /oled/print help 0. 0. 35."
 				}
 
 			}
