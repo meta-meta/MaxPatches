@@ -69,7 +69,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 31.0, 37.0, 250.0, 31.0 ],
-					"text" : "midi-in-selector ewi"
+					"text" : "midi-in-selector LM-EWI"
 				}
 
 			}

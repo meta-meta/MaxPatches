@@ -57,7 +57,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 31.0, 37.0, 305.0, 31.0 ],
-					"text" : "midi-in-selector \"Seaboard Block\""
+					"text" : "midi-in-selector LM-Seaboard"
 				}
 
 			}

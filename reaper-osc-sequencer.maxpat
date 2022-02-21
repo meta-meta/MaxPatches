@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 227.0, 72.0, 1108.0, 879.0 ],
+		"rect" : [ 1201.0, 166.0, 1354.0, 879.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 20.0,
@@ -26,7 +26,7 @@
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
 		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 15,
+		"toolbars_unpinned_last_save" : 7,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -149,13 +149,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 815.192291259765625, 235.0, 307.0, 57.0 ],
-					"text" : "reaper-osc-seq-birdcall 1 Bird"
+					"patching_rect" : [ 815.192291259765625, 235.0, 308.0, 33.0 ],
+					"text" : "reaper-osc-seq-birdcall 3 Bird"
 				}
 
 			}
@@ -201,7 +200,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 597.192291259765625, 373.0, 341.0, 33.0 ],
+					"patching_rect" : [ 597.192291259765625, 373.0, 298.0, 33.0 ],
 					"text" : "reaper-osc-seq-inst 2 Drums"
 				}
 
@@ -213,7 +212,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 317.807657241821289, 309.0, 378.0, 33.0 ],
+					"patching_rect" : [ 317.807657241821289, 309.0, 318.0, 33.0 ],
 					"text" : "reaper-osc-seq-inst 1 Pianoteq"
 				}
 
@@ -527,208 +526,46 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "EWI-newest.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-inst.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MIDI-sync.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "midi-in-loopmidi-beat-clock.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "midi-in-selector.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "select-midi.js",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-set.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "midi-out-loopmidi-max-sequencer.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "midi-out-selector.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "line-cc-route-0-31.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "./functions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "line-cc.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "./functions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-get.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-set-oscMsg.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-birdcall.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-set-cc.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-get-cc.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "BirdCall.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/BirdCall",
-				"patcherrelativepath" : "./BirdCall",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "vposc.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/BirdCall",
-				"patcherrelativepath" : "./BirdCall",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "avian-syrinx-model.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/BirdCall",
-				"patcherrelativepath" : "./BirdCall",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ringmod.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/BirdCall",
-				"patcherrelativepath" : "./BirdCall",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "crossfade.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/BirdCall",
-				"patcherrelativepath" : "./BirdCall",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "trachea.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/BirdCall",
-				"patcherrelativepath" : "./BirdCall",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cc-controller.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "diff.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "./functions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "OSC-route.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "bach.circle.mxe64",
-				"type" : "mx64"
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "PupleStyle",
 				"comment" : 				{
+					"fontsize" : [ 20.0 ],
 					"textjustification" : [ 1 ],
 					"fontname" : [ "Fira Code" ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
-					"fontsize" : [ 20.0 ]
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ]
+				}
+,
+				"default" : 				{
+					"fontsize" : [ 20.0 ],
+					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
+					"fontname" : [ "Fira Code" ],
+					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
+					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
+					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
+					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+,
+				"number" : 				{
+					"fontsize" : [ 20.0 ],
+					"fontname" : [ "Fira Code" ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
 				"newobj" : 				{
+					"fontsize" : [ 20.0 ],
 					"textjustification" : [ 1 ],
 					"fontname" : [ "Fira Code" ],
 					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-					"fontsize" : [ 20.0 ]
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ]
 				}
 ,
 				"message" : 				{
+					"fontsize" : [ 20.0 ],
 					"textjustification" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -741,7 +578,6 @@
 					}
 ,
 					"fontname" : [ "Fira Code" ],
-					"fontsize" : [ 20.0 ],
 					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ]
 				}
 ,
@@ -756,31 +592,10 @@
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 				}
 ,
-				"default" : 				{
-					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
-					"fontname" : [ "Fira Code" ],
-					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
-					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
-					"accentcolor" : [ 1.0, 1.0, 1.0, 0.15 ],
-					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
-					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-,
 				"slider" : 				{
 					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
-				}
-,
-				"number" : 				{
-					"fontname" : [ "Fira Code" ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ]
 				}
 ,
 				"parentstyle" : "",
@@ -789,18 +604,37 @@
 , 			{
 				"name" : "PurpleStyle2",
 				"comment" : 				{
+					"fontsize" : [ 20.0 ],
 					"textjustification" : [ 1 ],
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
-					"fontsize" : [ 20.0 ]
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ]
+				}
+,
+				"default" : 				{
+					"fontsize" : [ 20.0 ],
+					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
+					"fontname" : [ "JetBrains Mono" ],
+					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
+					"accentcolor" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ],
+					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
+					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
+					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
+					"textcolor_inverse" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ],
+					"selectioncolor" : [ 0.0, 0.0, 0.0, 0.811764705882353 ]
+				}
+,
+				"number" : 				{
+					"fontsize" : [ 20.0 ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ]
 				}
 ,
 				"newobj" : 				{
+					"fontsize" : [ 20.0 ],
 					"textjustification" : [ 1 ],
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"fontsize" : [ 20.0 ]
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
 				}
 ,
 				"message" : 				{
+					"fontsize" : [ 20.0 ],
 					"textjustification" : [ 1 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
@@ -811,8 +645,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"fontsize" : [ 20.0 ]
+
 				}
 ,
 				"button" : 				{
@@ -826,28 +659,10 @@
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
 				}
 ,
-				"default" : 				{
-					"color" : [ 0.515478, 0.649409, 0.63182, 1.0 ],
-					"fontname" : [ "JetBrains Mono" ],
-					"bgcolor" : [ 0.392157, 0.376471, 0.470588, 1.0 ],
-					"patchlinecolor" : [ 0.65098, 0.862745, 0.521569, 0.898039 ],
-					"accentcolor" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ],
-					"elementcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ],
-					"textcolor" : [ 0.67451, 0.847059, 0.737255, 1.0 ],
-					"selectioncolor" : [ 0.0, 0.0, 0.0, 0.811764705882353 ],
-					"fontsize" : [ 20.0 ],
-					"textcolor_inverse" : [ 0.125490196078431, 0.247058823529412, 0.423529411764706, 0.811764705882353 ]
-				}
-,
 				"slider" : 				{
 					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
 					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
-				}
-,
-				"number" : 				{
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"fontsize" : [ 20.0 ]
 				}
 ,
 				"parentstyle" : "",
