@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 0,
-			"revision" : 1,
+			"minor" : 1,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1639.0, 810.0 ],
+		"rect" : [ 801.0, 166.0, 1639.0, 810.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,14 +37,110 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-129",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1518.547135263681412, 427.0, 70.0, 103.0 ],
+					"presentation_linecount" : 7,
+					"text" : "list (pair) of midi number to custom freq\n\n69 432.123"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 8.020538999999999,
+					"id" : "obj-126",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.183857619762421, 359.700012000000015, 79.0, 53.0 ],
+					"presentation_linecount" : 5,
+					"text" : "use mtof for base freq unless remappings have been received over inlet 11"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-125",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 48.118922412395477, 424.999999999999943, 29.5, 22.0 ],
+					"text" : "t b l"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-123",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ -1.487006863159181, 452.0, 29.5, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-115",
+					"maxclass" : "gswitch2",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 3.512993136840819, 480.0, 39.0, 32.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 43.683857619762421, 531.0, 50.5, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-6",
+					"index" : 11,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1488.340857297182083, 427.0, 28.206277966499329, 28.206277966499329 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-95",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 591.0, 354.0, 150.0, 60.0 ],
+					"patching_rect" : [ 591.0, 354.0, 150.0, 62.0 ],
 					"text" : "TODO: vel at note-on\nratchet for qunexus\nonly set if higher than previous"
 				}
 
@@ -118,7 +214,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1343.4185791015625, 427.0, 70.0, 47.0 ],
+					"patching_rect" : [ 1343.4185791015625, 427.0, 70.0, 48.0 ],
 					"text" : "is continuous velocity"
 				}
 
@@ -144,7 +240,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1113.5, 452.0, 47.0, 33.0 ],
+					"patching_rect" : [ 1113.5, 452.0, 47.0, 34.0 ],
 					"text" : "is cont.\nvel"
 				}
 
@@ -275,7 +371,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 514.5, 612.800048999999944, 150.0, 60.0 ],
+					"patching_rect" : [ 514.5, 612.800048999999944, 150.0, 62.0 ],
 					"text" : "TODO: play with \nnot allowing bend\nfor partials with\ndecay"
 				}
 
@@ -311,7 +407,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 626.0, 719.0, 174.0, 47.0 ],
+					"patching_rect" : [ 626.0, 719.0, 174.0, 48.0 ],
 					"text" : "accept a note,bend list so per-note pitchbend notes don't dirty everything else"
 				}
 
@@ -347,7 +443,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 922.0, 309.0, 154.0, 60.0 ],
+					"patching_rect" : [ 922.0, 309.0, 154.0, 62.0 ],
 					"text" : "vel comes in before note\nwe want to check the prev vel before setting the new one"
 				}
 
@@ -371,7 +467,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 885.0, 405.0, 114.0, 60.0 ],
+					"patching_rect" : [ 885.0, 405.0, 114.0, 62.0 ],
 					"text" : "vel at note-on/off\nwithout uzi\nfor decay only from note-on"
 				}
 
@@ -567,7 +663,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 562.5, 871.29998779296875, 54.0, 28.0 ],
+					"patching_rect" : [ 562.5, 871.29998779296875, 54.0, 29.0 ],
 					"text" : "per-note\npitch bend"
 				}
 
@@ -606,7 +702,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1226.9000244140625, 581.0, 68.0, 33.0 ],
+					"patching_rect" : [ 1226.9000244140625, 581.0, 68.0, 34.0 ],
 					"text" : "per-note pitch bend"
 				}
 
@@ -717,7 +813,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 188.649993999999992, 375.200012000000015, 79.0, 33.0 ],
+					"patching_rect" : [ 188.649993999999992, 375.200012000000015, 79.0, 34.0 ],
 					"text" : "pick oscbank index based on midi note and drawbar index"
 				}
 
@@ -741,7 +837,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.899993999999992, 499.200012000000015, 75.850005999999993, 36.0 ],
+					"patching_rect" : [ 287.899993999999992, 499.200012000000015, 75.850005999999993, 37.0 ],
 					"text" : "keep things updated when assigning drawbar and changing drawbar amplitude"
 				}
 
@@ -753,7 +849,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 364.25, 411.600036999999986, 61.649994, 33.0 ],
+					"patching_rect" : [ 364.25, 411.600036999999986, 61.649994, 34.0 ],
 					"text" : "drawbar amplitude"
 				}
 
@@ -765,7 +861,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 117.0, 513.0, 63.599997999999999, 74.0 ],
+					"patching_rect" : [ 117.0, 513.0, 63.599997999999999, 75.0 ],
 					"text" : "multiply note freq by drawbar multiplier"
 				}
 
@@ -777,7 +873,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 56.0, 354.0, 68.0, 47.0 ],
+					"patching_rect" : [ 38.370365291833878, 276.077922821044922, 68.0, 48.0 ],
 					"text" : "cycling through all midi notes"
 				}
 
@@ -789,7 +885,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.800003000000004, 692.800048999999944, 37.199997000000003, 33.0 ],
+					"patching_rect" : [ 150.800003000000004, 692.800048999999944, 37.199997000000003, 34.0 ],
 					"text" : "pitch bend"
 				}
 
@@ -862,7 +958,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 408.600006000000008, 354.0, 41.0, 47.0 ],
+					"patching_rect" : [ 408.600006000000008, 354.0, 41.0, 48.0 ],
 					"text" : "vel at note-on/off"
 				}
 
@@ -874,7 +970,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 658.0, 446.0, 56.0, 33.0 ],
+					"patching_rect" : [ 658.0, 446.0, 56.0, 34.0 ],
 					"text" : "vel at note-on"
 				}
 
@@ -886,7 +982,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 798.75, 560.0, 61.5, 33.0 ],
+					"patching_rect" : [ 798.75, 560.0, 61.5, 34.0 ],
 					"text" : "time at note-on"
 				}
 
@@ -900,7 +996,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1061.5, 534.5, 55.0, 33.0 ],
+					"patching_rect" : [ 1061.5, 534.5, 55.0, 34.0 ],
 					"text" : "decay curve"
 				}
 
@@ -928,7 +1024,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 930.5, 525.0, 55.0, 33.0 ],
+					"patching_rect" : [ 930.5, 525.0, 55.0, 34.0 ],
 					"text" : "decay time"
 				}
 
@@ -956,7 +1052,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 826.0, 122.5, 55.0, 33.0 ],
+					"patching_rect" : [ 826.0, 122.5, 55.0, 34.0 ],
 					"text" : "toggle decay"
 				}
 
@@ -990,7 +1086,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-153",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -1231,7 +1326,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 649.5, 202.0, 50.0, 33.0 ],
+					"patching_rect" : [ 649.5, 202.0, 50.0, 34.0 ],
 					"text" : "pitch bend"
 				}
 
@@ -1245,7 +1340,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 619.0, 202.0, 25.0, 25.0 ]
 				}
 
@@ -1272,7 +1367,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 226.399993999999992, 114.199996999999996, 67.0, 47.0 ],
+					"patching_rect" : [ 226.399993999999992, 114.199996999999996, 67.0, 48.0 ],
 					"text" : "drawbar \nfrequency multiplier"
 				}
 
@@ -1286,7 +1381,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 156.649993999999992, 108.5, 67.0, 47.0 ],
+					"patching_rect" : [ 156.649993999999992, 108.5, 67.0, 48.0 ],
 					"text" : "drawbar \nindex\n0 - 8"
 				}
 
@@ -1300,7 +1395,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 386.25, 59.5, 85.0, 33.0 ],
+					"patching_rect" : [ 386.25, 59.5, 85.0, 34.0 ],
 					"text" : "drawbar val\n0 - 127"
 				}
 
@@ -1314,7 +1409,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 553.5, 202.0, 38.0, 33.0 ],
+					"patching_rect" : [ 553.5, 202.0, 38.0, 34.0 ],
 					"text" : "note amp"
 				}
 
@@ -1328,7 +1423,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 433.450012000000015, 820.299987999999985, 60.0, 33.0 ],
+					"patching_rect" : [ 433.450012000000015, 820.299987999999985, 60.0, 34.0 ],
 					"text" : "oscbank index"
 				}
 
@@ -1368,7 +1463,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 719.0, 18.5, 269.0, 87.0 ],
+					"patching_rect" : [ 719.0, 18.5, 269.0, 89.0 ],
 					"text" : "we save the note velocities in a table and constantly loop through all the notes, getting them from the table so that this drawbar will change for every note and not just the most recently played\n"
 				}
 
@@ -1493,7 +1588,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 19.750005999999999, 375.200012000000015, 32.5, 22.0 ],
+					"patching_rect" : [ 3.512993136840819, 285.589623244201675, 32.5, 22.0 ],
 					"text" : "t i i"
 				}
 
@@ -1521,7 +1616,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.200005000000004, 523.40002400000003, 34.0, 22.0 ],
+					"patching_rect" : [ 3.512993136840819, 541.0, 34.0, 22.0 ],
 					"text" : "mtof"
 				}
 
@@ -1536,7 +1631,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 22.949998999999998, 61.0, 25.0, 25.0 ]
 				}
 
@@ -1550,7 +1645,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 523.0, 202.0, 25.0, 25.0 ]
 				}
 
@@ -1709,8 +1804,8 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-204", 0 ],
-					"midpoints" : [ 42.750005999999999, 408.0, 73.700005000000004, 408.0 ],
+					"destination" : [ "obj-115", 1 ],
+					"midpoints" : [ 26.512993136840819, 408.0, 33.012993136840819, 408.0 ],
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -1718,7 +1813,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-59", 0 ],
-					"midpoints" : [ 29.250005999999999, 414.0, 262.899993999999992, 414.0 ],
+					"midpoints" : [ 13.012993136840819, 414.0, 262.899993999999992, 414.0 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -1782,6 +1877,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-204", 0 ],
+					"source" : [ "obj-115", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-115", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-127", 0 ],
 					"source" : [ "obj-117", 0 ]
 				}
@@ -1796,8 +1905,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-115", 0 ],
+					"source" : [ "obj-123", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-117", 2 ],
 					"source" : [ "obj-124", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"source" : [ "obj-125", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-72", 0 ],
+					"source" : [ "obj-125", 1 ]
 				}
 
 			}
@@ -2237,6 +2367,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-125", 0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"midpoints" : [ 276.399993999999992, 559.200012000000015, 412.700012000000015, 559.200012000000015 ],
 					"source" : [ "obj-60", 1 ]
@@ -2334,6 +2471,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
 					"source" : [ "obj-71", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-67", 0 ],
+					"source" : [ "obj-72", 0 ]
 				}
 
 			}
@@ -2530,7 +2674,34 @@
  ],
 		"styles" : [ 			{
 				"name" : "PupleStyle",
+				"comment" : 				{
+					"fontsize" : [ 20.0 ],
+					"fontname" : [ "Fira Code" ],
+					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
+					"textjustification" : [ 1 ]
+				}
+,
+				"number" : 				{
+					"fontsize" : [ 20.0 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"fontname" : [ "Fira Code" ],
+					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
+					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ]
+				}
+,
+				"newobj" : 				{
+					"fontsize" : [ 20.0 ],
+					"fontname" : [ "Fira Code" ],
+					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
+					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
+					"textjustification" : [ 1 ]
+				}
+,
 				"message" : 				{
+					"fontsize" : [ 20.0 ],
+					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
+					"fontname" : [ "Fira Code" ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2541,51 +2712,24 @@
 						"autogradient" : 0
 					}
 ,
-					"fontsize" : [ 20.0 ],
-					"fontname" : [ "Fira Code" ],
-					"textcolor_inverse" : [ 0.894118, 0.745098, 0.745098, 1.0 ],
 					"textjustification" : [ 1 ]
-				}
-,
-				"comment" : 				{
-					"textcolor" : [ 0.439216, 0.74902, 0.254902, 0.639216 ],
-					"fontsize" : [ 20.0 ],
-					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ]
-				}
-,
-				"number" : 				{
-					"accentcolor" : [ 0.0, 0.0, 0.0, 0.65098 ],
-					"bgcolor" : [ 0.047059, 0.913725, 0.913725, 1.0 ],
-					"fontsize" : [ 20.0 ],
-					"selectioncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontname" : [ "Fira Code" ],
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 0.65098 ]
-				}
-,
-				"newobj" : 				{
-					"accentcolor" : [ 0.584314, 0.403922, 0.533333, 1.0 ],
-					"bgcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ],
-					"fontsize" : [ 20.0 ],
-					"fontname" : [ "Fira Code" ],
-					"textjustification" : [ 1 ]
-				}
-,
-				"toggle" : 				{
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ]
-				}
-,
-				"slider" : 				{
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
-					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
-					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
 				}
 ,
 				"button" : 				{
-					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
 					"elementcolor" : [ 0.827451, 0.364706, 0.541176, 1.0 ]
+				}
+,
+				"toggle" : 				{
+					"color" : [ 0.941176, 0.678431, 0.890196, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ]
+				}
+,
+				"slider" : 				{
+					"color" : [ 0.827451, 0.364706, 0.541176, 1.0 ],
+					"bgcolor" : [ 0.290196, 0.309804, 0.301961, 0.0 ],
+					"elementcolor" : [ 0.062745, 0.015686, 0.180392, 0.423529 ]
 				}
 ,
 				"parentstyle" : "",
