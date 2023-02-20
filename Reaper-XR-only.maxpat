@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 5,
 			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1139.0, 477.0, 1183.0, 647.0 ],
+		"rect" : [ 585.0, 365.0, 1527.0, 867.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 20.0,
@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 829.0, 357.0, 82.0, 33.0 ],
+					"text" : "xr-cr78"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "gain~",
 					"multichannelvariant" : 0,
@@ -47,7 +58,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 855.0, 439.0, 22.0, 140.0 ]
+					"patching_rect" : [ 1113.0, 510.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -58,7 +69,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 875.0, 346.0, 67.0, 33.0 ],
+					"patching_rect" : [ 1133.0, 417.0, 67.0, 33.0 ],
 					"text" : "pink~"
 				}
 
@@ -68,8 +79,7 @@
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 0,
 					"patching_rect" : [ 704.0, 357.0, 96.0, 33.0 ],
 					"text" : "xr-organ"
 				}
@@ -199,13 +209,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 12 ],
-					"source" : [ "obj-3", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
@@ -221,7 +224,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"order" : 2,
+					"order" : 3,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 0,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -229,7 +240,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -237,7 +248,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -371,34 +382,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "organ-2-routing.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "organ-2-voice.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "organ-2.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "organ-oscbank.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "osc-send-midi-to-unity.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
@@ -524,14 +507,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "xr-eggs.maxpat",
+				"name" : "xr-cr78.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "xr-organ.maxpat",
+				"name" : "xr-eggs.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
