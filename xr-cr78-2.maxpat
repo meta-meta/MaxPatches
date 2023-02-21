@@ -179,7 +179,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
 					"patching_rect" : [ 50.0, 402.0, 164.0, 35.0 ],
-					"text" : "midiformat 10"
+					"text" : "midiformat 11"
 				}
 
 			}
@@ -201,8 +201,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 50.0, 84.0, 188.0, 35.0 ],
-					"text" : "OSC-route /cr78"
+					"patching_rect" : [ 50.0, 84.0, 212.0, 35.0 ],
+					"text" : "OSC-route /cr78-2"
 				}
 
 			}
