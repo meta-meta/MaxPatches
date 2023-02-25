@@ -221,6 +221,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 12 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
