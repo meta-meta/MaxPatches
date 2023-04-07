@@ -90,8 +90,8 @@
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 704.0, 357.0, 96.0, 33.0 ],
 					"text" : "xr-organ"
 				}
@@ -216,6 +216,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 11 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 13 ],
+					"source" : [ "obj-3", 1 ]
 				}
 
 			}
