@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 585.0, 365.0, 1527.0, 867.0 ],
+		"rect" : [ 811.0, 375.0, 1527.0, 867.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 20.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "PurpleTemplate2018",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 1078.0, 350.0, 118.0, 33.0 ],
+					"text" : "XR-Birdcall"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
@@ -69,7 +81,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1113.0, 510.0, 22.0, 140.0 ]
+					"patching_rect" : [ 1019.0, 644.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -80,7 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1133.0, 417.0, 67.0, 33.0 ],
+					"patching_rect" : [ 1039.0, 551.0, 67.0, 33.0 ],
 					"text" : "pink~"
 				}
 
@@ -214,6 +226,13 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 14 ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 11 ],
 					"source" : [ "obj-19", 0 ]
 				}
@@ -250,7 +269,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
-					"order" : 4,
+					"order" : 5,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -258,22 +277,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"order" : 1,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"order" : 3,
-					"source" : [ "obj-9", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
 					"order" : 2,
 					"source" : [ "obj-9", 0 ]
 				}
@@ -281,8 +284,32 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
+					"destination" : [ "obj-13", 0 ],
 					"order" : 0,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"order" : 4,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 3,
+					"source" : [ "obj-9", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"order" : 1,
 					"source" : [ "obj-9", 0 ]
 				}
 
@@ -312,6 +339,13 @@
 , 			{
 				"name" : "OSC-route.mxe64",
 				"type" : "mx64"
+			}
+, 			{
+				"name" : "XR-Birdcall.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches/BirdCall",
+				"patcherrelativepath" : "./BirdCall",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "avian-syrinx-model.maxpat",
@@ -381,7 +415,21 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "midi-in-ewi.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "midi-in-loopmidi-beat-clock.maxpat",
+				"bootpath" : "C:/Projects/MaxPatches",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "midi-in-qunexus-cv.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
