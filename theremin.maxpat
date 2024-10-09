@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 2,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -410,22 +410,6 @@
 			}
 , 			{
 				"box" : 				{
-					"format" : 6,
-					"id" : "obj-39",
-					"maxclass" : "flonum",
-					"maximum" : 1.0,
-					"minimum" : 0.0,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 102.0, 246.0, 100.0, 35.0 ],
-					"style" : "PurpleStyle2"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-34",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -486,10 +470,10 @@
 					"maxclass" : "bpatcher",
 					"name" : "theremin-osc.maxpat",
 					"numinlets" : 1,
-					"numoutlets" : 9,
+					"numoutlets" : 10,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "", "", "", "", "", "", "", "", "bang" ],
-					"patching_rect" : [ 35.5, 58.0, 765.0, 100.0 ],
+					"outlettype" : [ "", "", "", "", "", "", "", "", "bang", "" ],
+					"patching_rect" : [ 35.5, 58.0, 883.0, 102.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.0, 2.0, 764.0, 97.0 ],
 					"viewvisibility" : 1
@@ -537,6 +521,13 @@
 					"destination" : [ "obj-18", 0 ],
 					"order" : 0,
 					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-34", 1 ],
+					"source" : [ "obj-1", 9 ]
 				}
 
 			}
@@ -698,13 +689,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
 					"source" : [ "obj-34", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-34", 1 ],
-					"source" : [ "obj-39", 0 ]
 				}
 
 			}
