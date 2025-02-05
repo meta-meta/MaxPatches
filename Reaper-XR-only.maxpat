@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 440.0, 343.0, 1527.0, 867.0 ],
+		"rect" : [ 890.0, 281.0, 1043.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 20.0,
@@ -44,7 +44,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1230.0, 350.0, 118.0, 33.0 ],
+					"patching_rect" : [ 836.0, 335.0, 118.0, 33.0 ],
 					"text" : "xr-sampler"
 				}
 
@@ -56,7 +56,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1078.0, 350.0, 118.0, 33.0 ],
+					"patching_rect" : [ 684.0, 335.0, 118.0, 33.0 ],
 					"text" : "XR-Birdcall"
 				}
 
@@ -67,7 +67,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 937.0, 357.0, 76.0, 33.0 ],
+					"patching_rect" : [ 543.0, 342.0, 76.0, 33.0 ],
 					"text" : "xr-808"
 				}
 
@@ -78,7 +78,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 829.0, 357.0, 82.0, 33.0 ],
+					"patching_rect" : [ 435.0, 342.0, 82.0, 33.0 ],
 					"text" : "xr-cr78"
 				}
 
@@ -92,7 +92,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1019.0, 644.0, 22.0, 140.0 ]
+					"patching_rect" : [ 884.0, 547.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -103,7 +103,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1039.0, 551.0, 67.0, 33.0 ],
+					"patching_rect" : [ 904.0, 454.0, 67.0, 33.0 ],
 					"text" : "pink~"
 				}
 
@@ -115,19 +115,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 704.0, 357.0, 96.0, 33.0 ],
+					"patching_rect" : [ 310.0, 342.0, 96.0, 33.0 ],
 					"text" : "xr-organ"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-12",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 41.0, 282.0, 238.0, 33.0 ],
-					"text" : "osc-send-midi-to-unity"
 				}
 
 			}
@@ -137,7 +126,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 481.0, 357.0, 85.0, 33.0 ],
+					"patching_rect" : [ 87.0, 342.0, 85.0, 33.0 ],
 					"text" : "xr-eggs"
 				}
 
@@ -149,19 +138,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 592.0, 206.0, 176.0, 33.0 ],
+					"patching_rect" : [ 198.0, 191.0, 176.0, 33.0 ],
 					"text" : "udpreceive 8010"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-2",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 41.0, 333.0, 255.0, 33.0 ],
-					"text" : "reaper-osc-sequencer"
 				}
 
 			}
@@ -172,20 +150,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 580.0, 357.0, 99.0, 33.0 ],
+					"patching_rect" : [ 186.0, 342.0, 99.0, 33.0 ],
 					"text" : "theremin",
 					"varname" : "theremin[1]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 41.0, 389.671707272529602, 267.0, 33.0 ],
-					"text" : "reaper-midi-unity-osc"
 				}
 
 			}
@@ -205,7 +172,7 @@
 					"numoutlets" : 16,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 316.0, 59.0, 436.0, 106.0 ],
+					"patching_rect" : [ 186.0, 46.0, 436.0, 106.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.0, 4.0, 361.0, 111.0 ],
 					"viewvisibility" : 1
@@ -227,7 +194,7 @@
 					"numinlets" : 16,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 306.5, 499.0, 353.0, 96.0 ],
+					"patching_rect" : [ 117.0, 586.0, 353.0, 96.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 645.0, 382.0, 90.0 ],
 					"viewvisibility" : 1
@@ -342,20 +309,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "EWI-newest.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "MIDI-sync.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "OSC-route.mxe64",
 				"type" : "mx64"
 			}
@@ -374,27 +327,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bach.circle.mxe64",
-				"type" : "mx64"
-			}
-, 			{
-				"name" : "cc-controller.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "crossfade.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches/BirdCall",
 				"patcherrelativepath" : "./BirdCall",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "diff.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "./functions",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -420,28 +355,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "line-cc-route-0-31.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "./functions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "line-cc.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches/functions",
-				"patcherrelativepath" : "./functions",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "midi-in-ewi.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "midi-in-loopmidi-beat-clock.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -511,79 +425,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "osc-send-midi-to-unity.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "out-reaper.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches/StuStuStudio",
 				"patcherrelativepath" : "./StuStuStudio",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-midi-unity-osc.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-birdcall.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-get-cc.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-get.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-set-cc.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-set-oscMsg.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-dict-set.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-seq-inst.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "reaper-osc-sequencer.maxpat",
-				"bootpath" : "C:/Projects/MaxPatches",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -619,12 +463,6 @@
 				"name" : "theremin.maxpat",
 				"bootpath" : "C:/Projects/MaxPatches",
 				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
 				"type" : "JSON",
 				"implicit" : 1
 			}
